@@ -1,4 +1,4 @@
-# ⚡ Proyecto React + Vite + Bootstrap - Sindicato Luz y Fuerza Córdoba
+# ⚡ Proyecto React + Vite + Bootstrap - Sindicato Luz y Fuerza Córdoba - Sitio web Institucional
 
 Este proyecto está construido con **Vite** y **React 19** usando las mejores prácticas actuales de desarrollo web:
 - Estructura de carpetas escalable y profesional.
