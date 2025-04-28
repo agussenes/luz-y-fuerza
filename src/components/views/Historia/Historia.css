@@ -1,0 +1,48 @@
+
+  
+  .bannerGif-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .bannerGif-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 💥 ESTO ES LO CORRECTO */
+    display: block;
+  }
+  
+  .overlay-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro suave */
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay-text h1 {
+    font-size: clamp(2rem, 5vw, 3rem); /* Responsive */
+    margin: 0;
+  }
+
+  .imgMid{
+    height: 500px !important;
+  }
+  
+
+
+
+.bannerGif-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

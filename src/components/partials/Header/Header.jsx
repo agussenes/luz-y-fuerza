@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Header.css'; 
+import './Header.css';
 
 function Header() {
   return (
@@ -24,10 +24,16 @@ function Header() {
 
               {/* Dropdown */}
               <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle" to="#" id="dropdownMenu" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                <button
+                  className="nav-link dropdown-toggle btn btn-link"
+                  id="dropdownMenu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  type="button"
+                >
                   Institucional
-                </Link>
+                </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
                   <li><Link className="dropdown-item" to="/quienes-somos">Quienes somos</Link></li>
                   <li><Link className="dropdown-item" to="/vida-institucional">Vida institucional</Link></li>

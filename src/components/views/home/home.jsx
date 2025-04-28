@@ -6,7 +6,7 @@ function Home() {
       <SEO
         title="Inicio - Luz y Fuerza Córdoba"
         description="Bienvenidos al Sindicato de Luz y Fuerza de Córdoba. Noticias, beneficios y lucha sindical."
-        url="https://tusitio.com/"
+        url="http://localhost:5173/home"
         image="https://tusitio.com/img/home-og-image.jpg"
       />
 

@@ -2,20 +2,20 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Base del Body */
 body {
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-    background-color: var(--color-background);
-    color: var(--color-text);
-    line-height: 1.6;
-    min-height: 100vh;
-    scroll-behavior: smooth;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 /* Imágenes */
@@ -23,97 +23,97 @@ body {
 
 /* Links */
 a {
-    color: var(--color-primary);
-    text-decoration: none;
-    transition: var(--transition-base);
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition-base);
 }
 
 a:hover {
-    text-decoration: underline;
-    color: var(--color-secondary);
+  text-decoration: underline;
+  color: var(--color-secondary);
 }
 
 /* Botones básicos */
 button {
-    font-family: inherit;
-    font-size: inherit;
-    cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
 }
 
 /* Clases utilitarias */
 .container {
-    padding-left: var(--spacing-medium);
-    padding-right: var(--spacing-medium);
+  padding-left: var(--spacing-medium);
+  padding-right: var(--spacing-medium);
 }
 
 .section {
-    padding-top: var(--spacing-large);
-    padding-bottom: var(--spacing-large);
+  padding-top: var(--spacing-large);
+  padding-bottom: var(--spacing-large);
 }
 
 
 /* Para que el body ocupe toda la altura de la pantalla */
 html,
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    scroll-behavior: smooth;
-    font-family: 'Sofia Sans', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  font-family: 'Sofia Sans', sans-serif;
 }
 
 /* Main debe crecer si hay espacio */
 .main-content {
-    flex: 1 0 auto;
-    padding-top: var(--spacing-large);
-    /* opcional, para separarlo del header */
+  flex: 1 0 auto;
+
+  /* opcional, para separarlo del header */
 }
 
 /* Footer que quede al fondo */
 footer {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 /* •------Styles-scroll-bar-----• */
 
 /*  Scrollbar base para navegadores Webkit (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-    width: 12px;
-    height: 10px;
-  }
-  
-  /*  Fondo del scroll */
-  ::-webkit-scrollbar-track {
-    background: var(--color-primary);
-    /* Color de fondo */
-    border-radius: 10px;
-  }
-  
-  /*  Thumb (el "agarrador" del scroll) */
-  ::-webkit-scrollbar-thumb {
-    background: var(--color-terciario);
-    /* Color principal */
-    border-radius: 10px;
-    border: 2px solid var(--color-primary);
-    /* Espacio interno */
-  }
-  
-  /*  Hover sobre el thumb */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-terciario);
-  }
-  
-  /*  Scrollbar en elementos específicos */
-  .elemento-scrollable::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  /*  Para Firefox */
-  body {
-    scrollbar-width: thin;
-    /* thin | auto | none */
-    scrollbar-color: #004B51 #DAD6CB;
-    /* thumb color | track color */
-  }
+  width: 12px;
+  height: 10px;
+}
+
+/*  Fondo del scroll */
+::-webkit-scrollbar-track {
+  background: var(--color-primary);
+  /* Color de fondo */
+  border-radius: 10px;
+}
+
+/*  Thumb (el "agarrador" del scroll) */
+::-webkit-scrollbar-thumb {
+  background: var(--color-terciario);
+  /* Color principal */
+  border-radius: 10px;
+  border: 2px solid var(--color-primary);
+  /* Espacio interno */
+}
+
+/*  Hover sobre el thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-terciario);
+}
+
+/*  Scrollbar en elementos específicos */
+.elemento-scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+/*  Para Firefox */
+body {
+  scrollbar-width: thin;
+  /* thin | auto | none */
+  scrollbar-color: #004B51 #DAD6CB;
+  /* thumb color | track color */
+}

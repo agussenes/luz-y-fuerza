@@ -14,6 +14,8 @@ import Novedades from './components/views/Novedades/Novedades';
 import NuestraLucha from './components/views/NuestraLucha/NuestraLucha'
 import VidaInstitucional from './components/views/VidaInstitucional/VidaInstitucional'
 
+import NotFound from './components/views/NotFound/NotFound'
+
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
           <Route path="/nuestra-lucha" element={<NuestraLucha />} />
           <Route path="/vida-institucional" element={<VidaInstitucional />} />
           
+          <Route path="*" element={<NotFound />} />
           
         </Routes>
       </main>
