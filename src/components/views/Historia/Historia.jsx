@@ -1,19 +1,69 @@
 import SEO from '../../../seo/SEO';
+import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
 
 import './Historia.css'
 
+// imagenes individuales 
 import bannerHistoria from '../../../assets/images/historia/bannernuestrahistoria.jpg';
 import julioMurua from '../../../assets/images/historia/Julio-Murua-370x400.jpg';
 import atilioBorserini from '../../../assets/images/historia/2-Atilio-Borserini-370x400.jpg';
 import cristobalSierra from '../../../assets/images/historia/Cristobal-Sierra-370x400.jpg'
 import cristobalSierraImgSita from '../../../assets/images/historia/Sierra-4-570x700.jpg'
 
+// imagenes swipper
+
+import img1 from '../../../assets/images/historia/swipper/img1.jpg'
+import img2 from '../../../assets/images/historia/swipper/img2.jpg'
+import img3 from '../../../assets/images/historia/swipper/img3.jpg'
+import img4 from '../../../assets/images/historia/swipper/img4.jpg'
+import img5 from '../../../assets/images/historia/swipper/img5.jpg'
+import img6 from '../../../assets/images/historia/swipper/img6.jpg'
+import img7 from '../../../assets/images/historia/swipper/img7.jpg'
+import img8 from '../../../assets/images/historia/swipper/img8.jpg'
+import img9 from '../../../assets/images/historia/swipper/img9.jpg'
+import img10 from '../../../assets/images/historia/swipper/img10.jpg'
+import img11 from '../../../assets/images/historia/swipper/img11.jpg'
+import img12 from '../../../assets/images/historia/swipper/img12.jpg'
+import img13 from '../../../assets/images/historia/swipper/img13.jpg'
+
+// const swiperSlides = [
+//   { src: img1, alt: 'Historia 1', texto: 'Primeros pasos del sindicato' },
+//   { src: img2, alt: 'Historia 2', texto: 'Movilización histórica' },
+//   { src: img3, alt: 'Historia 3', texto: 'Firma de acuerdos fundamentales' },
+//   { src: img4, alt: 'Historia 4', texto: 'Asamblea general de afiliados' },
+//   { src: img5, alt: 'Historia 5', texto: 'Marcha solidaria' },
+//   { src: img6, alt: 'Historia 6', texto: 'Conferencia gremial' },
+//   { src: img7, alt: 'Historia 7', texto: 'Asado del 1º de Mayo' },
+//   { src: img8, alt: 'Historia 8', texto: 'Recuerdo de Murúa' },
+//   { src: img9, alt: 'Historia 9', texto: 'Cristóbal Sierra con delegados' },
+//   { src: img10, alt: 'Historia 10', texto: 'Acto institucional' },
+//   { src: img11, alt: 'Historia 11', texto: 'Jornada sindical' },
+//   { src: img12, alt: 'Historia 12', texto: 'Charla con afiliados' },
+//   { src: img13, alt: 'Historia 13', texto: 'Protesta histórica' },
+// ];
+
+const swiperSlides = [
+  { year: '1944', src: img1, texto: 'Nacimiento del Sindicato' },
+  { year: '1950', src: img2, texto: 'Primer Convenio Colectivo' },
+  { year: '1969', src: img3, texto: 'Cordobazo y lucha sindical' },
+  { year: '1983', src: img4, texto: 'Retorno a la democracia' },
+  { year: '1990', src: img5, texto: 'Privatizaciones y defensa de EPEC' },
+  { year: '2000', src: img6, texto: 'Modernización sindical' },
+  { year: '2023', src: img7, texto: 'Actualidad y renovación institucional' },
+];
+
+
+
 
 function Historia() {
+
+  const swiperRef = useRef(null);
+
   return (
     <>
       <SEO
@@ -39,9 +89,9 @@ function Historia() {
       <section className="bajada py-5">
         <div className="container">
           <h2 className="display-5">HISTORIA</h2>
-          <p className="lead">Un 5 de Febrero de 1944, como parte de las transformaciones sociales inauguradas por el Peronismo se fundaba la USEOCPE (Unión Sindical de Empleados y Obreros de las Compañías Productoras de Electricidad), antecesor de Luz y Fuerza Córdoba. Era el resultado de la larga lucha de varias generaciones de trabajadores de la electricidad.</p>
-          <p className="lead">Desde el momento de su fundación Luz y Fuerza de Córdoba se convirtió en una referencia para el Movimiento Obrero Organizado, formando parte de la vida gremial, social y cultural de Córdoba.</p>
-          <p className="lead">Pasando por etapas muy distintas en su historia, mantuvo de manera constante la defensa irrestricta de dos pilares fundamentales: la EPEC como empresa estatal e integrada, con sentido social y estratégico, y los derechos contemplados en el Convenio Colectivo de Trabajo, que costó mucho conseguir y conservar.</p>
+          <p >Un 5 de Febrero de 1944, como parte de las transformaciones sociales inauguradas por el Peronismo se fundaba la USEOCPE (Unión Sindical de Empleados y Obreros de las Compañías Productoras de Electricidad), antecesor de Luz y Fuerza Córdoba. Era el resultado de la larga lucha de varias generaciones de trabajadores de la electricidad.</p>
+          <p >Desde el momento de su fundación Luz y Fuerza de Córdoba se convirtió en una referencia para el Movimiento Obrero Organizado, formando parte de la vida gremial, social y cultural de Córdoba.</p>
+          <p >Pasando por etapas muy distintas en su historia, mantuvo de manera constante la defensa irrestricta de dos pilares fundamentales: la EPEC como empresa estatal e integrada, con sentido social y estratégico, y los derechos contemplados en el Convenio Colectivo de Trabajo, que costó mucho conseguir y conservar.</p>
         </div>
       </section>
 
@@ -88,71 +138,94 @@ function Historia() {
       </section>
 
       {/* Frases destacadas con imágenes */}
-      <section className="frases py-5">
-        <div className="container">
-          <div className="row align-items-center mb-5">
-            <div className="col-md-6">
-              <blockquote>
-                "Nuestro sindicato siempre se caracterizó por ser una gran familia, nunca hubo divisiones por cuestiones político partidarias..."
-                <footer>- Julio "Quebracho" Murúa</footer>
-              </blockquote>
+      <section className="frases text-light py-5">
+        <div className="container ">
+          <div className="backgroundTes row align-items-center mb-5 ">
+            <div className="col-md-6 ">
+              <p className='lead'>"Nuestro sindicato siempre se caracterizó por ser una gran familia, nunca hubo divisiones por cuestiones político partidarias..."</p>
+              <p ><small> Julio "Quebracho" Murúa</small></p>
             </div>
-            <div className="col-md-6">
-            <img src={julioMurua} className="img-fluid mb-2" alt="Julio Murúa" loading="lazy" />
+            <div className="col-md-6 d-flex justify-content-center align-items-center">
+              <img src={julioMurua} className="img-fluid mb-2 imgTesti" alt="Julio Murúa" loading="lazy" />
             </div>
           </div>
 
-          <div className="row align-items-center mb-5 flex-md-row-reverse">
+          <div className="backgroundTes row align-items-center mb-5 flex-md-row-reverse">
             <div className="col-md-6">
-              <blockquote>
-                "Los obreros no pueden olvidar que si ellos no exigen la aplicación de la legislación social, esta se convierte en letra muerta..."
-                <footer>- Cristóbal Sierra</footer>
-              </blockquote>
+              <p className='lead'>
+                "Los obreros no pueden olvidar que si ellos no exigen la aplicación de la legislación social, esta se convierte en letra muerta..."</p>
+              <p><small>- Cristóbal Sierra</small></p>
             </div>
-            <div className="col-md-6">
-            <img src={cristobalSierraImgSita} className="img-fluid mb-2 imgMid" alt="Atilio Borserini" loading="lazy" />
+            <div className="col-md-6 d-flex justify-content-center align-items-center">
+              <img src={cristobalSierraImgSita} className="img-fluid mb-2 imgMid imgTesti" alt="Atilio Borserini" loading="lazy" />
             </div>
           </div>
 
-          <div className="row align-items-center">
+          <div className=" backgroundTes row align-items-center">
             <div className="col-md-6">
-              <blockquote>
-                "¿No son necesarios los sindicatos? Hoy no solo son necesarios, son imprescindibles para el trabajador."
-                <footer>- Cristóbal Sierra</footer>
-              </blockquote>
+              <p className='lead'>
+                "¿No son necesarios los sindicatos? Hoy no solo son necesarios, son imprescindibles para el trabajador."</p>
+              <p><small>- Cristóbal Sierra</small></p>
             </div>
-            <div className="col-md-6">
-            <img src={cristobalSierra} className="img-fluid mb-2" alt="Atilio Borserini" loading="lazy" />
+            <div className="col-md-6 d-flex justify-content-center align-items-center ">
+              <img src={cristobalSierra} className="img-fluid mb-2 imgTesti" alt="Atilio Borserini" loading="lazy" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Swiper de imágenes */}
-      <section className="galeria-final py-5 bg-light">
+      <section className="timeline-swiper py-5 bg-light">
         <div className="container">
-          <h3 className="text-center mb-4">Nuestra Historia en Imágenes</h3>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
-            pagination={{ clickable: true }}
-            modules={[Pagination]}
-          >
-            <SwiperSlide>
-              <img src="/img/galeria/historia1.jpg" className="img-fluid" alt="Historia 1" />
-              <p className="text-center">Primeros pasos del sindicato</p>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/img/galeria/historia2.jpg" className="img-fluid" alt="Historia 2" />
-              <p className="text-center">Movilización histórica</p>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/img/galeria/historia3.jpg" className="img-fluid" alt="Historia 3" />
-              <p className="text-center">Firma de acuerdos fundamentales</p>
-            </SwiperSlide>
-          </Swiper>
+          <h3 className="text-center mb-4">Línea de Tiempo del Sindicato</h3>
+
+          <div className="swiper-wrapper-timeline d-flex align-items-center position-relative">
+            <button className="btn-nav prev-btn" onClick={() => swiperRef.current?.slidePrev()}>←</button>
+
+            <Swiper
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
+              slidesPerView={2}
+              spaceBetween={60}
+              loop={true}
+              pagination={{ clickable: true }}
+              modules={[Pagination, Navigation]}
+              className="timeline-carousel"
+              breakpoints={{
+                0: {            // Desde 0px (todo)
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                568: {          // Desde 568px
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                769: {          // Desde 769px (tablets en adelante)
+                  slidesPerView: 2,
+                  spaceBetween: 60,
+                }
+              }}
+            >
+              {swiperSlides.map((slide, i) => (
+                <SwiperSlide key={i} className="slide-timeline">
+                  <div className="timeline-dot">
+                    <span>{slide.year}</span>
+                  </div>
+                  <div className="timeline-card">
+                    <img src={slide.src} alt={slide.texto} loading="lazy" />
+                    <p className='text-light'>{slide.texto}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            <button className="btn-nav next-btn" onClick={() => swiperRef.current?.slideNext()}>→</button>
+
+            {/* Línea base */}
+            <div className="timeline-line"></div>
+          </div>
         </div>
       </section>
+
     </>
   );
 }
