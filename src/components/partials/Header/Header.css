@@ -6,6 +6,12 @@ header {
     background-color: var(--color-primary);
 }
 
+.nav-link{}
+.nav-link:hover{
+    background-color: transparent !important;
+    color: var(--color-secondary) !important;
+}
+
 .dropdown-menu {
     background-color: var(--color-primary) !important;
     overflow: hidden;
