@@ -6,6 +6,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 
+import BannerPortadas from '../../reutilizables/bannerPortadas/BannerPortadas'
+
 import './Historia.css'
 
 // imagenes individuales 
@@ -25,11 +27,12 @@ import img5 from '../../../assets/images/historia/swipper/img5.jpg'
 import img6 from '../../../assets/images/historia/swipper/img6.jpg'
 import img7 from '../../../assets/images/historia/swipper/img7.jpg'
 import img8 from '../../../assets/images/historia/swipper/img8.jpg'
-import img9 from '../../../assets/images/historia/swipper/img9.jpg'
-import img10 from '../../../assets/images/historia/swipper/img10.jpg'
-import img11 from '../../../assets/images/historia/swipper/img11.jpg'
-import img12 from '../../../assets/images/historia/swipper/img12.jpg'
-import img13 from '../../../assets/images/historia/swipper/img13.jpg'
+// import img9 from '../../../assets/images/historia/swipper/img9.jpg'
+// import img10 from '../../../assets/images/historia/swipper/img10.jpg'
+// import img11 from '../../../assets/images/historia/swipper/img11.jpg'
+// import img12 from '../../../assets/images/historia/swipper/img12.jpg'
+// import img13 from '../../../assets/images/historia/swipper/img13.jpg'
+
 
 // const swiperSlides = [
 //   { src: img1, alt: 'Historia 1', texto: 'Primeros pasos del sindicato' },
@@ -74,21 +77,12 @@ function Historia() {
       />
 
       {/* Portada */}
-      <section className="portada d-flex align-items-center justify-content-center text-center">
-        <div class="bannerGif-img">
-          <img src={bannerHistoria} alt="Portada Energía Córdoba" loading="lazy" />
-
-          {/* Overlay de texto  */}
-          {/* <div class="overlay-text">
-                <h1 class="text-uppercase">Nuestra Historia</h1>
-            </div> */}
-        </div>
-      </section>
+      <BannerPortadas imagen={bannerHistoria} titulo="Nuestra Historia" />
 
       {/* Bajada con título grande */}
       <section className="bajada py-5">
         <div className="container">
-          <h2 className="display-5">HISTORIA</h2>
+          <h2 className="display-5 lineBorderTitle">HISTORIA</h2>
           <p >Un 5 de Febrero de 1944, como parte de las transformaciones sociales inauguradas por el Peronismo se fundaba la USEOCPE (Unión Sindical de Empleados y Obreros de las Compañías Productoras de Electricidad), antecesor de Luz y Fuerza Córdoba. Era el resultado de la larga lucha de varias generaciones de trabajadores de la electricidad.</p>
           <p >Desde el momento de su fundación Luz y Fuerza de Córdoba se convirtió en una referencia para el Movimiento Obrero Organizado, formando parte de la vida gremial, social y cultural de Córdoba.</p>
           <p >Pasando por etapas muy distintas en su historia, mantuvo de manera constante la defensa irrestricta de dos pilares fundamentales: la EPEC como empresa estatal e integrada, con sentido social y estratégico, y los derechos contemplados en el Convenio Colectivo de Trabajo, que costó mucho conseguir y conservar.</p>
@@ -100,7 +94,7 @@ function Historia() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
-              <h3>Se funda Luz y Fuerza</h3>
+              <h3 className='lineBorderTitle'>Se funda Luz y Fuerza</h3>
               <p>En Córdoba, los trabajadores lucifuercistas durante la primera mitad del S. XX, estaban nucleados en dos empresas de capital extranjero, la Compañía de Luz y Fuerza Motriz y la Compañía General, sin tener ningún reconocimiento de derechos laborales. Toda esta etapa es de enfrentamiento con la ley y las compañías, que castigaba la sindicalización.</p>
               <p>A partir de 1943 con la asunción en la Secretaría de Trabajo y Previsión de Juan Domingo Perón, las condiciones políticas cambian. Se impulsa una nueva política social, con eje en los trabajadores, y se envían asesores a todo el país a fomentar la sindicalización, en Córdoba fue designado un integrante del Círculo Obrero Católico, el cura Rafael Moreno, a quien se acercan un grupo de trabajadores de ambas compañías para buscar su asesoramiento.</p>
               <p>Las primeras reuniones tendientes a conformar el sindicato se realizaron el local del Círculo Obrero Católico, en la calle 9 de julio y allí también se realiza la asamblea constitutiva, el 5 de Febrero de 1944, que eligió una Comisión Provisoria que tuvo vigencia por un año, es decir hasta Febrero de 1945, año en el que se eligió la primera Comisión Directiva propiamente dicha.</p>
@@ -118,7 +112,7 @@ function Historia() {
       {/* Galería de Pioneros */}
       <section className="pioneros py-5 bg-light">
         <div className="container">
-          <h3 className="mb-4">Pioneros</h3>
+          <h3 className="mb-4 lineBorderTitle">Pioneros</h3>
           <p>Los referentes de la década fundacional: Julio Murúa, Atilio Borserini y Cristóbal Sierra</p>
           <div className="row">
             <div className="col-md-4">
@@ -143,7 +137,7 @@ function Historia() {
           <div className="backgroundTes row align-items-center mb-5 ">
             <div className="col-md-6 ">
               <p className='lead'>"Nuestro sindicato siempre se caracterizó por ser una gran familia, nunca hubo divisiones por cuestiones político partidarias..."</p>
-              <p ><small> Julio "Quebracho" Murúa</small></p>
+              <p ><small><i class="bi bi-quote iconTestimonio"></i> - Julio “Quebracho” Murúa. Presidente de la primera Comisión Provisoria</small></p>
             </div>
             <div className="col-md-6 d-flex justify-content-center align-items-center">
               <img src={julioMurua} className="img-fluid mb-2 imgTesti" alt="Julio Murúa" loading="lazy" />
@@ -154,7 +148,7 @@ function Historia() {
             <div className="col-md-6">
               <p className='lead'>
                 "Los obreros no pueden olvidar que si ellos no exigen la aplicación de la legislación social, esta se convierte en letra muerta..."</p>
-              <p><small>- Cristóbal Sierra</small></p>
+              <p><small><i class="bi bi-quote iconTestimonio"></i> - Cristóbal Sierra. Secretario General años 40 -50</small></p>
             </div>
             <div className="col-md-6 d-flex justify-content-center align-items-center">
               <img src={cristobalSierraImgSita} className="img-fluid mb-2 imgMid imgTesti" alt="Atilio Borserini" loading="lazy" />
@@ -165,7 +159,7 @@ function Historia() {
             <div className="col-md-6">
               <p className='lead'>
                 "¿No son necesarios los sindicatos? Hoy no solo son necesarios, son imprescindibles para el trabajador."</p>
-              <p><small>- Cristóbal Sierra</small></p>
+              <p><small><i class="bi bi-quote iconTestimonio"></i> - Cristóbal Sierra. Secretario General años 40 -50</small></p>
             </div>
             <div className="col-md-6 d-flex justify-content-center align-items-center ">
               <img src={cristobalSierra} className="img-fluid mb-2 imgTesti" alt="Atilio Borserini" loading="lazy" />
@@ -177,7 +171,7 @@ function Historia() {
       {/* Swiper de imágenes */}
       <section className="timeline-swiper py-5 bg-light">
         <div className="container">
-          <h3 className="text-center mb-4">Línea de Tiempo del Sindicato</h3>
+          <h3 className="text-center mb-4 lineBorderTitle2">Línea de Tiempo del Sindicato</h3>
 
           <div className="swiper-wrapper-timeline d-flex align-items-center position-relative">
             <button className="btn-nav prev-btn" onClick={() => swiperRef.current?.slidePrev()}>←</button>
@@ -189,6 +183,7 @@ function Historia() {
               loop={true}
               pagination={{ clickable: true }}
               modules={[Pagination, Navigation]}
+              autoplay={true}
               className="timeline-carousel"
               breakpoints={{
                 0: {            // Desde 0px (todo)

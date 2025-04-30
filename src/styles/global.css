@@ -93,7 +93,7 @@ footer {
 
 /*  Thumb (el "agarrador" del scroll) */
 ::-webkit-scrollbar-thumb {
-  background: var(--color-terciario);
+  background: var(--color-celeste);
   /* Color principal */
   border-radius: 10px;
   border: 2px solid var(--color-primary);
@@ -116,4 +116,35 @@ body {
   /* thin | auto | none */
   scrollbar-color: #004B51 #DAD6CB;
   /* thumb color | track color */
+}
+
+
+
+/* stilo globales para titulos  */
+
+.lineBorderTitle{
+  display: inline-block;  /* Solo ocupa lo que necesita */
+  position: relative;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.lineBorderTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px; 
+  left: 0;
+  width: 70px; 
+  height: 5px; 
+  background-color: var(--color-celeste); 
+  
+}
+
+.lineBorderTitle2{
+  position: relative;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  border-bottom: 5px solid var(--color-celeste);
 }
