@@ -21,6 +21,7 @@ Este proyecto está construido con **Vite** y **React 19** usando las mejores pr
 | animate.css | Animaciones CSS globales rápidas. |
 | react-toastify | Alertas y notificaciones pro. |
 | swiper | Carousels y sliders responsive en vistas. |
+| typewriter-effect | Efectos de texto escribiéndose solo |
 
 ---
 
