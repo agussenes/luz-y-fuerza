@@ -21,7 +21,7 @@ Este proyecto está construido con **Vite** y **React 19** usando las mejores pr
 | animate.css | Animaciones CSS globales rápidas. |
 | react-toastify | Alertas y notificaciones pro. |
 | swiper | Carousels y sliders responsive en vistas. |
-| typewriter-effect | Efectos de texto escribiéndose solo |
+| typewriter-effect | Efectos de texto escribiéndose solo. |
 
 ---
 
@@ -41,6 +41,7 @@ estructura-vite-bootstrap/
 │   │       └── home/        # Imágenes específicas de vistas
 │   ├── components/
 │   │   ├── partials/        # Componentes compartidos (Header, Footer, etc.)
+│   │   ├── reutilizables/   # Componentes reutilizables (bannerPortadas, forms, etc.)
 │   │   └── views/           # Vistas principales (Home, About, Legales, etc.)
 │   ├── seo/
 │   │   └── SEO.jsx          # Componente SEO dinámico

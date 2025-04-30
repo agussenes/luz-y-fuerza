@@ -8,6 +8,7 @@ import imgPortada from '../../../assets/images/convenioColectivo/portada.jpg';
 import convenioPersola from '../../../assets/images/convenioColectivo/convenioPersola.jpg';
 import img1 from '../../../assets/images/convenioColectivo/img1.jpg'
 import img2 from '../../../assets/images/convenioColectivo/img2.jpg'
+import logoSi from '../../../assets/images/convenioColectivo/logo-Sindicato-de-Luz-y-Fuerza_resized.png'
 
 
 
@@ -66,7 +67,7 @@ function ConvenioColectivo() {
             <img src={convenioPersola} alt="Convenio Luz y Fuerza" className="img-fluid rounded shadow my-4" />
             <div className="ratio ratio-16x9 shadow">
               <iframe
-                src="https://www.youtube.com/embed/XXXXXXX"
+                src="https://www.youtube.com/embed/fDbm3X5C1J0?si=WyECgfhlMTClBNKI"
                 title="Laboralistas y Juristas"
                 allowFullScreen
               ></iframe>
@@ -121,6 +122,8 @@ function ConvenioColectivo() {
               }}
             />
           </h3>
+          <img src={logoSi} alt="Artículo de Electrum" width={300} className="img-fluid rounded shadow" />
+
         </div>
       </section>
 
