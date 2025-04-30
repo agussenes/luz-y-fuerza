@@ -80,8 +80,8 @@ function ConvenioColectivo() {
       <section className="container py-5">
         <div className="row align-items-center">
           <div className="col-md-6">
-          <img src={img1} alt="Convenio Luz y Fuerza" className="img-fluid rounded shadow" />
-          <p className="fst-italic text-muted mt-2 text-center">
+            <img src={img1} alt="Convenio Luz y Fuerza" className="img-fluid rounded shadow" />
+            <p className="fst-italic text-muted mt-2 text-center">
               Queja elevada ante la OIT, por violación del derecho de negociación colectiva.
             </p>
           </div>
@@ -94,8 +94,8 @@ function ConvenioColectivo() {
         </div>
       </section>
 
-      
-      
+
+
 
       {/* Frase destacada en bloque */}
       <section className="bg-dark text-white py-5">
@@ -122,14 +122,25 @@ function ConvenioColectivo() {
               }}
             />
           </h3>
-          <img src={logoSi} alt="Artículo de Electrum" width={300} className="img-fluid rounded shadow" />
 
         </div>
       </section>
 
+      <div className=' container d-flex'>
+        <div className='col-6 texto-final-cc'>
+          <p>- Desde 2018, Luz y Fuerza de Córdoba viene luchando por el pleno respeto del Convenio Colectivo de Trabajo 165/75</p>
+          <p>- Amparado por la ley 14.250 de Convenciones Colectivas, mantiene la ultraactividad</p>
+          <p>- La modificación parcial de nuestro Convenio, aprobada por la Legislatura de Córdoba, es arbitraria e ilegal, en tanto la Unicameral no tiene autoridad para incidir en la autonomía colectiva, establecida en la legislación nacional e internacional.</p>
+        </div>
+        <div className='col-6 d-flex flex-column align-items-center'>
+          <img src={logoSi} alt="Artículo de Electrum" width={250} className="img-fluid rounded shadow" />
+
+        </div>
+      </div>
+
       {/* Formulario de contacto */}
       <section className="container py-5">
-        <h4 className="mb-4 text-center">¿Querés contactarte con nosotros?</h4>
+        <h4 className="mb-4 text-center lineBorderTitle2">¿Querés contactarte con nosotros?</h4>
         <ContactForm endpoint="https://tu-sitio.com/contacto.php" />
       </section>
     </>
