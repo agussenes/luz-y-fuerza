@@ -1,0 +1,92 @@
+/* swipper autoridades  */
+
+.contenedorSwipperAutoridades {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.swiper-button-prev-custom i,
+.swiper-button-next-custom i {
+    padding: 0px !important;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+    background-color: var(--color-primary) !important;
+    color: var(--color-celeste) !important;
+    border-color: var(--color-celeste) !important;
+    font-size: 1.2rem !important;
+    transition: all 0.3s ease-in-out !important;
+    border-radius: 8px !important;
+    padding-bottom: 0px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+    background-color: var(--color-celeste) !important;
+    color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    transform: scale(1.02);
+
+
+}
+
+
+.swiper-button-prev-custom {
+    left: -40px;
+}
+
+.swiper-button-next-custom {
+    right: -40px;
+}
+
+/* Sube los bullets */
+.contenedorSwipperAutoridades .swiper-pagination {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+
+.swiper-pagination-bullet {
+    background-color: var(--color-primary);
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: var(--color-celeste);
+}
+
+/* vocales  */
+
+.separadorBorde {
+    padding-top: 2rem;
+}
+
+.linea-vertical {
+    width: 2px;
+    background-color: var(--color-primary);
+    margin-left: 30px;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .linea-vertical{
+        display: none;
+    }
+}
+
+/* cards */
+
+.card {
+    transition: all 0.2s ease-in-out !important;
+
+}
+
+.card:hover {
+    transform: scale(1.05) !important;
+
+}

@@ -46,11 +46,9 @@ function Header() {
               <li className="nav-item">
                 <Link className="nav-link" to="/nuestra-lucha">Nuestra lucha</Link>
               </li>
+              
               <li className="nav-item">
-                <Link className="nav-link" to="/beneficios">Beneficios</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/novedades">Novedades</Link>
+                <Link className="nav-link" to="https://luzyfuerzacordobaelectrum.com.ar/category/noticias/">Novedades</Link>
               </li>
 
             </ul>

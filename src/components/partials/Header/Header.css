@@ -9,7 +9,7 @@ header {
 .nav-link{}
 .nav-link:hover{
     background-color: transparent !important;
-    color: var(--color-secondary) !important;
+    color: var(--color-celeste) !important;
 }
 
 .dropdown-menu {
@@ -19,7 +19,7 @@ header {
 
 .dropdown-menu li a:hover {
     background-color: var(--color-terciario);
-    color: var(--color-secondary);
+    color: var(--color-celeste);
 }
 
 .nav-item a {

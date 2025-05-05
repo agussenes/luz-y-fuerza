@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Importamos componentes parciales
 import Header from './components/partials/Header/Header';
 import Footer from './components/partials/Footer/Footer';
+import SocialSidebar from './components/partials/SocialSidebar/SocialSidebar';
 
 // Importamos vistas
 import Home from './components/views/Home/Home';
 import QuienesSomos from './components/views/QuienesSomos/QuienesSomos';
 import Historia from './components/views/Historia/Historia';
-import Beneficios from './components/views/Beneficios/Beneficios';
 import ConvenioColectivo from './components/views/ConvenioColectivo/ConvenioColectivo';
 import Novedades from './components/views/Novedades/Novedades';
 import NuestraLucha from './components/views/NuestraLucha/NuestraLucha'
@@ -29,7 +29,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/historia" element={<Historia />} />
           <Route path="/quienes-somos" element={<QuienesSomos />} />
-          <Route path="/beneficios" element={<Beneficios />} />
           <Route path="/convenio-colectivo" element={<ConvenioColectivo />} />
           <Route path="/novedades" element={<Novedades />} />
           <Route path="/nuestra-lucha" element={<NuestraLucha />} />
@@ -39,6 +38,9 @@ function App() {
           
         </Routes>
       </main>
+
+      {/* SocialSidebar fijo  */}
+      <SocialSidebar />
 
       {/* Footer siempre visible */}
       <Footer />

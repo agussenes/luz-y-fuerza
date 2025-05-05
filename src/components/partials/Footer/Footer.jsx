@@ -29,10 +29,11 @@ function Footer() {
           <div className="col-md-4">
             <h5 className="fw-bold">Contacto</h5>
             <ul className="list-unstyled text-light small">
-              <li className="mb-2">
+              <li className="mb-2 redesSo">
                 <i className="bi bi-geo-alt-fill me-2"></i> Dean Funes 672. Córdoba
               </li>
-              <li>
+              <hr />
+              <li className='redesSo'>
                 <i className="bi bi-envelope-fill me-2"></i> prensaluzyfuerza.cba@gmail.com
               </li>
             </ul>

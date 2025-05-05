@@ -7,9 +7,7 @@ footer {
 
 /* Iconos redes sociales */
 .redesSo i {
-    transition: transform 0.3s ease-in-out !important;
+    color: var(--color-celeste);
 }
 
-.redesSo i:hover {
-    transform: scale(1.15) !important;
-}
+
