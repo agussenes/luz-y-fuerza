@@ -17,11 +17,13 @@ Este proyecto está construido con **Vite** y **React 19** usando las mejores pr
 | react-router-dom | Ruteo SPA (Single Page Application). |
 | react-helmet-async | Manejo SEO dinámico por página. |
 | bootstrap | Framework de UI responsive (CSS/JS). |
+| react-bootstrap | librería de componentes React basados en Bootstrap. |
 | bootstrap-icons | Íconos vectoriales listos para Bootstrap. |
 | animate.css | Animaciones CSS globales rápidas. |
 | react-toastify | Alertas y notificaciones pro. |
 | swiper | Carousels y sliders responsive en vistas. |
 | typewriter-effect | Efectos de texto escribiéndose solo. |
+| React-countup | librería de React que te permite animar números que "cuentan" |
 
 ---
 

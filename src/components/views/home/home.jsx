@@ -1,10 +1,17 @@
 import SEO from '../../../seo/SEO';
-import BannerPortadas from '../../reutilizables/bannerPortadas/BannerPortadas';
-import HomeCard from './HomeCard'; // el nuevo componente
-
+import HeroSwiper from '../../reutilizables/HeroSwiper/HeroSwiper';
+import HomeModules from './HomeModules';
 import imgPortada from '../../../assets/images/vidaInstitucional/bannerPortada.jpg';
 
 function Home() {
+
+  // array slides portada
+  const slides = [
+    { img: imgPortada, titulo: 'Sindicato de Luz y Fuerza de Córdoba', bajada: '" No solo lucha contra la injusticia quien la padece, sino también quien la comprende " - Agustin Tosco', boton: 'Nuestra Organización', link: '/quienes-somos' },
+    { img: imgPortada, titulo: 'Electrum, el periódico de Luz y Fuerza', bajada: 'Consultá las ediciones de Electrum Digital y descargarlas en nuestra web', boton: 'Ver Electrum Digital', link: 'https://luzyfuerzacordobaelectrum.com.ar/electrum/' },
+    { img: imgPortada, titulo: 'Luchamos por una EPEC de los cordobeses', bajada: 'Somos un gremio en pie de lucha por una EPEC estatal, democrática e integrada', boton: 'Nuestra Lucha', link: '/nuestra-lucha' },
+  ];
+
   return (
     <>
       <SEO
@@ -15,43 +22,12 @@ function Home() {
       />
 
       {/* Portada */}
-      <BannerPortadas imagen={imgPortada} title="Bienvenido/a a Luz y Fuerza" />
+      <HeroSwiper slides={slides} />;
 
-      {/* Intro */}
-      <section className="home-intro py-5 bg-light text-center animate__animated animate__fadeIn">
-        <div className="container">
-          <h1 className="display-5">Bienvenidos a Luz y Fuerza Córdoba</h1>
-          <p className="lead">Defendiendo los derechos de los trabajadores de la energía desde siempre.</p>
-        </div>
+      <section className='contenedorHome'>
+        <HomeModules />
       </section>
 
-      {/* Enlaces rápidos */}
-      <section className="home-links py-5 animate__animated animate__fadeInUp">
-        <div className="container">
-          <div className="row g-4 justify-content-center text-center">
-            <HomeCard to="/quienes-somos" title="¿Quiénes somos?" icon="people-fill" />
-            <HomeCard to="/beneficios" title="Beneficios para afiliados" icon="heart-fill" />
-            <HomeCard to="/novedades" title="Novedades" icon="newspaper" />
-            <HomeCard to="/nuestra-lucha" title="Nuestra lucha" icon="megaphone-fill" />
-          </div>
-        </div>
-      </section>
-
-      {/* Banner a sitio de prensa */}
-      <section className="home-periodismo bg-dark text-white py-5 animate__animated animate__fadeInUp">
-        <div className="container text-center">
-          <h2 className="mb-3">Visitá nuestro portal periodístico</h2>
-          <p className="lead">Noticias, entrevistas y publicaciones de la Secretaría de Prensa y Difusión.</p>
-          <a
-            href="https://periodismo.luzyfuerzacordoba.org.ar"
-            className="btn btn-outline-light mt-3"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ir al portal de periodismo
-          </a>
-        </div>
-      </section>
     </>
   );
 }

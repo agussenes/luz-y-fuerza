@@ -1,0 +1,84 @@
+
+.asamblea-seccion {
+    background-color: #fff;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.asamblea-subtitulo {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--color-celeste);
+}
+
+
+.asamblea-texto {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Swiper personalizado */
+.asamblea-swiper {
+    position: relative;
+    padding-bottom: 3rem;
+    
+}
+
+.asamblea-swiper .swiper-slide img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Bullets debajo del slider */
+.asamblea-swiper .swiper-pagination {
+    bottom: 0px !important;
+    text-align: center;
+}
+
+.asamblea-swiper .swiper-pagination-bullet {
+    background-color: var(--color-celeste);
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.asamblea-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Botones prev/next externos */
+.asamblea-swiper .swiper-button-next,
+.asamblea-swiper .swiper-button-prev {
+    color: var(--color-celeste);
+    background-color:var(--color-primary);
+    padding: 1rem;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+
+
+.asamblea-swiper .swiper-button-next {
+    right: 0rem;
+}
+
+.asamblea-swiper .swiper-button-prev {
+    left: 0rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+      
+    .asamblea-texto {
+        font-size: 1rem;
+    }
+}

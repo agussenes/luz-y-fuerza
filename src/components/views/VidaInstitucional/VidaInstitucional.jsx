@@ -5,12 +5,12 @@ import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+import BannerPortadas from '../../reutilizables/bannerPortadas/BannerPortadas';
 
 // Sstilo 
 import './VidaInstitucional.css';
 
 // import de imagenes 
-import BannerPortadas from '../../reutilizables/bannerPortadas/BannerPortadas';
 import imgPortada from '../../../assets/images/vidaInstitucional/bannerPortada.jpg';
 import ConsejoDirectivo from '../../../assets/images/vidaInstitucional/ConsejoDirectivo.jpg'
 import pngParaCol from '../../../assets/images/vidaInstitucional/pngParaCol.png';
@@ -179,7 +179,7 @@ function VidaInstitucional() {
                     src={item.img}
                     alt={item.alt}
                     className="img-fluid mb-2"
-                    style={{ maxHeight: '100px' }}
+                    style={{ maxHeight: '200px' }}
                   />
                   <h6 className="fw-bold">{item.titulo}</h6>
                   <p className="small text-muted">{item.texto}</p>
@@ -187,8 +187,10 @@ function VidaInstitucional() {
               </SwiperSlide>
             ))}
 
+            
             {/* Flechas personalizadas */}
             <div className='d-flex justify-content-center align-items-center gap-4 my-2'>
+              
               <div className="swiper-button-prev-custom btn btn-outline-primary"><i className="bi bi-chevron-left"></i></div>
               <div className="swiper-button-next-custom btn btn-outline-primary"><i className="bi bi-chevron-right"></i></div>
             </div>
@@ -328,7 +330,7 @@ function VidaInstitucional() {
           <div className="col-md-4 mb-4">
             <div
               className="card h-100 text-center shadow-sm"
-              onClick={() => navigate("/secretaria")}
+              onClick={() => navigate("/secretarias")}
               style={{ cursor: "pointer" }}
             >
               <div className="card-body">
