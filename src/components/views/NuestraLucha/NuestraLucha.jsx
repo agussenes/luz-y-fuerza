@@ -1,4 +1,6 @@
 // NuestraLucha.jsx
+import { Link } from 'react-router-dom';
+
 import { Container, Row, Col } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -197,8 +199,9 @@ function NuestraLucha() {
           <div className="mt-5 text-center rounded p-4 shadow bannerEpec">
             <h3 className="fw-bold mb-2 lineBorderTitle">Defendemos EPEC</h3>
             <p>Sumate a nuestra lucha por una empresa estatal, integrada y al servicio del pueblo.</p>
-            <a href="/defendamos-epec" className="btn btn-primary mt-2 estiloBoton">Ver más</a>
+            <Link to="/defendamos-epec" className="btn btn-primary mt-2 estiloBoton">Ver más</Link>
           </div>
+
         </Container>
       </section>
     </>

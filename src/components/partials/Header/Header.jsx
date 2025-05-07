@@ -1,7 +1,31 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
+
+
+
 function Header() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const navbarCollapse = document.getElementById('navbarContenido');
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show'); // ✅ fuerza cierre
+      navbarCollapse.classList.add('collapsing');
+      setTimeout(() => {
+        navbarCollapse.classList.remove('collapsing');
+        navbarCollapse.classList.add('collapse');
+      }, 300); // tiempo para el efecto colapso
+    }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location]);
+
+
+
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-dark container sticky-top">
@@ -46,7 +70,7 @@ function Header() {
               <li className="nav-item">
                 <Link className="nav-link" to="/nuestra-lucha">Nuestra lucha</Link>
               </li>
-              
+
               <li className="nav-item">
                 <Link className="nav-link" to="https://luzyfuerzacordobaelectrum.com.ar/category/noticias/">Novedades</Link>
               </li>

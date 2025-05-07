@@ -63,7 +63,7 @@ function Footer() {
         <hr className="border-light my-4" />
 
         {/* Copyright */}
-        <div className="text-center small text-light d-flex justify-content-center align-items-center">
+        <div className="text-center small text-light d-flex justify-content-center align-items-center styleColumMobile">
           Desarrollado por
           <a href="https://usinacreativa.com.ar/" target="_blank" rel="noopener noreferrer" style={{ margin: '0 0.2rem' }}>
             <img

@@ -11,3 +11,13 @@ footer {
 }
 
 
+@media (max-width:768px) {
+
+    .styleColumMobile{
+        display: flex;
+        flex-direction: column !important;
+    }
+    
+}
+
+

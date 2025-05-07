@@ -37,12 +37,12 @@ function HomeModules() {
                             <h2 className="lineBorderTitle">Sindicato de Luz y Fuerza de Córdoba</h2>
                             <p className="bajada">Historia, presente y futuro lucifuercista. Sostenemos una política gremial basada en la defensa irrestricta de la EPEC estatal e integrada, con sentido social.</p>
                             <ul className="lista-ticks">
-                                <li><i className="bi bi-check-lg text-info"></i> Actividad sindical</li>
-                                <li><i className="bi bi-check-lg text-info"></i> Novedades gremiales</li>
-                                <li><i className="bi bi-check-lg text-info"></i> Información para el afiliado</li>
-                                <li><i className="bi bi-check-lg text-info"></i> Electrum Digital</li>
-                                <li><i className="bi bi-check-lg text-info"></i> Turismo</li>
-                                <li><i className="bi bi-check-lg text-info"></i> Comunicados oficiales</li>
+                                <li> Actividad sindical</li>
+                                <li> Novedades gremiales</li>
+                                <li> Información para el afiliado</li>
+                                <li> Electrum Digital</li>
+                                <li> Turismo</li>
+                                <li> Comunicados oficiales</li>
                             </ul>
                             <Link to="/vida-institucional" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Vida institucional</Link>
                         </Col>
@@ -79,7 +79,7 @@ function HomeModules() {
                                 <hr />
                                 <h5 className="mt-3 lineBorderSubTitle">Epec</h5>
                                 <p>Conocé el trabajo y funciones de cada secretaría del sindicato.</p>
-                                <Link to="/secretarias" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                                <Link to="/defendamos-epec" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
                             </div>
                         </Col>
                         <Col md={4} className="mb-4">
@@ -122,7 +122,7 @@ function HomeModules() {
                                 </Link>
                             </Col>
                             <Col md={6} className='d-flex justify-content-center'>
-                                <img src={imgCounter} alt="Historia de lucha" className="rounded shadow" loading='lazy' height={400}/>
+                                <img src={imgCounter} alt="Historia de lucha" className=" my-4 rounded shadow" loading='lazy' height={400}/>
                             </Col>
                         </Row>
                     </Container>
