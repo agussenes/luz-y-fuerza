@@ -1,0 +1,62 @@
+
+.delegados-table-section {
+    padding: 3rem 0;
+    background-color: #f1f5fb;
+}
+
+/* Subtítulo */
+.delegados-table-section .subtitulo {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* Tabla responsive */
+.table-responsive {
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Tabla general */
+.delegados-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+
+.bg-color-tabla {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+}
+
+.delegados-table th,
+.delegados-table td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.delegados-table tbody tr:nth-child(even) {
+    background-color: #e8edff;
+}
+
+.delegados-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+    .delegados-table th,
+    .delegados-table td {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .delegados-table-section .lineBorderTitle {
+        font-size: 1.5rem;
+    }
+}

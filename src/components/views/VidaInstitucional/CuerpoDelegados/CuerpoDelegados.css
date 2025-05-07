@@ -1,0 +1,97 @@
+
+.delegados-section {
+    background-color: #f5f8fd;
+}
+
+.delegados-section .subtitulo {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.9rem;
+}
+
+.delegados-section .titulo {
+    font-size: 2rem;
+    border-left: 4px solid var(--color-celeste);
+    padding-left: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.delegados-section .bajada {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.lista-ticks {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+}
+
+.lista-ticks li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.lista-ticks li::before {
+    content: "\2713";
+    color: var(--color-celeste);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+.card-delegado {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-delegado:hover {
+    transform: translateY(-5px);
+    text-decoration: none;
+}
+
+.card-delegado .card-inner {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.card-delegado .card-inner:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    color: var(--color-celeste);
+
+}
+
+.card-delegado img {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-delegado h5 {
+    font-size: 1.2rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.card-delegado h5:hover{
+    color: var(--color-celeste);
+}
+
+.card-delegado p {
+    font-size: 0.95rem;
+    color: #555;
+}

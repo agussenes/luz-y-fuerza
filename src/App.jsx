@@ -16,7 +16,10 @@ import VidaInstitucional from './components/views/VidaInstitucional/VidaInstituc
 import AsambleaGeneral from './components/views/VidaInstitucional/AsambleaGeneral/AsambleaGeneral';
 import Secretarias from './components/views/VidaInstitucional/Secretaria/Secretaria';
 import SecretariaDetalle from './components/views/VidaInstitucional/Secretaria/SecretariaDetalle';
-
+import CuerpoDelegados from './components/views/VidaInstitucional/CuerpoDelegados/CuerpoDelegados';
+import CuerpoGenDelegados from './components/views/VidaInstitucional/CuerpoDelegados/CuerpoGenDelegados/CuerpoGenDelegados';
+import DelegadosDelegadas from './components/views/VidaInstitucional/CuerpoDelegados/DelegadosDelegadas/DelegadosDelegadas';
+import DefendamosEpec from './components/views/NuestraLucha/defendamosEpec/DefendamosEpec';
 
 import NotFound from './components/views/NotFound/NotFound'
 
@@ -36,10 +39,15 @@ function App() {
           <Route path="/convenio-colectivo" element={<ConvenioColectivo />} />
           <Route path="/novedades" element={<Novedades />} />
           <Route path="/nuestra-lucha" element={<NuestraLucha />} />
+         | <Route path="/defendamos-epec" element={<DefendamosEpec />} />
           <Route path="/vida-institucional" element={<VidaInstitucional />} />
-              <Route path='/asamblea-general' element={<AsambleaGeneral />} />
-              <Route path='/secretarias' element={<Secretarias />} />
-                <Route path='/secretarias/:id' element={<SecretariaDetalle />} />
+            <Route path='/asamblea-general' element={<AsambleaGeneral />} />
+            <Route path='/secretarias' element={<Secretarias />} />
+              <Route path='/secretarias/:id' element={<SecretariaDetalle />} />
+            <Route path="/cuerpo-general-delegados" element={<CuerpoDelegados />} />
+              <Route path="/delegados-generales" element={<CuerpoGenDelegados />} />
+              <Route path="/delegados-delegadas" element={<DelegadosDelegadas />} />
+
 
 
           <Route path="*" element={<NotFound />} />

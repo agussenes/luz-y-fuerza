@@ -191,3 +191,36 @@ body {
 .imgShadow{
   box-shadow: -15px -15px 0px var(--color-celeste) ;
 }
+
+
+/* max widht para texto  */
+
+.tamaño{
+  max-width: 900px;
+}
+
+
+/* cursor pointer */
+
+.pointer{
+  cursor: pointer;
+}
+
+/* estilo para botones  */
+
+.estiloBoton{
+  background-color: var(--color-celeste) !important;
+  color: var(--color-primary) !important;
+  border-color: var(--color-celeste) !important;
+  transition: all 0.3s ease-in-out !important;
+  font-weight: bold !important;
+
+}
+
+.estiloBoton:hover {
+  transform: scale(1.03) !important;
+  border-color: var(--color-celeste) !important;
+  background-color: transparent !important;
+  color: var(--color-celeste) !important;
+
+}
