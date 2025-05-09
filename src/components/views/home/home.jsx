@@ -1,15 +1,19 @@
 import SEO from '../../../seo/SEO';
 import HeroSwiper from '../../reutilizables/HeroSwiper/HeroSwiper';
 import HomeModules from './HomeModules';
-import imgPortada from '../../../assets/images/vidaInstitucional/bannerPortada.jpg';
+
+// img hero swiper home 
+import imgPortada1 from '../../../assets/images/home/swiperHeroHome/imgSliderHome1.jpg';
+import imgPortada2 from '../../../assets/images/home/swiperHeroHome/imgSliderHome2.jpg';
+import imgPortada3 from '../../../assets/images/home/swiperHeroHome/imgSliderHome3.jpg';
 
 function Home() {
 
   // array slides portada
   const slides = [
-    { img: imgPortada, titulo: 'Sindicato de Luz y Fuerza de Córdoba', bajada: '" No solo lucha contra la injusticia quien la padece, sino también quien la comprende " - Agustin Tosco', boton: 'Nuestra Organización', link: '/quienes-somos' },
-    { img: imgPortada, titulo: 'Electrum, el periódico de Luz y Fuerza', bajada: 'Consultá las ediciones de Electrum Digital y descargarlas en nuestra web', boton: 'Ver Electrum Digital', link: 'https://luzyfuerzacordobaelectrum.com.ar/electrum/' },
-    { img: imgPortada, titulo: 'Luchamos por una EPEC de los cordobeses', bajada: 'Somos un gremio en pie de lucha por una EPEC estatal, democrática e integrada', boton: 'Nuestra Lucha', link: '/nuestra-lucha' },
+    { img: imgPortada1, titulo: 'Sindicato Luz y Fuerza', bajada: 'Más de 80 años defendiendo a los trabajadores del servicio eléctrico de Córdoba.', boton: 'El Sindicato', link: '/quienes-somos' },
+    { img: imgPortada2, titulo: 'Beneficios para nuestros afiliados y sus familias', bajada: 'Actividades recreativas, descuentos en turismo, capacitaciones y mucho más.', boton: 'Conocé los beneficios', link: '/' },
+    { img: imgPortada3, titulo: 'Luchamos por una EPEC de los cordobeses', bajada: 'Somos un gremio en pie de lucha por una EPEC estatal, democrática e integrada.', boton: 'Nuestra Lucha', link: '/nuestra-lucha' },
   ];
 
   return (

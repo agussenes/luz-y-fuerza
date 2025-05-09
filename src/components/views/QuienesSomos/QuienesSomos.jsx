@@ -41,7 +41,7 @@ function QuienesSomos() {
               <img
                 src={logoSlyf}
                 alt="Logo Sindicato Luz y Fuerza"
-                className="img-fluid rounded shadow-lg"
+                className="img-fluid rounded shadow-lg my-4"
               />
             </div>
           </div>

@@ -140,7 +140,7 @@ function VidaInstitucional() {
           </div>
 
 
-          <div className="col-md-4 ">
+          <div className="col-md-4 my-4">
 
             <img src={ConsejoDirectivo} alt="Imagen del Consejo Directivo completo de 2019 - 2023" className="img-fluid" loading='lazy' />
             <img src={ConsejoDirectivo} alt="Imagen del Consejo Directivo completo de 2019 - 2023" className="img-fluid" loading='lazy' />

@@ -1,6 +1,5 @@
 import SEO from '../../../seo/SEO';
 import BannerPortadas from '../../reutilizables/bannerPortadas/BannerPortadas';
-import ContactForm from '../../reutilizables/formularioCont/ContactForm';
 import Typewriter from 'typewriter-effect';
 
 // Imágenes
@@ -138,11 +137,7 @@ function ConvenioColectivo() {
         </div>
       </div>
 
-      {/* Formulario de contacto */}
-      <section className="container py-5">
-        <h4 className="mb-4 text-center lineBorderTitle2">¿Querés contactarte con nosotros?</h4>
-        <ContactForm endpoint="https://tu-sitio.com/contacto.php" />
-      </section>
+      
     </>
   );
 }

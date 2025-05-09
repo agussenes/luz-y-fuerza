@@ -1,0 +1,25 @@
+.swiper-beneficios-wrapper{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedorImgSwiper{
+    background-color: #00000054;
+}
+
+.swiper-beneficios-pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contenedorImgSwiper img{
+    object-fit: contain !important;
+    height: 400px;
+}

@@ -12,12 +12,12 @@ function Header() {
   useEffect(() => {
     const navbarCollapse = document.getElementById('navbarContenido');
     if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-      navbarCollapse.classList.remove('show'); // ✅ fuerza cierre
+      navbarCollapse.classList.remove('show'); 
       navbarCollapse.classList.add('collapsing');
       setTimeout(() => {
         navbarCollapse.classList.remove('collapsing');
         navbarCollapse.classList.add('collapse');
-      }, 300); // tiempo para el efecto colapso
+      }, 300);
     }
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -56,23 +56,29 @@ function Header() {
                   aria-expanded="false"
                   type="button"
                 >
-                  Institucional
+                  El Sindicato
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
                   <li><Link className="dropdown-item" to="/quienes-somos">Quienes somos</Link></li>
                   <li><Link className="dropdown-item" to="/vida-institucional">Vida institucional</Link></li>
                   <li><Link className="dropdown-item" to="/historia">Historia</Link></li>
+                  <li><Link className="dropdown-item" to="/nuestra-lucha">Nuestra lucha</Link></li>                
                   <li><Link className="dropdown-item" to="/convenio-colectivo">Convenio colectivo</Link></li>
+                  
                 </ul>
               </li>
 
               {/* Enlaces normales */}
               <li className="nav-item">
-                <Link className="nav-link" to="/nuestra-lucha">Nuestra lucha</Link>
+                <Link className="nav-link" to="/">Beneficios</Link>
               </li>
 
               <li className="nav-item">
                 <Link className="nav-link" to="https://luzyfuerzacordobaelectrum.com.ar/category/noticias/">Novedades</Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to="/">Contacto</Link>
               </li>
 
             </ul>

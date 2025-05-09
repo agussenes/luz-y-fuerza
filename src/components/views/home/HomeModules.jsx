@@ -2,6 +2,7 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';
+import SwiperBeneficios from '../../reutilizables/swiperBeneficios/SwiperBeneficios';
 import './HomeModules.css';
 
 // import de imagenes 
@@ -10,18 +11,43 @@ import img1 from '../../../assets/images/home/img1.png';
 import img2 from '../../../assets/images/home/img2.png';
 import img3 from '../../../assets/images/home/historia.png';
 import fondoLucha from '../../../assets/images/home/bg-counter.jpg';
-import imgCounter from '../../../assets/images/home/img-counter.jpg'
+import imgCounter from '../../../assets/images/home/img-counter.jpg';
+
+// import imagenes carousel beneficios
+
+import imgB1 from '../../../assets/images/home/swipperBeneficios/imgB1.jpg';
+import imgB2 from '../../../assets/images/home/swipperBeneficios/imgB2.jpg';
+import imgB3 from '../../../assets/images/home/swipperBeneficios/imgB3.jpg';
+import imgB4 from '../../../assets/images/home/swipperBeneficios/imgB4.jpg';
+import imgB5 from '../../../assets/images/home/swipperBeneficios/imgB5.jpeg';
+import imgB6 from '../../../assets/images/home/swipperBeneficios/imgB6.jpg';
+import imgB7 from '../../../assets/images/home/swipperBeneficios/imgB6.jpg';
+
 
 function HomeModules() {
 
 
     // Array Noticias 
     const noticias = [
-        {img: img1 , titulo: 'pepe', texto:'pepe2', alt:'a', linkBoton:'https://luzyfuerzacordobaelectrum.com.ar/category/noticias/' },
-        {img: img2 , titulo: 'pepe', texto:'pepe2', alt:'a', linkBoton:'' },
-        {img: img3 , titulo: 'pepe', texto:'pepe2', alt:'a', linkBoton:'' },
+        { img: img1, titulo: 'Noticia 1', texto: 'Noticia', alt: 'a', linkBoton: 'https://luzyfuerzacordobaelectrum.com.ar/category/noticias/' },
+        { img: img2, titulo: 'Noticia 2', texto: 'Noticia', alt: 'a', linkBoton: '' },
+        { img: img3, titulo: 'Noticia 3', texto: 'Noticia', alt: 'a', linkBoton: '' },
     ]
 
+    const beneficiosImages = [
+        { src: imgB1, alt: 'Beneficio 1' },
+        { src: imgB2, alt: 'Beneficio 2' },
+        { src: imgB3, alt: 'Beneficio 3' },
+        { src: imgB4, alt: 'Beneficio 4' },
+        { src: imgB5, alt: 'Beneficio 5' },
+        { src: imgB6, alt: 'Beneficio 6' },
+        { src: imgB7, alt: 'Beneficio 7' },
+        
+    ];
+
+
+
+    // Array swipper beneficios 
 
     return (
         <>
@@ -46,6 +72,30 @@ function HomeModules() {
                             </ul>
                             <Link to="/vida-institucional" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Vida institucional</Link>
                         </Col>
+                    </Row>
+                </Container>
+            </section>
+
+            {/* Módulo Veneficios */}
+            <section className="modulo-50-50 bg-white">
+                <Container>
+                    <Row className="align-items-center flex-column flex-lg-row my-4">
+                        <Col lg={6} >
+                            <h2 className="lineBorderTitle">Beneficios</h2>
+                            <p className="bajada">Contamos con actividades y espacios que promueven el bienestar y disfrute de nuestros afiliados y sus familias.</p>
+                            <ul className="lista-ticks">
+                                <li> Viajes en temporadas turísticas de verano e invierno para toda la familia.</li>
+                                <li> Colonias de vacaciones con hoteles y alojamientos confortables.</li>
+                                <li> Campings para pasar el día.</li>
+                                <li> Actividades culturales y recreativas.</li>
+                                <li> Capacitaciones para los trabajadores.</li>
+                            </ul>
+                            <Link to="/vida-institucional" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ir a beneficios</Link>
+                        </Col>
+                        <Col lg={6}>
+                            <SwiperBeneficios images={beneficiosImages} />
+                        </Col>
+
                     </Row>
                 </Container>
             </section>
@@ -122,7 +172,7 @@ function HomeModules() {
                                 </Link>
                             </Col>
                             <Col md={6} className='d-flex justify-content-center'>
-                                <img src={imgCounter} alt="Historia de lucha" className=" my-4 rounded shadow" loading='lazy' height={400}/>
+                                <img src={imgCounter} alt="Historia de lucha" className=" my-4 rounded shadow" loading='lazy' height={400} />
                             </Col>
                         </Row>
                     </Container>
@@ -134,7 +184,7 @@ function HomeModules() {
                 <Container>
                     <h2 className="lineBorderTitle mb-5">Últimas Noticias</h2>
                     <Row>
-                        {noticias.map((noticia,i) => (
+                        {noticias.map((noticia, i) => (
                             <Col md={4} key={i} className="mb-4">
                                 <div className="card h-100">
                                     <img src={noticia.img} alt={noticia.alt} className="card-img-top" loading='lazy' />
