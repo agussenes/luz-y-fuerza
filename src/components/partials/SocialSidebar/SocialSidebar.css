@@ -53,3 +53,15 @@
 .icon.plus {
     background-color: #007bff;
 }
+
+@media (max-width: 768px) {
+
+
+    .social-sidebar .icon {
+        width: 20px;
+        height: 20px;
+        color: white;
+        font-size: 0.9rem;
+
+    }
+}

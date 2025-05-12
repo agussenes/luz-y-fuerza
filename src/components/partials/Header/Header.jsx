@@ -63,16 +63,29 @@ function Header() {
                   <li><Link className="dropdown-item" to="/vida-institucional">Vida institucional</Link></li>
                   <li><Link className="dropdown-item" to="/historia">Historia</Link></li>
                   <li><Link className="dropdown-item" to="/nuestra-lucha">Nuestra lucha</Link></li>                
-                  <li><Link className="dropdown-item" to="/convenio-colectivo">Convenio colectivo</Link></li>
                   
                 </ul>
               </li>
 
               {/* Enlaces normales */}
-              <li className="nav-item">
-                <Link className="nav-link" to="/">Beneficios</Link>
+              <li className="nav-item dropdown">
+                <button
+                  className="nav-link dropdown-toggle btn btn-link"
+                  id="dropdownMenu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  type="button"
+                >
+                  Afiliados
+                </button>
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
+                  <li><Link className="dropdown-item" to="/">Beneficios</Link></li>                
+                  <li><Link className="dropdown-item" to="/convenio-colectivo">Convenio colectivo</Link></li>
+                  
+                </ul>
               </li>
-
+              
               <li className="nav-item">
                 <Link className="nav-link" to="https://luzyfuerzacordobaelectrum.com.ar/category/noticias/">Novedades</Link>
               </li>

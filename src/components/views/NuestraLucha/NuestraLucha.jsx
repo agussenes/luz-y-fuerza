@@ -12,6 +12,8 @@ import SEO from '../../../seo/SEO';
 import BannerPortadas from '../../reutilizables/bannerPortadas/BannerPortadas';
 import LightboxGallery from '../../reutilizables/LightboxGallery/LightboxGallery';
 import LightboxGallerySwiper from '../../reutilizables/LightboxGallerySwiper/LightboxGallerySwiper';
+import BannerGif from '../../reutilizables/bannerEpecNoEsAnonima/BannerGif';
+
 
 // Importa imágenes, videos y PDFs
 import portadaImg from '../../../assets/images/vidaInstitucional/bannerPortada.jpg';
@@ -69,6 +71,8 @@ function NuestraLucha() {
       />
 
       <BannerPortadas imagen={portadaImg} title="Nuestra Lucha" />
+
+      < BannerGif />
 
       <section className="nuestra-lucha-content py-5">
         <Container>

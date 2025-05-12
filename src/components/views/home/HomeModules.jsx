@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';
 import SwiperBeneficios from '../../reutilizables/swiperBeneficios/SwiperBeneficios';
+import BannerGif from '../../reutilizables/bannerEpecNoEsAnonima/BannerGif';
 import './HomeModules.css';
 
 // import de imagenes 
@@ -144,6 +145,9 @@ function HomeModules() {
                     </Row>
                 </Container>
             </section>
+
+            {/* banner epec no es anonima  */}
+            <BannerGif />
 
             {/* Módulo 4: 50/50 Lucha desde 1944 */}
             <section

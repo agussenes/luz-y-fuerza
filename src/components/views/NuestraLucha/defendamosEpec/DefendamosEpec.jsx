@@ -3,7 +3,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import SEO from '../../../../seo/SEO';
 import BannerPortadas from '../../../reutilizables/bannerPortadas/BannerPortadas';
 import LightboxGallery from '../../../reutilizables/LightboxGallery/LightboxGallery';
+import BannerGif from '../../../reutilizables/bannerEpecNoEsAnonima/BannerGif';
 
+// import imagenes 
 import portadaImg from '../../../../assets/images/vidaInstitucional/bannerPortada.jpg';
 import img1 from '../../../../assets/images/nuestraLucha/pngParaCol.png';
 
@@ -25,6 +27,8 @@ function DefendamosEpec() {
             />
 
             <BannerPortadas imagen={portadaImg} title="Defendemos EPEC" />
+
+            <BannerGif />
 
             <section className="defendamos-epec-content py-5">
                 <Container>
