@@ -1,0 +1,115 @@
+/* Reset y personalización de lista con íconos check */
+.lista-ticks {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.lista-ticks li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 0.75rem;
+    list-style: none;
+}
+
+.lista-ticks i {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.lista-ticks .title {
+    display: block;
+    font-weight: 700;
+}
+
+.lista-ticks .desc {
+    display: block;
+    /* texto secundario */
+    line-height: 1.35;
+}
+
+/* card beneficios  */
+
+
+
+.card-beneficios i{
+    color: #030F27 !important;
+}
+
+.card-beneficios{
+    border: 1px solid #0DCAF0;
+    border-radius: 8px;
+    background-color: #d2d2d288;
+    color: #030F27;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-beneficios:hover{
+    transform: scale(1.02);
+}
+
+/* Estilo botón principal (Secretarías, Electrum, etc.) */
+.botonSecretarias {
+    transition: all 0.3s ease-in-out !important;
+}
+
+.botonSecretarias:hover {
+    transform: scale(1.05);
+    background-color: transparent !important;
+    color: var(--color-celeste) !important;
+    border-color: var(--color-celeste) !important;
+}
+
+/* Banner Electrum */
+.banner-electrum {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/* Cards modulares (Nuestra Organización) */
+.rowCards .card {
+    border: 1px solid #D2D2D2;
+    border-radius: 10px;
+    padding: 1.5rem;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.rowCards .card:hover {
+    transform: translateY(-5px);
+}
+
+.SizeIcon {
+    color: var(--color-primary) !important;
+    font-size: 7rem !important;
+}
+
+.rowCards hr {
+    color: var(--color-primary);
+    height: 2px;
+}
+
+/* seccion conter  */
+
+.counter-box {
+    transition: transform 0.3s ease;
+}
+
+.counter-box:hover {
+    transform: scale(1.03);
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+
+/* Noticias recientes */
+
+.module-noticias .card img {
+    border-radius: 8px 8px 0 0;
+}

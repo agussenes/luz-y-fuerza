@@ -11,7 +11,7 @@ function Footer() {
           <div className="col-md-5">
             <div className="d-flex align-items-center mb-3">
               <img
-                src="/img/identidad/Logo-White.webp"
+                src="/luz-y-fuerza/img/identidad/Logo-White.webp"
                 alt="Logo Sindicato de Luz y Fuerza de Córdoba"
                 height="80"
                 className="me-2"

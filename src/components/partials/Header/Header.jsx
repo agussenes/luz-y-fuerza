@@ -33,7 +33,7 @@ function Header() {
 
           {/* LOGO */}
           <Link className="navbar-brand" to="/">
-            <img src="/img/identidad/Logo-White.webp" alt="Logo sindicato de luz y fuerza" height="50" loading="lazy" />
+            <img src="/luz-y-fuerza/img/identidad/Logo-White.webp" alt="Logo sindicato de luz y fuerza" height="50" loading="lazy" />
           </Link>
 
           {/* Botón hamburguesa mobile */}
@@ -80,7 +80,8 @@ function Header() {
                   Afiliados
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
-                  <li><Link className="dropdown-item" to="/">Beneficios</Link></li>                
+                  <li><Link className="dropdown-item" to="/beneficios">Beneficios</Link></li>                
+                  <li><Link className="dropdown-item" to="/actividades">Actividades</Link></li>                
                   <li><Link className="dropdown-item" to="/convenio-colectivo">Convenio colectivo</Link></li>
                   
                 </ul>
@@ -91,7 +92,7 @@ function Header() {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/">Contacto</Link>
+                <Link className="nav-link" to="/contacto">Contacto</Link>
               </li>
 
             </ul>

@@ -41,24 +41,27 @@ textarea.has-value+label {
     top: -0.6rem;
     left: 0.5rem;
     font-size: 0.75rem;
-    color: #007bff;
+    color: var(--color-celeste);
 }
 
 input:focus,
 textarea:focus {
-    border-color: #007bff;
+    border-color: var(--color-celeste);
 }
 
 button[type="submit"] {
     width: 100%;
-    padding: 0.9rem;
+    padding: 0.2rem;
     font-size: 1rem;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    background-color: var(--color-celeste) !important;
+    color: var(--color-primary) !important;
+    border: 1px solid var(--color-celeste) !important;
+    transition: all 0.3s ease-in-out !important;
+    font-weight: bold !important;
+    
 }
 
 button[disabled] {
@@ -67,7 +70,11 @@ button[disabled] {
 }
 
 button:hover:not([disabled]) {
-    background-color: #0056b3;
+    transform: scale(1.03) !important;
+    border-color: var(--color-celeste) !important;
+    background-color: transparent !important;
+    color: var(--color-celeste) !important;
+
 }
 
 .error {

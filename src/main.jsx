@@ -15,6 +15,9 @@ import 'react-toastify/dist/ReactToastify.css';
 // SEO HelmetProvider
 import { HelmetProvider } from 'react-helmet-async';
 
+// React Router
+import { BrowserRouter } from 'react-router-dom';
+
 // Importación de estilos globales y variables (branding)
 import './styles/global.css';
 import './styles/variables.css';
@@ -22,6 +25,7 @@ import './styles/variables.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelmetProvider>
+    <BrowserRouter basename="/luz-y-fuerza">
       <App />
       {/* Toastify container global */}
       <ToastContainer
@@ -36,6 +40,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         pauseOnHover
         theme="light"
       />
+      </BrowserRouter>
     </HelmetProvider>
   </React.StrictMode>
 );

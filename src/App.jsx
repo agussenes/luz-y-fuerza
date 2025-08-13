@@ -1,66 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import Router from './Router';
 // Importamos componentes parciales
 import Header from './components/partials/Header/Header';
 import Footer from './components/partials/Footer/Footer';
 import SocialSidebar from './components/partials/SocialSidebar/SocialSidebar';
 
-// Importamos vistas
-import Home from './components/views/Home/Home';
-import QuienesSomos from './components/views/QuienesSomos/QuienesSomos';
-import Historia from './components/views/Historia/Historia';
-import ConvenioColectivo from './components/views/ConvenioColectivo/ConvenioColectivo';
-import Novedades from './components/views/Novedades/Novedades';
-import NuestraLucha from './components/views/NuestraLucha/NuestraLucha';
-import VidaInstitucional from './components/views/VidaInstitucional/VidaInstitucional';
-import AsambleaGeneral from './components/views/VidaInstitucional/AsambleaGeneral/AsambleaGeneral';
-import Secretarias from './components/views/VidaInstitucional/Secretaria/Secretaria';
-import SecretariaDetalle from './components/views/VidaInstitucional/Secretaria/SecretariaDetalle';
-import CuerpoDelegados from './components/views/VidaInstitucional/CuerpoDelegados/CuerpoDelegados';
-import CuerpoGenDelegados from './components/views/VidaInstitucional/CuerpoDelegados/CuerpoGenDelegados/CuerpoGenDelegados';
-import DelegadosDelegadas from './components/views/VidaInstitucional/CuerpoDelegados/DelegadosDelegadas/DelegadosDelegadas';
-import DefendamosEpec from './components/views/NuestraLucha/defendamosEpec/DefendamosEpec';
-
-import NotFound from './components/views/NotFound/NotFound'
-
-
 function App() {
   return (
-    <Router>
-      {/* Header siempre visible */}
+    <>
       <Header />
-
-      {/* Contenido dinámico basado en la ruta */}
       <main className="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/historia" element={<Historia />} />
-          <Route path="/quienes-somos" element={<QuienesSomos />} />
-          <Route path="/convenio-colectivo" element={<ConvenioColectivo />} />
-          <Route path="/novedades" element={<Novedades />} />
-          <Route path="/nuestra-lucha" element={<NuestraLucha />} />
-         | <Route path="/defendamos-epec" element={<DefendamosEpec />} />
-          <Route path="/vida-institucional" element={<VidaInstitucional />} />
-            <Route path='/asamblea-general' element={<AsambleaGeneral />} />
-            <Route path='/secretarias' element={<Secretarias />} />
-              <Route path='/secretarias/:id' element={<SecretariaDetalle />} />
-            <Route path="/cuerpo-general-delegados" element={<CuerpoDelegados />} />
-              <Route path="/delegados-generales" element={<CuerpoGenDelegados />} />
-              <Route path="/delegados-delegadas" element={<DelegadosDelegadas />} />
-
-
-
-          <Route path="*" element={<NotFound />} />
-          
-        </Routes>
+      <Router />
       </main>
-
-      {/* SocialSidebar fijo  */}
-      <SocialSidebar />
-
-      {/* Footer siempre visible */}
       <Footer />
-    </Router>
+      <SocialSidebar />
+    </>
   );
 }
 

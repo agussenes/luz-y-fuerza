@@ -235,3 +235,15 @@ body {
   color: var(--color-celeste) !important;
 
 }
+
+
+/* hr global  */
+
+.dividor{
+border: 6px dashed #030F27 !important;
+margin-top: 4rem !important;
+}
+
+.bg-azul-osucro{
+background-color: #030F27 ;
+}

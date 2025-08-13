@@ -1,0 +1,330 @@
+// HomeModules.jsx
+import { Container, Row, Col } from 'react-bootstrap';
+import CountUp from 'react-countup';
+import { Link } from 'react-router-dom';
+import SwiperBeneficios from '../../components/reutilizables/swiperBeneficios/SwiperBeneficios';
+import BannerGif from '../../components/reutilizables/bannerEpecNoEsAnonima/BannerGif';
+import './HomeModules.css';
+
+// import de imagenes 
+import presentacion from '../../assets/images/home/presentacion.jpg';
+import img1 from '../../assets/images/home/img1.png';
+import img2 from '../../assets/images/home/img2.png';
+import img3 from '../../assets/images/home/historia.png';
+import fondoLucha from '../../assets/images/home/bg-counter.jpg';
+import imgCounter from '../../assets/images/home/img-counter.jpg';
+
+// import imagenes carousel beneficios
+
+import imgB1 from '../../assets/images/home/swipperBeneficios/imgB1.jpg';
+import imgB2 from '../../assets/images/home/swipperBeneficios/imgB2.jpg';
+import imgB3 from '../../assets/images/home/swipperBeneficios/imgB3.jpg';
+import imgB4 from '../../assets/images/home/swipperBeneficios/imgB4.jpg';
+import imgB5 from '../../assets/images/home/swipperBeneficios/imgB5.jpeg';
+import imgB6 from '../../assets/images/home/swipperBeneficios/imgB6.jpg';
+import imgB7 from '../../assets/images/home/swipperBeneficios/imgB6.jpg';
+
+
+
+// img de banner beneficio 
+
+import imgBeneEdu from '../../assets/images/beneficios/imgCardBeneficioEducacion.webp'
+import imgBeneJudi from '../../assets/images/beneficios/cardJudicialBene.webp'
+
+function HomeModules() {
+
+
+    // Array Noticias 
+    const noticias = [
+        { img: img1, titulo: 'Noticia 1', texto: 'Noticia', alt: 'a', linkBoton: 'https://luzyfuerzacordobaelectrum.com.ar/category/noticias/' },
+        { img: img2, titulo: 'Noticia 2', texto: 'Noticia', alt: 'a', linkBoton: '' },
+        { img: img3, titulo: 'Noticia 3', texto: 'Noticia', alt: 'a', linkBoton: '' },
+    ]
+
+    const beneficiosImages = [
+        { src: imgB1, alt: 'Beneficio 1' },
+        { src: imgB2, alt: 'Beneficio 2' },
+        { src: imgB3, alt: 'Beneficio 3' },
+        { src: imgB4, alt: 'Beneficio 4' },
+        { src: imgB5, alt: 'Beneficio 5' },
+        { src: imgB6, alt: 'Beneficio 6' },
+        { src: imgB7, alt: 'Beneficio 7' },
+
+    ];
+
+
+
+    // Array swipper beneficios 
+
+    return (
+        <>
+            {/* Módulo 1: 50/50 con lista y botón */}
+            <section className="modulo-50-50 bg-white">
+                <Container>
+                    <Row className="align-items-center flex-column-reverse flex-lg-row my-4">
+                        <Col lg={4}>
+                            <img src={presentacion} alt="Sede Luz y Fuerza Córdoba" className="img-fluid mb-4 mb-lg-0 my-4 imgShadow" />
+                        </Col>
+                        <Col lg={8} >
+                            <p className="subtitulo">CÓRDOBA</p>
+                            <h2 className="lineBorderTitle">Sindicato de Luz y Fuerza de Córdoba</h2>
+                            <p className="bajada">Historia, presente y futuro lucifuercista. Sostenemos una política gremial basada en la defensa irrestricta de la EPEC estatal e integrada, con sentido social.</p>
+                            <ul className="lista-ticks">
+                                <li> Actividad sindical</li>
+                                <li> Novedades gremiales</li>
+                                <li> Información para el afiliado</li>
+                                <li> Electrum Digital</li>
+                                <li> Turismo</li>
+                                <li> Comunicados oficiales</li>
+                            </ul>
+                            <Link to="/vida-institucional" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Vida institucional</Link>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+            <div className="dividor"></div>
+            {/* Módulo beneficios */}
+            <section className="modulo-40-40-40 bg-beneficios">
+                <Container className='pt-4'>
+                    <Row className="d-flex justify-content-center mt-4">
+                        <div className="d-flex justify-content-center">
+                            <h2 className="lineBorderTitle ">Beneficios</h2>
+
+                        </div>
+
+                        <Col sm={12} md={6} lg={4} className='my-4'>
+                            <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Turísticos</h4>
+
+                            <div className="card-beneficios shadow p-3">
+                                <div className="text-center">
+                                    <img src={imgB5} alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios" className='img-fluid rounded' />
+                                </div>
+                                <hr />
+                                <ul className="lista-ticks">
+                                    <li>
+                                        <span className="title">Complejos Turísticos</span>
+                                        <span className="desc">Mina Clavero y Cosquín. Pensión completa para afiliados y familia.</span>
+                                    </li>
+                                    <li>
+                                        <span className="title">Campo de Deportes Guiñazú</span>
+                                        <span className="desc">3 canchas, pileta, quinchos y asadores. Temporada de pileta con tarifa diferencial.</span>
+                                    </li>
+                                </ul>
+                                <div className="d-flex justify-content-center mt-5">
+                                    <Link to="/beneficios-turisticos" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={6} lg={4} className='my-4'>
+                            <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Educativos</h4>
+
+                            <div className="card-beneficios shadow p-3">
+                                <div className="text-center">
+                                    <img src={imgBeneEdu} alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios" className='img-fluid rounded' />
+
+                                </div>
+                                <hr />
+                                <ul className="lista-ticks">
+                                    {/* <li>
+                                        <span className="title">Centro de Actividades “Lorenzo Racero”</span>
+                                        <span className="desc">Talleres para jubilados/pensionados: celular, ritmo, folklore.</span>
+                                    </li> */}
+                                    <li>
+                                        <span className="title">Becas</span>
+                                        <span className="desc">Hijos de afiliados en secundario, terciario o universitario.</span>
+                                    </li>
+                                    <li>
+                                        <span className="title">Útiles escolares</span>
+                                        <span className="desc">Kit para primaria y vouchers/descuentos para secundaria.</span>
+                                    </li>
+                                </ul>
+                                <div className="d-flex justify-content-center mt-5">
+                                    <Link to="/beneficios-educativos" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+
+                                </div>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={6} lg={4} className='my-4'>
+
+                            <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Jurídicos y de Asesoramiento</h4>
+                            
+                            <div className="card-beneficios shadow p-3">
+                                <div className="d-flex text-center">
+                                    <img src={imgBeneJudi} alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios" className='img-fluid rounded' />
+
+                                </div>
+                                <hr />
+                                <ul className="lista-ticks">
+                                    <li>
+                                        <span className="title">Asesoramiento previsional y jurídico</span>
+                                        <span className="desc">Inicio de trámite jubilatorio, consultas generales y continuidad de afiliación.</span>
+                                    </li>
+                                    <li>
+                                        <span className="title">Vivienda</span>
+                                        <span className="desc">Asistencia para edificación/refacción y atención prioritaria ante siniestros estructurales.</span>
+                                    </li>
+                                </ul>
+                                <div className="d-flex justify-content-center mt-4">
+                                    <Link to="/beneficios-juridicos-y-de-asesoramiento" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                                </div>
+                            </div>
+                        </Col>
+
+
+                        {/* <Col lg={6} >
+                            <h2 className="lineBorderTitle">Beneficios</h2>
+                            <p className="bajada">Contamos con actividades y espacios que promueven el bienestar y disfrute de nuestros afiliados y sus familias.</p>
+                            <ul className="lista-ticks">
+                                <li> Viajes en temporadas turísticas de verano e invierno para toda la familia.</li>
+                                <li> Colonias de vacaciones con hoteles y alojamientos confortables.</li>
+                                <li> Campings para pasar el día.</li>
+                                <li> Actividades culturales y recreativas.</li>
+                                <li> Capacitaciones para los trabajadores.</li>
+                            </ul>
+                            <Link to="/beneficios" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ir a beneficios</Link>
+                        </Col>
+                        <Col lg={6}>
+                            <SwiperBeneficios images={beneficiosImages} />
+                        </Col> */}
+
+                    </Row>
+                </Container>
+            </section>
+
+            <div className="dividor"></div>
+
+            {/* beneficios - actividades  */}
+            <section className="modulo-50-50 bg-white">
+                <Container>
+                    <Row className="align-items-center flex-column-reverse flex-lg-row my-4">
+                        <Col lg={6}>
+                            <SwiperBeneficios images={beneficiosImages} />
+                        </Col>
+                        <Col lg={6} className='px-4'>
+                            <h2 className="lineBorderTitle">Actividades</h2>
+                            <p className="bajada">Actividades para disfrutar, aprender y compartir</p>
+                            <ul className="lista-ticks">
+                                <li> <strong>Aire libre y naturaleza:</strong> Trekking mensual con guías.</li>
+                                <li> <strong>Deportes y competencia:</strong> Pesca, fútbol, hockey, pileta.</li>
+                                <li> <strong>Arte marcial y disciplina:</strong> Karate para todas las edades.</li>
+                                <li> <strong>Encuentro y camaradería:</strong> Torneos y eventos deportivos.</li>
+                            </ul>
+                            <Link to="/actividades" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver actividades</Link>
+                        </Col>
+
+
+                    </Row>
+                </Container>
+            </section>
+
+            {/* Módulo 2: Banner Electrum */}
+            <section className="banner-electrum text-white text-center">
+                <Container>
+                    <h2 className="mb-3">Electrum, el periódico de Luz y Fuerza</h2>
+                    <p className="mb-4">Consultá las ediciones de Electrum Digital y descargarlas desde nuestra web</p>
+                    <a href="https://luzyfuerzacordobaelectrum.com.ar/electrum-digital/" className="btn btn-light fw-bold px-4 botonSecretarias">Ver Electrum</a>
+                </Container>
+            </section>
+
+            {/* Módulo 3: Cartas 3 columnas */}
+            <section className="modulo-cartas my-4">
+                <Container >
+                    <h2 className="lineBorderTitle my-4 mb-5 ">Nuestra Organización</h2>
+                    <Row className='d-flex justify-content-center'>
+                        <Col sm={12} md={6} lg={4} className="mb-4">
+                            <div className="card-beneficios h-100 shadow-sm text-center p-4">
+                                <i className="bi bi-person-lines-fill display-5  SizeIcon"></i>
+                                <hr />
+                                <h5 className="mt-3 lineBorderSubTitle">Convenio</h5>
+                                <p>Información útil para el nuevo afiliado y beneficios disponibles.</p>
+                                <Link to="/quienes-somos" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={6} lg={4} className="mb-4">
+                            <div className="card-beneficios h-100 shadow-sm text-center p-4">
+                                <i className="bi bi-building display-5  SizeIcon"></i>
+                                <hr />
+                                <h5 className="mt-3 lineBorderSubTitle">Epec</h5>
+                                <p>Conocé el trabajo y funciones de cada secretaría del sindicato.</p>
+                                <Link to="/defendamos-epec" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                            </div>
+                        </Col>
+                        <Col sm={12} md={6} lg={4} className="mb-4">
+                            <div className="card-beneficios h-100 shadow-sm text-center p-4">
+                                <i className="bi bi-flag-fill display-5  SizeIcon"></i>
+                                <hr />
+                                <h5 className="mt-3 lineBorderSubTitle">Nuestra historia</h5>
+                                <p>Enterate de las principales acciones gremiales y sindicales.</p>
+                                <Link to="/nuestra-lucha" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+            {/* banner epec no es anonima  */}
+            <BannerGif />
+
+            {/* Módulo 4: 50/50 Lucha desde 1944 */}
+            <section
+                className="modulo-lucha  text-white py-5"
+                style={{
+                    backgroundImage: `url(${fondoLucha})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                }}
+            >
+                <div className="py-5">
+                    <Container>
+                        <Row className="align-items-center">
+                            <Col md={6}>
+                                <p className="text-info fw-bold mb-2">LUZ Y FUERZA CÓRDOBA</p>
+                                <h2 className="mb-4">Defendiendo un Sindicato participativo y plural en permanente transformación.</h2>
+
+                                <Link to="/nuestra-lucha" className="counter-box text-decoration-none">
+                                    <div className="d-inline-flex align-items-center gap-3 px-4 py-3 rounded shadow-sm bg-white bg-opacity-10 border border-info backdrop-blur">
+                                        <i className="bi bi-hourglass-split text-info fs-2"></i>
+                                        <span className="fs-1 fw-bold text-info">
+                                            <CountUp end={1944} duration={3} />
+                                        </span>
+                                    </div>
+                                </Link>
+                            </Col>
+                            <Col md={6} className='d-flex justify-content-center'>
+                                <img src={imgCounter} alt="Historia de lucha" className=" my-4 rounded shadow" loading='lazy' height={400} />
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            </section>
+
+            {/* Módulo 5: Noticias recientes */}
+            <section className="modulo-noticias py-5">
+                <Container>
+                    <h2 className="lineBorderTitle mb-5">Últimas Noticias</h2>
+                    <Row>
+                        {noticias.map((noticia, i) => (
+                            <Col md={4} key={i} className="mb-4">
+                                <div className="card h-100">
+                                    <img src={noticia.img} alt={noticia.alt} className="card-img-top" loading='lazy' />
+                                    <div className="card-body">
+                                        <h5 className="card-title"> {noticia.titulo}</h5>
+                                        <p className="card-text"> {noticia.texto} </p>
+                                        <Link to={noticia.linkBoton} className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ir a la noticia</Link>
+                                    </div>
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                    <div className="text-center mt-4">
+                        <Link to="https://luzyfuerzacordobaelectrum.com.ar/category/noticias/" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Todas las noticias</Link>
+                    </div>
+                </Container>
+            </section>
+        </>
+    );
+}
+
+export default HomeModules;
