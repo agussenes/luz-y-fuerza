@@ -83,17 +83,19 @@ export default function Actividades() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 mt-4">
-                  <FaqAccordion id="faq-trekking" items={trekking.faq} />
+                <div className="col-md-4 ">
+                  <ContactBlock mainTel={trekking.contacto?.tel} mainWa={trekking.contacto?.whatsapp} />
 
                 </div>
+                
               </div>
               <div className="row">
                 {/* <div className="col-md-8">
                   <FaqAccordion id="faq-trekking" items={trekking.faq} />
                 </div> */}
                 <div className="col">
-                  <ContactBlock mainTel={trekking.contacto?.tel} mainWa={trekking.contacto?.whatsapp} />
+                  <FaqAccordion id="faq-trekking" items={trekking.faq} />
+
                 </div>
               </div>
             </Section>

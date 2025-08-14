@@ -6,6 +6,7 @@
     isolation: isolate;
     display: flow-root;
     scroll-margin-top: 100px;
+    border-top: 1px solid var(--color-primary) !important;
 }
 
 /* Cabecera de sección siempre por encima del contenido propio */
@@ -160,6 +161,11 @@
 
 .input-group-text, .form-control{
     border-color: var(--color-primary) !important;
+}
+
+.inputFiltro{
+    border-color: var(--color-primary) !important;
+
 }
 
 /* ---------- Sidebar sticky ---------- */
