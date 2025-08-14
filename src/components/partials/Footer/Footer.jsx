@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Footer.css'; // Estilos propios
 
+import imgUsina from '../../../../public/img/identidad/logoUsina.webp'
+
 function Footer() {
   return (
     <footer className="text-white pt-5 pb-4">
@@ -67,7 +69,7 @@ function Footer() {
           Desarrollado por
           <a href="https://usinacreativa.com.ar/" target="_blank" rel="noopener noreferrer" style={{ margin: '0 0.2rem' }}>
             <img
-              src="/img/identidad/logoUsina.webp"
+              src={imgUsina}
               alt="Logo Usina Creativa - Agencia de comunicación y desarrollo del sitio web del sindicato Luz y Fuerza Córdoba"
               loading="lazy"
               height="25"

@@ -1,0 +1,176 @@
+/* ====== ACTIVIDADES (layout estable, sin solapamientos) ====== */
+
+/* Cada bloque <Section> se aísla y controla su propio apilamiento */
+.stack-section {
+    position: relative;
+    isolation: isolate;
+    display: flow-root;
+    scroll-margin-top: 100px;
+}
+
+/* Cabecera de sección siempre por encima del contenido propio */
+.section-head {
+    position: relative;
+    z-index: 1;
+}
+
+.section-head i{
+    color: var(--color-primary);
+}
+
+.section-title {
+    background: #fff;
+    padding-right: .25rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    border-bottom: 1px dashed var(--color-primary);
+}
+
+
+.card{
+    border-color: var(--color-primary);
+}
+
+.card-title{
+    color: var(--color-primary);
+    font-weight: 600;
+}
+/* Separación visual entre secciones */
+.stack-section+.stack-section {
+    border-top: 1px solid #e9ecef;
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+}
+
+/* Gutters verticales dentro de filas internas */
+.stack-section .row {
+    --bs-gutter-y: 1rem;
+}
+
+/* Evitar que columnas estiren el contenedor por textos largos */
+.row>[class^="col-"],
+.row>[class*=" col-"] {
+    min-width: 0;
+}
+
+/* Cards / alerts / accordion en capa base del contexto de su sección */
+.stack-section .card,
+.stack-section .alert,
+.stack-section .accordion,
+.stack-section .table-responsive {
+    position: relative;
+    z-index: 0;
+}
+
+/* ---------- TABLAS: visibles y sin recortes ---------- */
+
+/* Wrapper responsive con scroll horizontal cuando haga falta */
+.table-responsive {
+    overflow-x: auto;
+    overflow-y: visible;
+    margin-bottom: 1rem;
+    background: #fff;
+    border-radius: .375rem;
+}
+
+/* La tabla no debe recortar; sólo las celdas truncan */
+.stack-section .table {
+    table-layout: fixed;
+    overflow: visible !important;
+}
+
+.table th,
+.table td {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+/* ---------- Tabla de calendario (Pesca) reforzada ---------- */
+
+/* Envuelve a la card de la tabla */
+.schedule-wrapper {
+    position: relative;
+    z-index: 0;
+    margin-top: .25rem;
+}
+
+
+.card--tabla {
+    overflow: visible;
+}
+
+
+.schedule-wrapper .table-responsive,
+.schedule-table {
+    position: relative;
+    z-index: 0 !important;
+}
+
+
+.schedule-table {
+    display: table !important;
+    width: 100% !important;
+    border-collapse: collapse;
+    table-layout: fixed;
+    overflow: visible !important;
+}
+
+.schedule-table thead {
+    display: table-header-group !important;
+}
+
+.schedule-table tbody {
+    display: table-row-group !important;
+}
+
+.schedule-table tr {
+    display: table-row !important;
+}
+
+.schedule-table th,
+.schedule-table td {
+    display: table-cell !important;
+    padding: .5rem .75rem;
+    border: 1px solid #dee2e6;
+}
+
+/* Encabezado con tono claro */
+.schedule-table thead th {
+    background: #f8f9fa !important;
+    font-weight: 600;
+}
+
+/* Badges suaves */
+.bg-info-subtle {
+    background-color: rgba(13, 110, 253, .12) !important;
+}
+
+/* ---------- ContactBlock ---------- */
+.alert.alert-info {
+    align-items: flex-start !important;
+}
+
+
+/*-----------contenedorfiltros ----------------*/
+.contenedorFiltros{
+    border-color: var(--color-primary) !important;
+}
+
+.input-group-text, .form-control{
+    border-color: var(--color-primary) !important;
+}
+
+/* ---------- Sidebar sticky ---------- */
+@media (min-width: 992px) {
+    .position-sticky {
+        top: 90px !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .position-sticky {
+        position: static !important;
+    }
+}
