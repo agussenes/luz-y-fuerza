@@ -16,7 +16,7 @@ function Contacto() {
                 image="https://tusitio.com/img/home-og-image.jpg"
             />
 
-            <BannerPortadas imagen={portadaImg} title="Contactanos" />
+            <BannerPortadas imagen={portadaImg} titulo="Contactanos" />
 
             <section className="contacto-section py-5">
                 <Container>

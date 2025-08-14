@@ -26,7 +26,7 @@ function DefendamosEpec() {
                 image="https://tusitio.com/img/epec-banner.jpg"
             />
 
-            <BannerPortadas imagen={portadaImg} title="Defendemos EPEC" />
+            <BannerPortadas imagen={portadaImg} titulo="Defendemos EPEC" />
 
             <BannerGif />
 

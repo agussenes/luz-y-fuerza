@@ -16,7 +16,7 @@ function BeneficiosTurismo() {
                 url="http://localhost:5173/contacto"
                 image="https://tusitio.com/img/home-og-image.jpg"
             />
-            <BannerPortadas imagen={portadaImg} title="Beneficios Turisticos" />
+            <BannerPortadas imagen={portadaImg} titulo="Beneficios Turisticos" />
 
         </>
     )

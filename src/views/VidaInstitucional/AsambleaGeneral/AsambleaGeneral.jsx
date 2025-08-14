@@ -22,7 +22,7 @@ function AsambleaGeneral() {
             {/* Portada reutilizable */}
             <BannerPortadas
                 imagen={portada}
-                title="Asamblea General Ordinaria"
+                titulo="Asamblea General Ordinaria"
             />
 
             {/* Sección principal */}

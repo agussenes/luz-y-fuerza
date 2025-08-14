@@ -238,7 +238,7 @@ function HomeModules() {
                                 <hr />
                                 <h5 className="mt-3 lineBorderSubTitle">Convenio</h5>
                                 <p>Información útil para el nuevo afiliado y beneficios disponibles.</p>
-                                <Link to="/quienes-somos" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                                <Link to="/convenio-colectivo" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
                             </div>
                         </Col>
                         <Col sm={12} md={6} lg={4} className="mb-4">

@@ -89,7 +89,7 @@ const data = [
 function DelegadosDelegadas() {
     return (
         <>
-            <BannerPortadas imagen={portadaImg} title="DELEGADOS y DELEGADAS 2022 - 2023" />
+            <BannerPortadas imagen={portadaImg} titulo="DELEGADOS y DELEGADAS 2022 - 2023" />
 
             <section className="delegados-table-section py-5">
                 <Container>

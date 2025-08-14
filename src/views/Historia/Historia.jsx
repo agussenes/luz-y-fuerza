@@ -11,7 +11,8 @@ import BannerPortadas from '../../components/reutilizables/bannerPortadas/Banner
 import './Historia.css'
 
 // imagenes individuales 
-import bannerHistoria from '../../assets/images/historia/bannernuestrahistoria.jpg';
+import portadaImg from '../../assets/images/vidaInstitucional/bannerPortada.jpg';
+
 import julioMurua from '../../assets/images/historia/Julio-Murua-370x400.jpg';
 import atilioBorserini from '../../assets/images/historia/2-Atilio-Borserini-370x400.jpg';
 import cristobalSierra from '../../assets/images/historia/Cristobal-Sierra-370x400.jpg'
@@ -77,7 +78,7 @@ function Historia() {
       />
 
       {/* Portada */}
-      <BannerPortadas imagen={bannerHistoria} titulo="Nuestra Historia" />
+      <BannerPortadas imagen={portadaImg} titulo="NUestra historia" />
 
       {/* Bajada con título grande */}
       <section className="bajada py-5">

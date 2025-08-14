@@ -118,7 +118,7 @@ function VidaInstitucional() {
         image="https://tusitio.com/img/home-og-image.jpg"
       />
 
-      <BannerPortadas imagen={imgPortada} title="Vida institucional" />
+      <BannerPortadas imagen={imgPortada} titulo="Vida institucional" />
 
       <section className="vidaInstitucional container py-5">
 

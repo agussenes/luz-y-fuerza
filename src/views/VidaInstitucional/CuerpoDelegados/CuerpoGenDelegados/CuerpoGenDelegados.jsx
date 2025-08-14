@@ -10,7 +10,7 @@ import cuerpoImg from '../../../../assets/images/vidaInstitucional/CuerpoDelegad
 function CuerpoGenDelegados() {
   return (
     <>
-      <BannerPortadas imagen={portadaImg} title="Cuerpo General de Delegados" />
+      <BannerPortadas imagen={portadaImg} titulo="Cuerpo General de Delegados" />
 
       <section className="detalle-delegados-section py-5">
         <Container>

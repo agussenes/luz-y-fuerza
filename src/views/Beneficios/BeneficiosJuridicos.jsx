@@ -18,7 +18,7 @@ function BeneficiosJuridicos() {
                 url="http://localhost:5173/contacto"
                 image="https://tusitio.com/img/home-og-image.jpg"
             />
-            <BannerPortadas imagen={portadaImg} title="Beneficios Jurídicos y de Asesoramiento" />
+            <BannerPortadas imagen={portadaImg} titulo="Beneficios Jurídicos y de Asesoramiento" />
 
         </>
     )

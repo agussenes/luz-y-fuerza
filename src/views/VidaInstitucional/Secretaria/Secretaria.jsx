@@ -48,7 +48,7 @@ const secretariasData = [
 function Secretarias() {
   return (
     <>
-      <BannerPortadas imagen={imgPortada} title="Secretarías" />
+      <BannerPortadas imagen={imgPortada} titulo="Secretarías" />
 
       <section className="secretaria-seccion">
         <Container>

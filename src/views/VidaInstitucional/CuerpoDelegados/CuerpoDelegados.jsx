@@ -12,7 +12,7 @@ import './CuerpoDelegados.css';
 function CuerpoDelegados() {
   return (
     <>
-      <BannerPortadas imagen={imgPortada} title="Cuerpo General de Delegados" />
+      <BannerPortadas imagen={imgPortada} titulo="Cuerpo General de Delegados" />
 
       <section className="delegados-section py-5">
         <Container>

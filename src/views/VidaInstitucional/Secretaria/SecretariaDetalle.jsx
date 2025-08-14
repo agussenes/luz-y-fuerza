@@ -45,7 +45,7 @@ function SecretariaDetalle() {
 
   return (
     <>
-      <BannerPortadas imagen={imgPortada} title={data.titulo} />
+      <BannerPortadas imagen={imgPortada} titulo={data.titulo} />
       <Container className="py-5 secretaria-detalle-container">
         <p className="text-info fw-bold subtitulo">{data.subtitulo}</p>
         <h2 className="fw-bold mb-4 lineBorderTitle">{data.titulo}</h2>

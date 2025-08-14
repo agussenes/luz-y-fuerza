@@ -70,7 +70,7 @@ function NuestraLucha() {
         image="https://tusitio.com/img/home-og-image.jpg"
       />
 
-      <BannerPortadas imagen={portadaImg} title="Nuestra Lucha" />
+      <BannerPortadas imagen={portadaImg} titulo="Nuestra Lucha" />
 
       < BannerGif />
 
