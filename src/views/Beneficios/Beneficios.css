@@ -1,18 +1,18 @@
 /* -------- Vista Beneficios -------- */
 .benefit-card {
   border: 1px solid #0DCAF0;
-    border-radius: 8px;
-    background-color: #d2d2d288;
-    color: #030F27;
-    transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  background-color: #d2d2d288;
+  color: #030F27;
+  transition: all 0.3s ease-in-out;
 }
 
 .benefit-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,.08);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, .08);
 }
 
-.benefit-card .ratio { 
+.benefit-card .ratio {
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -24,17 +24,49 @@
 }
 
 .lista-ticks li::before {
-  content: "\f26e";                 /* check2-circle */
+  content: "\f26e";
+  /* check2-circle */
   font-family: "bootstrap-icons";
   position: absolute;
   left: 0;
   top: .15rem;
   font-size: 1rem;
-  color: #198754;                   /* success */
+  color: #198754;
+  /* success */
 }
 
-.lista-ticks .title { line-height: 1.2; }
-.lista-ticks .desc  { line-height: 1.25; }
+.lista-ticks .title {
+  line-height: 1.2;
+}
+
+.lista-ticks .desc {
+  line-height: 1.25;
+}
 
 /* Intro */
-.intro-strip { border-radius: .75rem; }
+.intro-strip {
+  border-radius: .75rem;
+}
+
+
+
+/* detalle ben eficiois  */
+
+.section-gap+.section-gap {
+  border-top: 1px solid #e9ecef;
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+}
+
+.card .list-unstyled li {
+  line-height: 1.35;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* imagen responsive con ratio si querés usar imágenes luego */
+.ratio img.object-fit-cover {
+  object-fit: cover;
+}
