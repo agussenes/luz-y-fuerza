@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';
 import SwiperBeneficios from '../../components/reutilizables/swiperBeneficios/SwiperBeneficios';
-import BannerGif from '../../components/reutilizables/bannerEpecNoEsAnonima/BannerGif';
+// import BannerGif from '../../components/reutilizables/bannerEpecNoEsAnonima/BannerGif';
 import './HomeModules.css';
 
 // import de imagenes 
@@ -77,13 +77,12 @@ function HomeModules() {
                                 <li> Turismo</li>
                                 <li> Comunicados oficiales</li>
                             </ul>
-                            <Link to="/vida-institucional" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Vida institucional</Link>
+                            <Link to="/vida-institucional" className="px-4 py-1 mt-3 estiloBoton">Vida institucional</Link>
                         </Col>
                     </Row>
                 </Container>
             </section>
 
-            <div className="dividor"></div>
             {/* Módulo beneficios */}
             <section className="modulo-40-40-40 bg-beneficios">
                 <Container className='pt-4'>
@@ -94,9 +93,10 @@ function HomeModules() {
                         </div>
 
                         <Col sm={12} md={6} lg={4} className='my-4'>
-                            <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Turísticos</h4>
 
                             <div className="card-beneficios shadow p-3">
+                                <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Turísticos</h4>
+
                                 <div className="text-center">
                                     <img src={imgB5} alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios" className='img-fluid rounded' />
                                 </div>
@@ -112,14 +112,15 @@ function HomeModules() {
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center mt-5">
-                                    <Link to="/beneficios-turisticos" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                                    <Link to="/beneficios-turisticos" className="estiloBoton px-4 mt-3 ">Ver más</Link>
                                 </div>
                             </div>
                         </Col>
                         <Col sm={12} md={6} lg={4} className='my-4'>
-                            <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Educativos</h4>
 
                             <div className="card-beneficios shadow p-3">
+                                <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Educativos</h4>
+
                                 <div className="text-center">
                                     <img src={imgBeneEdu} alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios" className='img-fluid rounded' />
 
@@ -140,16 +141,17 @@ function HomeModules() {
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center mt-5">
-                                    <Link to="/beneficios-educativos" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                                    <Link to="/beneficios-educativos" className="px-4 mt-3 estiloBoton">Ver más</Link>
 
                                 </div>
                             </div>
                         </Col>
                         <Col sm={12} md={6} lg={4} className='my-4'>
 
-                            <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Jurídicos y de Asesoramiento</h4>
-                            
+
                             <div className="card-beneficios shadow p-3">
+                                <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Jurídicos y de Asesoramiento</h4>
+
                                 <div className="d-flex text-center">
                                     <img src={imgBeneJudi} alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios" className='img-fluid rounded' />
 
@@ -166,7 +168,7 @@ function HomeModules() {
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center mt-4">
-                                    <Link to="/beneficios-juridicos-y-de-asesoramiento" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                                    <Link to="/beneficios-juridicos-y-de-asesoramiento" className="px-4 mt-3 estiloBoton">Ver más</Link>
                                 </div>
                             </div>
                         </Col>
@@ -192,7 +194,6 @@ function HomeModules() {
                 </Container>
             </section>
 
-            <div className="dividor"></div>
 
             {/* beneficios - actividades  */}
             <section className="modulo-50-50 bg-white">
@@ -210,7 +211,7 @@ function HomeModules() {
                                 <li> <strong>Arte marcial y disciplina:</strong> Karate para todas las edades.</li>
                                 <li> <strong>Encuentro y camaradería:</strong> Torneos y eventos deportivos.</li>
                             </ul>
-                            <Link to="/actividades" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver actividades</Link>
+                            <Link to="/actividades" className="py-1 px-4 mt-3 estiloBoton">Ver actividades</Link>
                         </Col>
 
 
@@ -223,7 +224,7 @@ function HomeModules() {
                 <Container>
                     <h2 className="mb-3">Electrum, el periódico de Luz y Fuerza</h2>
                     <p className="mb-4">Consultá las ediciones de Electrum Digital y descargarlas desde nuestra web</p>
-                    <a href="https://luzyfuerzacordobaelectrum.com.ar/electrum-digital/" className="btn btn-light fw-bold px-4 botonSecretarias">Ver Electrum</a>
+                    <a href="https://luzyfuerzacordobaelectrum.com.ar/electrum-digital/" className="px-4 mt-3 estiloBotonClaro py-1">Ver Electrum</a>
                 </Container>
             </section>
 
@@ -238,16 +239,16 @@ function HomeModules() {
                                 <hr />
                                 <h5 className="mt-3 lineBorderSubTitle">Convenio</h5>
                                 <p>Información útil para el nuevo afiliado y beneficios disponibles.</p>
-                                <Link to="/convenio-colectivo" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                                <Link to="/convenio-colectivo" className="px-4 mt-3 estiloBoton py-1">Ver más</Link>
                             </div>
                         </Col>
                         <Col sm={12} md={6} lg={4} className="mb-4">
                             <div className="card-beneficios h-100 shadow-sm text-center p-4">
                                 <i className="bi bi-building display-5  SizeIcon"></i>
                                 <hr />
-                                <h5 className="mt-3 lineBorderSubTitle">Epec</h5>
-                                <p>Conocé el trabajo y funciones de cada secretaría del sindicato.</p>
-                                <Link to="/defendamos-epec" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                                <h5 className="mt-3 lineBorderSubTitle">Epec no es anonima</h5>
+                                <p className='mb-4'>EPEC Estatal e Integrada</p>
+                                <Link to="/defendamos-epec" className="px-4 estiloBoton py-1">Ver más</Link>
                             </div>
                         </Col>
                         <Col sm={12} md={6} lg={4} className="mb-4">
@@ -256,7 +257,7 @@ function HomeModules() {
                                 <hr />
                                 <h5 className="mt-3 lineBorderSubTitle">Nuestra historia</h5>
                                 <p>Enterate de las principales acciones gremiales y sindicales.</p>
-                                <Link to="/nuestra-lucha" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ver más</Link>
+                                <Link to="/nuestra-lucha" className="px-4 mt-3 estiloBoton py-1">Ver más</Link>
                             </div>
                         </Col>
                     </Row>
@@ -264,7 +265,7 @@ function HomeModules() {
             </section>
 
             {/* banner epec no es anonima  */}
-            <BannerGif />
+            {/* <BannerGif /> */}
 
             {/* Módulo 4: 50/50 Lucha desde 1944 */}
             <section
@@ -287,7 +288,7 @@ function HomeModules() {
                                     <div className="d-inline-flex align-items-center gap-3 px-4 py-3 rounded shadow-sm bg-white bg-opacity-10 border border-info backdrop-blur">
                                         <i className="bi bi-hourglass-split text-info fs-2"></i>
                                         <span className="fs-1 fw-bold text-info">
-                                            <CountUp end={1944} duration={3} />
+                                            <CountUp end={1944} duration={3} separator=''/>
                                         </span>
                                     </div>
                                 </Link>
@@ -312,14 +313,14 @@ function HomeModules() {
                                     <div className="card-body">
                                         <h5 className="card-title"> {noticia.titulo}</h5>
                                         <p className="card-text"> {noticia.texto} </p>
-                                        <Link to={noticia.linkBoton} className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Ir a la noticia</Link>
+                                        <Link to={noticia.linkBoton} className="px-4 mt-3 estiloBoton py-1">Ir a la noticia</Link>
                                     </div>
                                 </div>
                             </Col>
                         ))}
                     </Row>
                     <div className="text-center mt-4">
-                        <Link to="https://luzyfuerzacordobaelectrum.com.ar/category/noticias/" className="btn btn-info text-white fw-bold px-4 mt-3 botonSecretarias">Todas las noticias</Link>
+                        <Link to="https://luzyfuerzacordobaelectrum.com.ar/category/noticias/" className="px-4 mt-3 estiloBoton py-1">Todas las noticias</Link>
                     </div>
                 </Container>
             </section>

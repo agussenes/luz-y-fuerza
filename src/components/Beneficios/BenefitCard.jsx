@@ -4,13 +4,14 @@ export default function BenefitCard({ title, icon, image, bullets = [], link }) 
     return (
         <>
             {/* Encabezado */}
-            <div className="benefit-header">
-                <h5 className="fw-bold text-center bg-dark text-white rounded py-2 mb-3">
-                    <i className={`bi ${icon} me-2`} aria-hidden="true"></i>
-                    {title}
-                </h5>
-            </div>
+
             <div className="benefit-card p-3  shadow-sm ">
+                <div className="benefit-header">
+                    <h5 className="fw-bold text-center bg-dark text-white rounded py-2 mb-3">
+                        <i className={`bi ${icon} me-2`} aria-hidden="true"></i>
+                        {title}
+                    </h5>
+                </div>
                 {/* Imagen responsive (ratio 16:9) */}
                 <div className="ratio ratio-16x9 ">
                     <img src={image} alt={title} className="w-100  object-fit-cover rounded" />
@@ -31,7 +32,7 @@ export default function BenefitCard({ title, icon, image, bullets = [], link }) 
 
                     {/* CTA siempre abajo */}
                     <div className="mt-auto d-flex justify-content-center">
-                        <Link to={link} className="btn btn-info text-white fw-bold px-4">
+                        <Link to={link} className="py-1 mt-3 px-4 estiloBoton">
                             Ver más
                         </Link>
                     </div>

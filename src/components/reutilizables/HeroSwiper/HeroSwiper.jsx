@@ -21,12 +21,14 @@ function HeroSwiper({ slides }) {
                     <SwiperSlide key={i}>
                         <div className="hero-slide text-white text-center d-flex align-items-center justify-content-center" style={{ backgroundImage: `url(${item.img})` }}>
                             <div className="hero-slide-overlay">
-                                <h1 className="hero-slide-title">{item.titulo}</h1>
-                                <p className="hero-slide-text">{item.bajada}</p>
-                                <div className='contenedorBotonHeroSwipper'>
-                                    <Link to={item.link} className="btn btn-outline-light mt-3 botonHeroSwiper">
-                                        {item.boton} <i className="bi bi-arrow-right-short"></i>
-                                    </Link>
+                                <div className="container">
+                                    <h1 className="hero-slide-title">{item.titulo}</h1>
+                                    <p className="hero-slide-text">{item.bajada}</p>
+                                    <div className='contenedorBotonHeroSwipper'>
+                                        <Link to={item.link} className="px-4 mt-3 estiloBotonClaro py-1">
+                                            {item.boton} <i className="bi bi-arrow-right-short"></i>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

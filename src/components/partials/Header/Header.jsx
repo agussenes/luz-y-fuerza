@@ -12,7 +12,7 @@ function Header() {
   useEffect(() => {
     const navbarCollapse = document.getElementById('navbarContenido');
     if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-      navbarCollapse.classList.remove('show'); 
+      navbarCollapse.classList.remove('show');
       navbarCollapse.classList.add('collapsing');
       setTimeout(() => {
         navbarCollapse.classList.remove('collapsing');
@@ -60,12 +60,35 @@ function Header() {
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
                   <li><Link className="dropdown-item" to="/quienes-somos">Quienes somos</Link></li>
-                  <li><Link className="dropdown-item" to="/vida-institucional">Vida institucional</Link></li>
+
                   <li><Link className="dropdown-item" to="/historia">Historia</Link></li>
-                  <li><Link className="dropdown-item" to="/nuestra-lucha">Nuestra lucha</Link></li>                
-                  
+                  <li><Link className="dropdown-item" to="/nuestra-lucha">Nuestra lucha</Link></li>
+
                 </ul>
               </li>
+
+              {/* Dropdown */}
+              <li className="nav-item dropdown">
+                <button
+                  className="nav-link dropdown-toggle btn btn-link"
+                  id="dropdownMenuVI"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  type="button"
+                >
+                  Vida institucional
+                </button>
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuVI">
+                  <li><Link className="dropdown-item" to="/vida-institucional">Institucional</Link></li>
+                  <li><Link className="dropdown-item" to="/cuerpo-general-delegados">Cuerpo General de Delegados</Link></li>
+                  <li><Link className="dropdown-item" to="/asamblea-general">Asamblea General Ordinaria</Link></li>
+                  <li><Link className="dropdown-item" to="/secretarias">Secretarías</Link></li>
+
+                </ul>
+              </li>
+
+
 
               {/* Enlaces normales */}
               <li className="nav-item dropdown">
@@ -80,13 +103,13 @@ function Header() {
                   Afiliados
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
-                  <li><Link className="dropdown-item" to="/beneficios">Beneficios</Link></li>                
-                  <li><Link className="dropdown-item" to="/actividades">Actividades</Link></li>                
+                  <li><Link className="dropdown-item" to="/beneficios">Beneficios</Link></li>
+                  <li><Link className="dropdown-item" to="/actividades">Actividades</Link></li>
                   <li><Link className="dropdown-item" to="/convenio-colectivo">Convenio colectivo</Link></li>
-                  
+
                 </ul>
               </li>
-              
+
               <li className="nav-item">
                 <Link className="nav-link" to="https://luzyfuerzacordobaelectrum.com.ar/category/noticias/">Novedades</Link>
               </li>

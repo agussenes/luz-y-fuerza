@@ -49,33 +49,7 @@ textarea:focus {
     border-color: var(--color-celeste);
 }
 
-button[type="submit"] {
-    width: 100%;
-    padding: 0.2rem;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: var(--color-celeste) !important;
-    color: var(--color-primary) !important;
-    border: 1px solid var(--color-celeste) !important;
-    transition: all 0.3s ease-in-out !important;
-    font-weight: bold !important;
-    
-}
 
-button[disabled] {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
-button:hover:not([disabled]) {
-    transform: scale(1.03) !important;
-    border-color: var(--color-celeste) !important;
-    background-color: transparent !important;
-    color: var(--color-celeste) !important;
-
-}
 
 .error {
     color: #d32f2f;

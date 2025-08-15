@@ -32,14 +32,13 @@
     font-size: 3.5rem;
     font-weight: bold;
     text-align: left;
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .hero-slide-text {
     font-size: 1.2rem;
     text-align: left;
-    max-width: 51%;
-
+    max-width: 60%;
 
 }
 
@@ -77,6 +76,19 @@
     font-size: 1.2rem !important;
 }
 
+@media (max-width: 991px) {
+    .hero-slide-title {
+        text-align: left;
+        max-width: 90%;
+    }
+
+    .hero-slide-text {
+        text-align: left;
+        max-width: 90%;
+
+    }
+}
+
 
 @media (max-width: 768px) {
 
@@ -107,7 +119,7 @@
         max-width: 100%;
     }
 
-    .contenedorBotonHeroSwipper{
+    .contenedorBotonHeroSwipper {
         display: flex;
         justify-content: center;
     }

@@ -106,9 +106,11 @@ export default function ContactForm({ fields = defaultFields, onSubmit, endpoint
         );
       })}
 
-      <button type="submit" disabled={isSubmitting}>
-        {isSubmitting ? 'Enviando...' : 'Enviar'}
-      </button>
+      <div className="d-flex justify-content-center">
+        <button type="submit" disabled={isSubmitting} className='estiloBoton px-3 py-1'>
+          {isSubmitting ? 'Enviando...' : 'Enviar'}
+        </button>
+      </div>
 
       {successMessage && <p className="status-message">{successMessage}</p>}
     </form>

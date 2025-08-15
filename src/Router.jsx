@@ -51,8 +51,6 @@ function Router() {
           <Route path="/beneficios-juridicos-y-de-asesoramiento" element={<BeneficiosJuridicos />} />
           <Route path="/actividades" element={<Actividades />} />
 
-
-
           <Route path="*" element={<NotFound />} />
 
         </Routes>

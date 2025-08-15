@@ -3,21 +3,20 @@
     background-color: #fff;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    text-align: center;
+
 }
 
 .asamblea-subtitulo {
     font-size: 0.9rem;
     text-transform: uppercase;
     color: var(--color-celeste);
+    margin-bottom: 0;
 }
 
 
 .asamblea-texto {
     font-size: 1.1rem;
     color: #333;
-    max-width: 700px;
-    margin: 0 auto 2rem auto;
 }
 
 /* Swiper personalizado */

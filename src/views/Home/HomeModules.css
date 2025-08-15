@@ -110,6 +110,7 @@
 
 /* Noticias recientes */
 
-.module-noticias .card img {
-    border-radius: 8px 8px 0 0;
+.modulo-noticias .card img {
+    height: 250px !important;
+    object-fit: cover;
 }
