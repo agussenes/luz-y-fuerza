@@ -24,6 +24,10 @@ import BeneficiosJuridicos from './views/Beneficios/BeneficiosJuridicos';
 import Actividades from './views/Actividades/Actividades';
 import NotFound from './views/NotFound/NotFound';
 
+// propuestas home 
+
+import HomeFrist from './views/Home/propuestas/HomeFrist';
+import HomeSecund from './views/Home/propuestas/HomeSecund';
 
 function Router() {
   return (
@@ -50,6 +54,11 @@ function Router() {
           <Route path="/beneficios-educativos" element={<BeneficiosEducativos />} />
           <Route path="/beneficios-juridicos-y-de-asesoramiento" element={<BeneficiosJuridicos />} />
           <Route path="/actividades" element={<Actividades />} />
+
+          {/* propuestas home  */}
+          <Route path="/home-1" element={<HomeFrist />} />
+          <Route path="/home-2" element={<HomeSecund />} />
+
 
           <Route path="*" element={<NotFound />} />
 

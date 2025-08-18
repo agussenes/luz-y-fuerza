@@ -24,8 +24,6 @@ import imgB5 from '../../assets/images/home/swipperBeneficios/imgB5.jpeg';
 import imgB6 from '../../assets/images/home/swipperBeneficios/imgB6.jpg';
 import imgB7 from '../../assets/images/home/swipperBeneficios/imgB6.jpg';
 
-
-
 // img de banner beneficio 
 
 import imgBeneEdu from '../../assets/images/beneficios/imgCardBeneficioEducacion.webp'
