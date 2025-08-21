@@ -224,7 +224,8 @@ body {
   border-color: var(--color-primary) !important;
   transition: all 0.3s ease-in-out !important;
   font-weight: bold !important;
-  border-radius: 8px 0px 8px 0px !important;
+  border-radius:  0px !important;
+  /* border-radius: 8px 0px 8px 0px !important; */
   border: 1px solid !important;
   padding: 2px 5px;
 }
@@ -245,7 +246,8 @@ body {
   border-color: #f1f1f1 !important;
   transition: all 0.3s ease-in-out !important;
   font-weight: bold !important;
-  border-radius: 8px 0px 8px 0px !important;
+  border-radius: 0px !important;
+  /* border-radius: 8px 0px 8px 0px !important; */
   border: 1px solid !important;
   padding: 2px 5px;
 }
