@@ -10,6 +10,7 @@ import ActividadesBannersSW from '../../../components/Home/propuestas/Actividade
 import OrganizacionSection from '../../../components/Home/OrganizacionSection';
 import LuchaSection from '../../../components/Home/LuchaSection';
 import NoticiasSection from '../../../components/Home/NoticiasSection';
+import BannerElectrum from '../../../components/reutilizables/bannerElectrum/BannerElectrum';
 
 // import imagenes 
 import imgPortada1 from '../../../assets/images/home/swiperHeroHome/imgSliderHome1.jpg';
@@ -37,6 +38,7 @@ function HomeSecund() {
       < ActividadesBannersSW />
       <OrganizacionSection />
       <LuchaSection />
+      <BannerElectrum />
       < NoticiasSection />
     </>
   )
