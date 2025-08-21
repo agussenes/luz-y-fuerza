@@ -115,7 +115,7 @@ export default function BeneficiosTurismo() {
             <div className="col-md-5">
               <div className="card h-100 shadow-sm">
                 <div className="card-body">
-                  <h6 className="fw-semibold">Notas</h6>
+                  <h6 className="fw-semibold">Más informacion</h6>
                   <ul className="list-unstyled mb-0">
                     {guiñazu.notas.map((n, i) => (
                       <li key={i} className="mb-2">

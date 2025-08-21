@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 // imagenes 
 import fondoLucha from '../../assets/images/home/bgCounter2.webp';
-import imgCounter from '../../assets/images/home/img-counter.jpg';
+// import imgCounter from '../../assets/images/home/img-counter.jpg';
 
 function LuchaSection() {
     return (
@@ -29,17 +29,21 @@ function LuchaSection() {
                                 <p className="text-info fw-bold mb-2">LUZ Y FUERZA CÓRDOBA</p>
                                 <h2 className="mb-4 display-4">Defendiendo un Sindicato participativo y plural en permanente transformación.</h2>
 
-                                <Link to="/nuestra-lucha" className="counter-box text-decoration-none">
-                                    <div className="d-inline-flex align-items-center gap-3 px-4 py-3 rounded shadow-sm bg-white bg-opacity-10 border border-info backdrop-blur">
-                                        <i className="bi bi-hourglass-split text-info fs-2"></i>
-                                        <span className="fs-1 fw-bold text-info">
-                                            <CountUp end={1944} duration={3} separator='' />
-                                        </span>
-                                    </div>
-                                </Link>
+
                             </Col>
                             <Col md={4} className='d-flex justify-content-center'>
-                                <img src={imgCounter} alt="Historia de lucha" className=" my-4 rounded shadow" loading='lazy' height={400} />
+                                <div className="d-flex flex-column">
+                                    <h3 className='fw-bold'>Luchando desde</h3>
+                                    <Link to="/nuestra-lucha" className="counter-box text-decoration-none">
+
+                                        <div className="d-inline-flex align-items-center gap-3 px-4 py-3 rounded shadow-sm bg-white bg-opacity-10 border border-info backdrop-blur">
+                                            <i className="bi bi-hourglass-split text-info fs-2"></i>
+                                            <span className="fs-1 fw-bold text-info">
+                                                <CountUp end={1944} duration={3} separator='' />
+                                            </span>
+                                        </div>
+                                    </Link>
+                                </div>
                             </Col>
                         </Row>
                     </Container>

@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 import imgBeneEdu from '../../assets/images/beneficios/imgCardBeneficioEducacion.webp'
 import imgBeneJudi from '../../assets/images/beneficios/cardJudicialBene.webp'
 import imgTuristico from '../../assets/images/home/swipperBeneficios/imgB5.jpeg';
-
+import imgObraSocial from '../../assets/images/beneficios/foto-edificio.jpg'
 
 function BeneficiosSection() {
     return (
@@ -16,11 +16,11 @@ function BeneficiosSection() {
                 <Container className='pt-4'>
                     <Row className="d-flex justify-content-center mt-4">
                         <div className="d-flex justify-content-center">
-                            <h2 className="lineBorderTitle ">Beneficios</h2>
+                            <h2 className="lineBorderTitle ">Propuestas de servicios</h2>
 
                         </div>
 
-                        <Col sm={12} md={6} lg={4} className='my-4'>
+                        <Col sm={12} md={6} lg={3} className='my-4'>
 
                             <div className="card-beneficios shadow p-3">
                                 <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Turísticos</h4>
@@ -44,7 +44,7 @@ function BeneficiosSection() {
                                 </div>
                             </div>
                         </Col>
-                        <Col sm={12} md={6} lg={4} className='my-4'>
+                        <Col sm={12} md={6} lg={3} className='my-4'>
 
                             <div className="card-beneficios shadow p-3">
                                 <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Educativos</h4>
@@ -74,11 +74,11 @@ function BeneficiosSection() {
                                 </div>
                             </div>
                         </Col>
-                        <Col sm={12} md={6} lg={4} className='my-4'>
+                        <Col sm={12} md={6} lg={3} className='my-4'>
 
 
                             <div className="card-beneficios shadow p-3">
-                                <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Jurídicos y de Asesoramiento</h4>
+                                <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Asesoramiento</h4>
 
                                 <div className="d-flex text-center">
                                     <img src={imgBeneJudi} alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios" className='img-fluid rounded' />
@@ -97,6 +97,33 @@ function BeneficiosSection() {
                                 </ul>
                                 <div className="d-flex justify-content-center mt-4">
                                     <Link to="/beneficios-juridicos-y-de-asesoramiento" className="px-4 mt-3 estiloBoton">Ver más</Link>
+                                </div>
+                            </div>
+                        </Col>
+
+                        <Col sm={12} md={6} lg={3} className='my-4'>
+
+
+                            <div className="card-beneficios shadow p-3">
+                                <h4 className="fw-bold text-center border bg-azul-osucro text-light rounded mb-3">Obra social</h4>
+
+                                <div className="d-flex text-center">
+                                    <img src={imgObraSocial} alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios" className='img-fluid rounded' />
+
+                                </div>
+                                <hr />
+                                <ul className="lista-ticks">
+                                    <li>
+                                        <span className="title">aca va un subtitulo</span>
+                                        <span className="desc">aca va un texto sobre la oibra social</span>
+                                    </li>
+                                    <li>
+                                        <span className="title">aca va otro un subtitulo</span>
+                                        <span className="desc">mas texto informativo</span>
+                                    </li>
+                                </ul>
+                                <div className="d-flex justify-content-center mt-4">
+                                    <Link to="https://osplyfc.com.ar/" className="px-4 mt-3 estiloBoton">Ver más</Link>
                                 </div>
                             </div>
                         </Col>
