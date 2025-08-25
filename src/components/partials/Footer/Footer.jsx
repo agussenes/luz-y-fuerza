@@ -54,7 +54,7 @@ function Footer() {
             <h5 className="fw-bold">Obra Social del Personal</h5>
             <ul className="list-unstyled text-light small">
               <li>
-                <Link to="/obra-social" className="text-info text-decoration-none">&gt; Luz y Fuerza Cba Salud</Link>
+                <Link to="https://osplyfc.com.ar/" className="text-info text-decoration-none">&gt; Luz y Fuerza Cba Salud</Link>
               </li>
             </ul>
           </div>

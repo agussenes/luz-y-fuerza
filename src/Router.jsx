@@ -34,7 +34,7 @@ function Router() {
     <>
       
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} /> */}
           <Route path="/historia" element={<Historia />} />
           <Route path="/quienes-somos" element={<QuienesSomos />} />
           <Route path="/convenio-colectivo" element={<ConvenioColectivo />} />
@@ -56,6 +56,7 @@ function Router() {
           <Route path="/actividades" element={<Actividades />} />
 
           {/* propuestas home  */}
+          <Route path="/" element={<Home />} />
           <Route path="/home-1" element={<HomeFrist />} />
           <Route path="/home-2" element={<HomeSecund />} />
 

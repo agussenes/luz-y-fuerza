@@ -8,6 +8,7 @@ import './Header.css';
 function Header() {
 
   const location = useLocation();
+  const path = location.pathname;
 
   useEffect(() => {
     const navbarCollapse = document.getElementById('navbarContenido');
@@ -35,6 +36,25 @@ function Header() {
           <Link className="navbar-brand" to="/">
             <img src="/luz-y-fuerza/img/identidad/Logo-White.webp" alt="Logo sindicato de luz y fuerza" height="50" loading="lazy" />
           </Link>
+          {path === '/home-1' && (
+            <>
+              <div className="text-light gap-2 d-flex ">
+                <h5 className='mt-2'>Esto es el home 1 | </h5>
+                <Link className='estiloBotonClaro mt-1 mb-1' to={'/home-2'}>ir al home 2</Link>
+              </div>
+            </>
+
+          )}
+          {/* {path ===} */}
+          {path === '/home-2' && (
+            <>
+              <div className="text-light gap-2 d-flex ">
+                <h5 className='mt-2'>Esto es el home 2 | </h5>
+                <Link className='estiloBotonClaro mt-1 mb-1' to={'/home-1'}>ir al home 1</Link>
+              </div>
+            </>
+
+          )}
 
           {/* Botón hamburguesa mobile */}
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido"

@@ -1,16 +1,18 @@
 import React from 'react'
-import HeroSwiper from '../../../components/reutilizables/HeroSwiper/HeroSwiper';
+import HeroSwiperH1 from '../../../components/Home/home1/hero/HeroSwiperH1';
 
 // components 
-import IntroSection from '../../../components/Home/IntroSection';
-import BeneficiosSection from '../../../components/Home/BeneficiosSection';
+import IntroSectionH1 from '../../../components/Home/home1/IntroSectionH1';
+import PropuestasServicios from '../../../components/Home/home1/PropuestasServicios';
+import OrganizacionSectionH1 from '../../../components/Home/home1/OrganizacionSectionH1';
+import LuchaSectionH1 from '../../../components/Home/home1/LuchaSectionH1';
+
+
 import ActividadesSection from '../../../components/Home/ActividadesSection';
-import OrganizacionSection from '../../../components/Home/OrganizacionSection';
-import LuchaSection from '../../../components/Home/LuchaSection';
-import NoticiasSection from '../../../components/Home/NoticiasSection';
+import BannerElectrum from '../../../components/reutilizables/bannerElectrum/BannerElectrum';
 
 // import imagenes 
-import imgPortada1 from '../../../assets/images/home/swiperHeroHome/imgSliderHome1.jpg';
+import imgPortada1 from '../../..//assets/images/home/swiperHeroHome/imgSliderHome1.jpg';
 import imgPortada2 from '../../../assets/images/home/swiperHeroHome/imgSliderHome2.jpg';
 import imgPortada3 from '../../../assets/images/home/swiperHeroHome/imgSliderHome3.jpg';
 import imgPortada4 from '../../../assets/images/home/swiperHeroHome/imgSliderHome4.webp';
@@ -29,13 +31,15 @@ function HomeFrist() {
 
     return (
         <>
-            <HeroSwiper slides={slides} />;
-            <IntroSection />
-            <BeneficiosSection />
-            < ActividadesSection />
-            <OrganizacionSection />
-            <LuchaSection />
-            < NoticiasSection />
+            <HeroSwiperH1 slides={slides} />;
+            <IntroSectionH1 />
+            <PropuestasServicios />
+            <ActividadesSection />
+            <OrganizacionSectionH1 />
+            <LuchaSectionH1 />
+
+
+            <BannerElectrum />
         </>
     )
 }

@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 // import de imagenes 
-import presentacion from '../../assets/images/home/presentacion.jpg';
+import presentacion from '../../../assets/images/home/presentacion.jpg';
 
 
 export default function IntroSection() {
