@@ -121,8 +121,9 @@ body {
 
 /* stilo globales para titulos  */
 
-.lineBorderTitle{
-  display: inline-block;  /* Solo ocupa lo que necesita */
+.lineBorderTitle {
+  display: inline-block;
+  /* Solo ocupa lo que necesita */
   position: relative;
   margin-bottom: 1.5rem;
   font-weight: bold;
@@ -132,34 +133,37 @@ body {
 .lineBorderTitle::after {
   content: '';
   position: absolute;
-  bottom: -8px; 
+  bottom: -8px;
   left: 0;
-  width: 70px; 
-  height: 5px; 
-  background-color: var(--color-celeste); 
-  
+  width: 70px;
+  height: 5px;
+  background-color: var(--color-celeste);
+
 }
 
-.lineBorderTitle2{
+.lineBorderTitle2 {
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: bold;
-  font-size: 2.5rem;
-  border-bottom: 5px solid var(--color-celeste);
+  font-size: 2.3rem;
+  width: max-content !important;
+  text-transform: uppercase;
+  border-bottom: 1px solid #030F27;
 }
 
-.lineBorderSubTitle{
-  display: inline-block;  /* Solo ocupa lo que necesita */
+.lineBorderSubTitle {
+  display: inline-block;
+  /* Solo ocupa lo que necesita */
   position: relative;
   font-weight: 600;
   font-size: 1.5rem;
 }
 
 .subtitulo {
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.9rem;
-    color: var(--color-celeste);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  color: var(--color-celeste);
 }
 
 /* @media (max-width:468px) {
@@ -194,37 +198,37 @@ body {
 
 /* sombra pra iamgenes  */
 
-.imgShadow{
-  box-shadow: -15px -15px 0px var(--color-celeste) ;
+.imgShadow {
+  box-shadow: -15px -15px 0px var(--color-celeste);
 }
 
-.imgShadow2{
-  box-shadow: 15px 15px 0px var(--color-celeste) ;
+.imgShadow2 {
+  box-shadow: 15px 15px 0px var(--color-celeste);
 }
 
 
 /* max widht para texto  */
 
-.tamaño{
+.tamaño {
   max-width: 900px;
 }
 
 
 /* cursor pointer */
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
 
 /* estilo para botones  */
 
-.estiloBoton{
+.estiloBoton {
   background-color: var(--color-primary) !important;
   color: #f1f1f1;
   border-color: var(--color-primary) !important;
   transition: all 0.3s ease-in-out !important;
   font-weight: bold !important;
-  border-radius:  0px !important;
+  border-radius: 0px !important;
   /* border-radius: 8px 0px 8px 0px !important; */
   border: 1px solid !important;
   padding: 2px 5px;
@@ -240,9 +244,9 @@ body {
 
 
 /* boton claro  */
-.estiloBotonClaro{
+.estiloBotonClaro {
   background-color: #f1f1f1 !important;
-  color:  var(--color-primary);
+  color: var(--color-primary);
   border-color: #f1f1f1 !important;
   transition: all 0.3s ease-in-out !important;
   font-weight: bold !important;
@@ -261,13 +265,58 @@ body {
 }
 
 
-/* hr global  */
+/* botones version 2  */
 
-.dividor{
-border: 6px dashed #030F27 !important;
-margin-top: 4rem !important;
+.estiloBotonH2 {
+  background-color: var(--color-primary) !important;
+  color: #f1f1f1;
+  border-color: var(--color-primary) !important;
+  transition: all 0.3s ease-in-out !important;
+  font-weight: bold !important;
+  border-radius: 8px 8px 8px 0px !important;
+  /* border-radius: 8px 0px 8px 0px !important; */
+  border: 1px solid !important;
+  padding: 2px 5px;
 }
 
-.bg-azul-osucro{
-background-color: #030F27 ;
+.estiloBotonH2:hover {
+  transform: scale(1.03) !important;
+  /* border-color: var(--color-secondary) !important; */
+  background-color: transparent !important;
+  color: var(--color-primary) !important;
+
+}
+
+
+/* boton claro  */
+.estiloBotonClaroH2 {
+  background-color: #f1f1f1 !important;
+  color: var(--color-primary);
+  border-color: #f1f1f1 !important;
+  transition: all 0.3s ease-in-out !important;
+  font-weight: bold !important;
+  border-radius: 8px 8px 8px 0px !important;
+
+  /* border-radius: 8px 0px 8px 0px !important; */
+  border: 1px solid !important;
+  padding: 2px 5px;
+}
+
+.estiloBotonClaroH2:hover {
+  transform: scale(1.03) !important;
+  /* border-color: var(--color-secondary) !important; */
+  background-color: transparent !important;
+  color: #f1f1f1 !important;
+
+}
+
+/* hr global  */
+
+.dividor {
+  border: 6px dashed #030F27 !important;
+  margin-top: 4rem !important;
+}
+
+.bg-azul-osucro {
+  background-color: #030F27;
 }

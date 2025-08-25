@@ -1,16 +1,15 @@
 
 
 import React from 'react'
-import HeroSwiper from '../../../components/reutilizables/HeroSwiper/HeroSwiper';
+import HeroSwiperH2 from '../../../components/Home/home2/hero/HeroSwiperH2';
 
 // components 
-import IntroSection from '../../../components/Home/IntroSection';
-import BeneficiosSection from '../../../components/Home/BeneficiosSection';
+import IntroSectionH2 from '../../../components/Home/home2/IntroSectionH2';
+import BeneficiosSectionH2 from '../../../components/Home/home2/BeneficiosSectionH2';
 import ActividadesBannersSW from '../../../components/Home/propuestas/ActividadesBannersSW';
-import OrganizacionSection from '../../../components/Home/OrganizacionSection';
-import LuchaSection from '../../../components/Home/LuchaSection';
-import NoticiasSection from '../../../components/Home/NoticiasSection';
-import BannerElectrum from '../../../components/reutilizables/bannerElectrum/BannerElectrum';
+import OrganizacionSectionH2 from '../../../components/Home/home2/OrganizacionSectionH2';
+import LuchaSectionH2 from '../../../components/Home/home2/LuchaSectionH2';
+import BannerElectrumh2 from '../../../components/Home/home2/bannerElectrum/BannerElectrumh2';
 
 // import imagenes 
 import imgPortada1 from '../../../assets/images/home/swiperHeroHome/imgSliderHome1.jpg';
@@ -32,14 +31,13 @@ function HomeSecund() {
 
   return (
     <>
-      <HeroSwiper slides={slides} />;
-      <IntroSection />
-      <BeneficiosSection />
+      <HeroSwiperH2 slides={slides} />;
+      <IntroSectionH2 />
+      <BeneficiosSectionH2 />
       < ActividadesBannersSW />
-      <OrganizacionSection />
-      <LuchaSection />
-      <BannerElectrum />
-      < NoticiasSection />
+      <OrganizacionSectionH2 />
+      <LuchaSectionH2 />
+      <BannerElectrumh2 />
     </>
   )
 }

@@ -61,7 +61,7 @@ export default function ActividadesBannersSW() {
 
         {/* Botón debajo del slider */}
         <div className="text-center mt-3">
-          <Link to="/actividades" className="py-1 px-4 estiloBoton">
+          <Link to="/actividades" className="py-1 px-4 estiloBotonH2">
             Ver actividades
           </Link>
         </div>
