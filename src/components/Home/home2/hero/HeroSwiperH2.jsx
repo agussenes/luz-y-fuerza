@@ -18,7 +18,7 @@ function HeroSwiper({ slides }) {
                 pagination={{ clickable: true }}
             >
                 {slides.map((item, i) => (
-                    <SwiperSlide key={i}>
+                    <SwiperSlide key={i} className='HeroContainerG'>
                         <div className="hero-slide-h2 text-white text-center d-flex align-items-center justify-content-center" style={{ backgroundImage: `url(${item.img})` }}>
                             <div className="hero-slide-overlay">
                                 <div className="container">

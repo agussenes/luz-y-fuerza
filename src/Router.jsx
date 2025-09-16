@@ -12,7 +12,6 @@ import VidaInstitucional from './views/VidaInstitucional/VidaInstitucional';
 import AsambleaGeneral from './views/VidaInstitucional/AsambleaGeneral/AsambleaGeneral';
 import Secretarias from './views/VidaInstitucional/Secretaria/Secretaria';
 import SecretariaDetalle from './views/VidaInstitucional/Secretaria/SecretariaDetalle';
-import CuerpoDelegados from './views/VidaInstitucional/CuerpoDelegados/CuerpoDelegados';
 import CuerpoGenDelegados from './views/VidaInstitucional/CuerpoDelegados/CuerpoGenDelegados/CuerpoGenDelegados';
 import DelegadosDelegadas from './views/VidaInstitucional/CuerpoDelegados/DelegadosDelegadas/DelegadosDelegadas';
 import DefendamosEpec from './views/NuestraLucha/defendamosEpec/DefendamosEpec';
@@ -23,11 +22,10 @@ import BeneficiosTurismo from './views/Beneficios/BeneficiosTurismo';
 import BeneficiosJuridicos from './views/Beneficios/BeneficiosJuridicos';
 import Actividades from './views/Actividades/Actividades';
 import NotFound from './views/NotFound/NotFound';
-
+import CuerposOrganicos from './views/VidaInstitucional/CuerposOrganicos/CuerposOrganicos';
 // propuestas home 
 
-import HomeFrist from './views/Home/propuestas/HomeFrist';
-import HomeSecund from './views/Home/propuestas/HomeSecund';
+
 
 function Router() {
   return (
@@ -41,24 +39,23 @@ function Router() {
           <Route path="/novedades" element={<Novedades />} />
           <Route path="/nuestra-lucha" element={<NuestraLucha />} />
           <Route path="/defendamos-epec" element={<DefendamosEpec />} />
-          <Route path="/vida-institucional" element={<VidaInstitucional />} />
+          <Route path="/autoridades" element={<VidaInstitucional />} />
           <Route path='/asamblea-general' element={<AsambleaGeneral />} />
           <Route path='/secretarias' element={<Secretarias />} />
           <Route path='/secretarias/:id' element={<SecretariaDetalle />} />
-          <Route path="/cuerpo-general-delegados" element={<CuerpoDelegados />} />
+          <Route path="/cuerpos-organicos" element={<CuerposOrganicos />} />
           <Route path="/delegados-generales" element={<CuerpoGenDelegados />} />
           <Route path="/delegados-delegadas" element={<DelegadosDelegadas />} />
           <Route path="/contacto" element={<Contacto />} />
-          <Route path="/beneficios" element={<Beneficios />} />
-          <Route path="/beneficios-turisticos" element={<BeneficiosTurismo />} />
-          <Route path="/beneficios-educativos" element={<BeneficiosEducativos />} />
-          <Route path="/beneficios-juridicos-y-de-asesoramiento" element={<BeneficiosJuridicos />} />
+          <Route path="/propuestas-de-servicios" element={<Beneficios />} />
+          <Route path="/propuestas-de-servicios-turisticos" element={<BeneficiosTurismo />} />
+          <Route path="/propuestas-de-servicios-educativos" element={<BeneficiosEducativos />} />
+          <Route path="/propuestas-de-servicios-juridicos-y-de-asesoramiento" element={<BeneficiosJuridicos />} />
           <Route path="/actividades" element={<Actividades />} />
 
           {/* propuestas home  */}
           <Route path="/" element={<Home />} />
-          <Route path="/home-1" element={<HomeFrist />} />
-          <Route path="/home-2" element={<HomeSecund />} />
+        
 
 
           <Route path="*" element={<NotFound />} />

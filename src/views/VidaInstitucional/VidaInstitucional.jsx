@@ -179,7 +179,7 @@ function VidaInstitucional() {
                     src={item.img}
                     alt={item.alt}
                     className="img-fluid mb-2"
-                    style={{ maxHeight: '200px' }}
+                    style={{ maxHeight: '100px', objectFit: "contain", borderRadius:'20%' }}
                   />
                   <h6 className="fw-bold">{item.titulo}</h6>
                   <p className="small text-muted">{item.texto}</p>
@@ -189,7 +189,7 @@ function VidaInstitucional() {
 
             
             {/* Flechas personalizadas */}
-            <div className='d-flex justify-content-center align-items-center gap-4 my-2'>
+            <div className='d-flex justify-content-center border-top pt-4 align-items-center gap-4 my-2'>
               
               <div className="swiper-button-prev-custom btn btn-outline-primary"><i className="bi bi-chevron-left"></i></div>
               <div className="swiper-button-next-custom btn btn-outline-primary"><i className="bi bi-chevron-right"></i></div>

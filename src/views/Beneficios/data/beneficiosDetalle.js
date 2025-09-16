@@ -1,6 +1,6 @@
 export const turismo = {
   hero: {
-    titulo: "Beneficios Turísticos",
+    titulo: "Servicios Turísticos",
     bajada:
       "Complejos en Mina Clavero y Cosquín, con estadías en hoteles, camping y temporada de pileta para toda la familia.",
     icon: "bi-geo-alt-fill",
@@ -63,7 +63,7 @@ export const turismo = {
 
 export const educativos = {
   hero: {
-    titulo: "Beneficios Educativos",
+    titulo: "Servicios Educativos",
     bajada:
       "Centro de Actividades para jubilados/as, becas para hijos/as de afiliados y entrega de útiles escolares.",
     icon: "bi-mortarboard",
@@ -104,7 +104,54 @@ export const educativos = {
 
 export const juridicos = {
   hero: {
-    titulo: "Beneficios Jurídicos y de Asesoramiento",
+    titulo: "Servicios Jurídicos y de Asesoramiento",
+    bajada:
+      "Atención para trámites jubilatorios, consultas previsionales y legales, continuidad de afiliación y asistencia en vivienda.",
+    icon: "bi-journal-text",
+  },
+  previsional: {
+    inicio: {
+      titulo: "Inicio del Trámite Jubilatorio",
+      horario:
+        "Miércoles de 10 a 14 h – 3º piso (Secretaría de Previsión Social).",
+      atencion: "Dra. Liliana Bustos.",
+      llevar: ["Número de CUIL", "Clave de Ciudadano Digital (CiDi)"],
+    },
+    asesoramiento: {
+      titulo: "Asesoramiento previsional y jurídico",
+      horario: "Miércoles de 10 a 14 h.",
+      alcance: "Consultas generales para todos los afiliados.",
+    },
+    continuidad: {
+      titulo: "Continuidad de afiliación al sindicato",
+      quienes:
+        "Jubilados/as o con beneficio de pensión por fallecimiento.",
+      horario:
+        "Secretaría de Previsión Social (3º piso), de lunes a viernes de 8 a 14 h.",
+      documentacion: [
+        "DNI original",
+        "2 fotos 4x4",
+        "Situación de revista (área Liquidación de Haberes de EPEC)",
+      ],
+    },
+  },
+  vivienda: {
+    titulo: "Vivienda: Asesoramiento y asistencia",
+    asistencia: [
+      "Edificación, refacción y ampliación",
+      "Atención prioritaria ante siniestros: desmoronamientos, rajaduras o hundimientos",
+    ],
+    contacto: {
+      telefonos: "351 422 8079/81 – 351 313 0413 – 351 381 1001",
+      email: "luzyfuerzavivienda@gmail.com",
+    },
+  },
+};
+
+
+export const campoDeportivo = {
+  hero: {
+    titulo: "Servicios Jurídicos y de Asesoramiento",
     bajada:
       "Atención para trámites jubilatorios, consultas previsionales y legales, continuidad de afiliación y asistencia en vivienda.",
     icon: "bi-journal-text",

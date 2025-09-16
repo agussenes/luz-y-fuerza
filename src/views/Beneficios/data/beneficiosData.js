@@ -19,7 +19,7 @@ export const beneficiosCategorias = [
         desc: "3 canchas, pileta, quinchos y asadores. Temporada de pileta con tarifa diferencial."
       }
     ],
-    link: "/beneficios-turisticos"
+    link: "/propuestas-de-servicios-turisticos"
   },
   {
     id: "educativos",
@@ -36,7 +36,7 @@ export const beneficiosCategorias = [
         desc: "Kit para primaria y vouchers/descuentos para secundaria."
       }
     ],
-    link: "/beneficios-educativos"
+    link: "/propuestas-de-servicios-educativos"
   },
   {
     id: "juridicos",
@@ -53,6 +53,40 @@ export const beneficiosCategorias = [
         desc: "Asistencia para edificación/refacción y atención prioritaria ante siniestros estructurales."
       }
     ],
-    link: "/beneficios-juridicos-y-de-asesoramiento"
+    link: "/propuestas-de-servicios-juridicos-y-de-asesoramiento"
+  },
+  {
+    id: "obra social",
+    title: "Obra social",
+    icon: "bi-journal-text",
+    image: imgJuridico,
+    bullets: [
+      {
+        title: "Asesoramiento previsional y jurídico",
+        desc: "Inicio de trámite jubilatorio, consultas generales y continuidad de afiliación."
+      },
+      {
+        title: "Vivienda",
+        desc: "Asistencia para edificación/refacción y atención prioritaria ante siniestros estructurales."
+      }
+    ],
+    link: "https://osplyfc.com.ar/"
+  },
+  {
+    id: "Parque deportivo",
+    title: "Parque deportivo",
+    icon: "bi-journal-text",
+    image: imgJuridico,
+    bullets: [
+      {
+        title: "Asesoramiento previsional y jurídico",
+        desc: "Inicio de trámite jubilatorio, consultas generales y continuidad de afiliación."
+      },
+      {
+        title: "Vivienda",
+        desc: "Asistencia para edificación/refacción y atención prioritaria ante siniestros estructurales."
+      }
+    ],
+    link: "/propuestas-de-servicios-juridicos-y-de-asesoramiento"
   }
 ];

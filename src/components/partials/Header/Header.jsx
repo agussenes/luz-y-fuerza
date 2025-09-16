@@ -8,7 +8,7 @@ import './Header.css';
 function Header() {
 
   const location = useLocation();
-  const path = location.pathname;
+  
 
   useEffect(() => {
     const navbarCollapse = document.getElementById('navbarContenido');
@@ -36,25 +36,7 @@ function Header() {
           <Link className="navbar-brand" to="/">
             <img src="/luz-y-fuerza/img/identidad/Logo-White.webp" alt="Logo sindicato de luz y fuerza" height="50" loading="lazy" />
           </Link>
-          {path === '/home-1' && (
-            <>
-              <div className="text-light gap-2 d-flex ">
-                <h5 className='mt-2'>Esto es el home 1 | </h5>
-                <Link className='estiloBotonClaro mt-1 mb-1' to={'/home-2'}>ir al home 2</Link>
-              </div>
-            </>
-
-          )}
-          {/* {path ===} */}
-          {path === '/home-2' && (
-            <>
-              <div className="text-light gap-2 d-flex ">
-                <h5 className='mt-2'>Esto es el home 2 | </h5>
-                <Link className='estiloBotonClaro mt-1 mb-1' to={'/home-1'}>ir al home 1</Link>
-              </div>
-            </>
-
-          )}
+          
 
           {/* Botón hamburguesa mobile */}
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido"
@@ -100,9 +82,8 @@ function Header() {
                   Vida institucional
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuVI">
-                  <li><Link className="dropdown-item" to="/vida-institucional">Institucional</Link></li>
-                  <li><Link className="dropdown-item" to="/cuerpo-general-delegados">Cuerpo General de Delegados</Link></li>
-                  <li><Link className="dropdown-item" to="/asamblea-general">Asamblea General Ordinaria</Link></li>
+                  <li><Link className="dropdown-item" to="/autoridades">Autoridades</Link></li>
+                  <li><Link className="dropdown-item" to="/cuerpos-organicos">Cuerpos organicos</Link></li>
                   <li><Link className="dropdown-item" to="/secretarias">Secretarías</Link></li>
 
                 </ul>
@@ -123,19 +104,21 @@ function Header() {
                   Afiliados
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
-                  <li><Link className="dropdown-item" to="/beneficios">Beneficios</Link></li>
+                  <li><Link className="dropdown-item" to="/propuestas-de-servicios">Propuesta de servicios</Link></li>
                   <li><Link className="dropdown-item" to="/actividades">Actividades</Link></li>
                   <li><Link className="dropdown-item" to="/convenio-colectivo">Convenio colectivo</Link></li>
 
                 </ul>
               </li>
 
-              <li className="nav-item">
-                <Link className="nav-link" to="https://luzyfuerzacordobaelectrum.com.ar/category/noticias/">Novedades</Link>
-              </li>
+              
 
               <li className="nav-item">
                 <Link className="nav-link" to="/contacto">Contacto</Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to="https://luzyfuerzacordobaelectrum.com.ar">Electrum</Link>
               </li>
 
             </ul>

@@ -92,16 +92,16 @@ footer {
 
 /*  Thumb (el "agarrador" del scroll) */
 ::-webkit-scrollbar-thumb {
-  background: var(--color-celeste);
+  background: #030F27;
   /* Color principal */
-  border-radius: 10px;
   border: 2px solid var(--color-primary);
   /* Espacio interno */
 }
 
 /*  Hover sobre el thumb */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-terciario);
+    background: #030F27;
+
 }
 
 /*  Scrollbar en elementos específicos */
@@ -113,7 +113,7 @@ footer {
 body {
   scrollbar-width: thin;
   /* thin | auto | none */
-  scrollbar-color: #004B51 #DAD6CB;
+  scrollbar-color: #004B51 #030F27;
   /* thumb color | track color */
 }
 
@@ -317,6 +317,10 @@ body {
   margin-top: 4rem !important;
 }
 
-.bg-azul-osucro {
+.bg-azul-oscuro {
   background-color: #030F27;
+}
+
+.bg-color-principal{
+  background-color: var(--color-primary);
 }

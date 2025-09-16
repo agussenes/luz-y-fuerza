@@ -1,10 +1,8 @@
 // CuerpoDelegados.jsx
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import BannerPortadas from '../../../components/reutilizables/bannerPortadas/BannerPortadas';
 
 // Importa imagenes
-import imgPortada from '../../../assets/images/vidaInstitucional/bannerPortada.jpg';
 import imgCard1 from '../../../assets/images/vidaInstitucional/pngParaCol.png';
 
 import './CuerpoDelegados.css';
@@ -12,7 +10,6 @@ import './CuerpoDelegados.css';
 function CuerpoDelegados() {
   return (
     <>
-      <BannerPortadas imagen={imgPortada} titulo="Cuerpo General de Delegados" />
 
       <section className="delegados-section py-5">
         <Container>

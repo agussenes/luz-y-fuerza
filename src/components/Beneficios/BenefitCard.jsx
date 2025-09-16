@@ -32,7 +32,7 @@ export default function BenefitCard({ title, icon, image, bullets = [], link }) 
 
                     {/* CTA siempre abajo */}
                     <div className="mt-auto d-flex justify-content-center">
-                        <Link to={link} className="py-1 mt-3 px-4 estiloBoton">
+                        <Link to={link} className="py-1 mt-3 px-4 estiloBotonH2">
                             Ver más
                         </Link>
                     </div>

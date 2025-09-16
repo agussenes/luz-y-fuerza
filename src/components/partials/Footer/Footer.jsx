@@ -11,30 +11,29 @@ function Footer() {
 
           {/* Columna 1: Logo + Descripción */}
           <div className="col-md-5">
-            <div className="d-flex align-items-center mb-3">
+            <div className="d-flex align-items-center justify-content-center mb-3">
               <img
                 src="/luz-y-fuerza/img/identidad/Logo-White.webp"
                 alt="Logo Sindicato de Luz y Fuerza de Córdoba"
-                height="80"
+                height="90"
                 className="me-2"
                 loading="lazy"
               />
             </div>
-            <p className="text-light small">
+            {/* <p className="text-light small">
               Desde nuestro sindicato hacemos llegar a nuestros asociados y a la comunidad en general todas las noticias relacionadas al sector, de forma ágil y democrática.
               <br />
               <Link to="/contacto" className="text-info text-decoration-none">Contáctenos!</Link>
-            </p>
+            </p> */}
           </div>
 
           {/* Columna 2: Contacto */}
-          <div className="col-md-4">
+          <div className="col-md-4 ">
             <h5 className="fw-bold">Contacto</h5>
             <ul className="list-unstyled text-light small">
               <li className="mb-2 redesSo">
                 <i className="bi bi-geo-alt-fill me-2"></i> Dean Funes 672. Córdoba
               </li>
-              <hr />
               <li className='redesSo'>
                 <i className="bi bi-envelope-fill me-2"></i> prensaluzyfuerza.cba@gmail.com
               </li>
@@ -42,7 +41,7 @@ function Footer() {
 
             {/* Redes Sociales */}
             <div className="mt-3">
-              <a href="#" className="text-light me-3 redesSo"><i className="bi bi-twitter"></i></a>
+              <a href="#" className="text-light me-3 redesSo"><i className="bi bi-twitter-x"></i></a>
               <a href="#" className="text-light me-3 redesSo"><i className="bi bi-facebook"></i></a>
               <a href="#" className="text-light me-3 redesSo"><i className="bi bi-youtube"></i></a>
               <a href="#" className="text-light redesSo"><i className="bi bi-instagram"></i></a>
@@ -66,7 +65,7 @@ function Footer() {
 
         {/* Copyright */}
         <div className="text-center small text-light d-flex justify-content-center align-items-center styleColumMobile">
-          Desarrollado por
+          <p>Desarrollado por
           <a href="https://usinacreativa.com.ar/" target="_blank" rel="noopener noreferrer" style={{ margin: '0 0.2rem' }}>
             <img
               src={imgUsina}
@@ -75,7 +74,7 @@ function Footer() {
               height="25"
             />
           </a>
-          © Sindicato de Luz y Fuerza Córdoba. 2025
+          © Sindicato de Luz y Fuerza Córdoba. 2025</p>
         </div>
 
       </div>

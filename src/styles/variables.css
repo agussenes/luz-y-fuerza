@@ -1,6 +1,7 @@
 :root {
     /* Branding Colors */
-    --color-primary: #030F27; /* Azul principal */
+    /* --color-primary: #030F27;  */
+    --color-primary: #042B60; 
     --color-secondary: #FAEA1E; /* Amarillo secundario */
     --color-background: #ffffff; /* Fondo general */
     --color-terciario: #3B62A7;
