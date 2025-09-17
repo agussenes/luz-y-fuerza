@@ -13,7 +13,7 @@ export default function Beneficios() {
   return (
     <>
       <SEO
-        title="Beneficios - Luz y Fuerza Córdoba"
+        title="Propuestas de servicios - Luz y Fuerza Córdoba"
         description="Conocé los beneficios turísticos, educativos y de asesoramiento para afiliados y su familia."
         url="http://localhost:5173/propuestas-de-servicios"
         image="https://tusitio.com/img/home-og-image.jpg"
