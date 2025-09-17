@@ -22,8 +22,8 @@ function OrganizacionSection() {
                             <div className="rounded shadow h-100  text-center p-4" style={{border: '1px solid #030F27'}}>
                                 <i className="bi bi-book display-3  SizeIcon" style={{color: '#030F27'}}></i>
                                 <hr />
-                                <h5 className="mt-3 lineBorderSubTitle">Secretarias</h5>
-                                <p className='mb-4'>Aca encontraras todas las secretarias</p>
+                                <h5 className="mt-3 lineBorderSubTitle">Secretarías</h5>
+                                <p className='mb-4'>Organización institucional del sindicato</p>
                                 <Link to="/secretarias" className="px-4 estiloBotonH2 py-1">Ver más</Link>
                             </div>
                         </Col>
@@ -32,7 +32,7 @@ function OrganizacionSection() {
                                 <i className="bi bi-flag-fill display-3  SizeIcon" style={{color: '#030F27'}}></i>
                                 <hr />
                                 <h5 className="mt-3 lineBorderSubTitle">Nuestra historia</h5>
-                                <p>Enterate de las principales acciones gremiales y sindicales.</p>
+                                <p>Nuestra trayectoria en defensa de los trabajadores.</p>
                                 <Link to="/nuestra-lucha" className="px-4 mt-3 estiloBotonH2 py-1">Ver más</Link>
                             </div>
                         </Col>

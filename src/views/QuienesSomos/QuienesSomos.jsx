@@ -4,7 +4,7 @@ import BannerPortadas from '../../components/reutilizables/bannerPortadas/Banner
 
 
 // improt imagenes 
-import bannerQuiSomos from '../../assets/images/quienesSomos/nosotros.jpg';
+import bannerQuiSomos from '../../assets/images/portadaProvi.webp';
 import logoSlyf from '../../assets/images/quienesSomos/presentacion.jpg'
 
 function QuienesSomos() {
@@ -19,11 +19,11 @@ function QuienesSomos() {
 
       <BannerPortadas imagen={bannerQuiSomos} title="Quienes somos" />
 
-      <section className="quienes-section py-5">
+      <section className="quienes-section pb-2 pt-4">
         <div className="container">
           <div className="row align-items-center">
             {/* Texto */}
-            <div className="col-md-6 mb-4 mb-md-0">
+            <div className="col-md-12 mb-4 mb-md-0">
               <h2 className="lineBorderTitle">¿Quiénes Somos?</h2>
               <p>
                 El Sindicato de Luz y Fuerza de Córdoba, asociación profesional de trabajadores con Personería Gremial y Jurídica N° 589 (26/9/1963), nuclea a los trabajadores que brindan servicios en la generación, transporte y distribución de energía eléctrica, y de todos los servicios manuales, técnicos y administrativos que presta la Empresa Provincial de Energía de Córdoba, en su zona de jurisdicción. Así mismo, nuclea y representa a los trabajadores acogidos al régimen jubilatorio que deseen continuar como afiliados y a los pensionados.
@@ -35,15 +35,6 @@ function QuienesSomos() {
                 El 31 de diciembre de 1952 se crea la actual Empresa Provincial de Energía de Córdoba, siendo Luz y Fuerza de Córdoba la organización sindical que representa a sus trabajadores dentro de la jurisdicción comprendida en: Córdoba Capital, ZONA E - Localidades de La Calera, Mendiolaza, Río Ceballos, Salsipuedes, Unquillo, Villa Allende del Departamento Colón; Localidades de Malagueño y Yocsina del Departamento Santa María; y Dique Molet del Departamento Punilla. En la actualidad nuestra organización cuenta con 1678 afiliados activos y 898 pasivos.
               </p>
             </div>
-
-            {/* Imagen */}
-            <div className="col-md-6 text-center">
-              <img
-                src={logoSlyf}
-                alt="Logo Sindicato Luz y Fuerza"
-                className="img-fluid rounded shadow-lg my-4"
-              />
-            </div>
           </div>
           <div>
             <p>
@@ -53,7 +44,7 @@ function QuienesSomos() {
         </div>
       </section>
 
-      <section className="mision-section py-5 bg-light">
+      <section className="mision-section pb-4 pt-2 bg-light">
         <div className="container">
           <h3 className="lineBorderTitle mb-4">Misión y valores</h3>
           <p>

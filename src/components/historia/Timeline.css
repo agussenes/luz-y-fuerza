@@ -1,0 +1,174 @@
+/* Contenedor general */
+.timeline {
+    background: #F8F9FA;
+}
+
+/* Badge del año con degradado */
+.year-badge {
+    background: linear-gradient(135deg, #2b6cb0 10%, #0b3d75 90%);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .5px;
+    box-shadow: 0 4px 10px rgba(11, 61, 117, .15);
+}
+
+/* Línea central continua (>= sm) */
+.timeline-inner {
+    position: relative;
+}
+
+@media (min-width: 576px) {
+    .timeline-inner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        left: calc(25% + (var(--bs-gutter-x) / 2) + 2.4%);
+        width: 3px;
+        background: #0b3d75;
+        opacity: .25;
+        border-radius: 3px;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .timeline-row {
+        --bs-gutter-x: .75rem;
+    }
+}
+
+/* Columna central y DOT */
+.timeline-center {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0b3d75;
+    box-shadow:
+        0 0 0 2px #ffffff,
+        0 0 0 5px #0b3d75;
+}
+
+/* Contenido derecho sin fondo */
+
+
+.timeline-thumb {
+    width: 150px;
+    min-width: 110px;
+}
+
+.timeline-thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: .75rem;
+    filter: grayscale(60%);
+}
+
+
+/* ==== XS ONLY (≤ 575.98px) – mejoras mobile sin tocar desktop/tablet ==== */
+@media (max-width: 575.98px) {
+
+    /* mini-línea y dot locales */
+    .timeline-row {
+        position: relative;
+        padding-left: 2.5rem;
+        /* lugar para línea + badge */
+        margin-bottom: .75rem;
+        /* filas más compactas */
+        --bs-gutter-y: .5rem;
+        /* menos espacio vertical */
+    }
+
+    .timeline-row::before {
+        content: "";
+        position: absolute;
+        left: .75rem;
+        top: .5rem;
+        bottom: .5rem;
+        width: 3px;
+        background: #0b3d75;
+        opacity: .25;
+        border-radius: 3px;
+    }
+
+    .timeline-row::after {
+        content: "";
+        position: absolute;
+        left: 0.5rem;
+        top: 1.7rem;
+        width: 12px;
+        height: 12px;
+        background: #0b3d75;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px #0b3d75;
+    }
+
+    /* ocultamos la col del año, el contenido ocupa todo */
+    .timeline-row>.col-3 {
+        display: none !important;
+    }
+
+    .timeline-row>.col-8 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* badge reubicado junto a la línea */
+    .timeline-row .year-badge {
+        position: absolute;
+        left: 1.15rem;
+        /* un poco a la derecha de la línea */
+        top: .5rem;
+        transform: translateX(-50%);
+        z-index: 1;
+        font-size: .78rem;
+        padding: .25rem .6rem;
+        box-shadow: 0 3px 8px rgba(11, 61, 117, .18);
+    }
+
+    /* texto + imagen */
+    .timeline-card {
+        gap: .5rem !important;
+    }
+
+    .timeline-card h5 {
+        font-size: 1.05rem;
+        line-height: 1.25;
+        margin-bottom: .35rem !important;
+    }
+
+    /* miniatura responsiva */
+    .timeline-thumb {
+        width: 56%;
+        max-width: 260px;
+    }
+
+    .timeline-thumb img {
+        width: 100%;
+        height: 96px;
+        /* alto fijo ordenado */
+        object-fit: cover;
+        border-radius: .6rem;
+        filter: grayscale(60%);
+    }
+}
+
+
+
+.contenedorImgText {
+    width: auto !important;
+}
+
+.contenedorImgText h5 {
+    color: var(--color-primary);
+}

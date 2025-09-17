@@ -1,17 +1,13 @@
 import SEO from '../../seo/SEO';
 import { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+import Timeline from '../../components/historia/Timeline';
 
 import BannerPortadas from '../../components/reutilizables/bannerPortadas/BannerPortadas'
 
 import './Historia.css'
 
 // imagenes individuales 
-import portadaImg from '../../assets/images/vidaInstitucional/bannerPortada.jpg';
+import portadaImg from '../../assets/images/portadaProvi.webp';
 
 import julioMurua from '../../assets/images/historia/Julio-Murua-370x400.jpg';
 import atilioBorserini from '../../assets/images/historia/2-Atilio-Borserini-370x400.jpg';
@@ -78,12 +74,12 @@ function Historia() {
       />
 
       {/* Portada */}
-      <BannerPortadas imagen={portadaImg} titulo="NUestra historia" />
+      <BannerPortadas imagen={portadaImg} titulo="" />
 
       {/* Bajada con título grande */}
-      <section className="bajada py-5">
+      <section className="bajada pt-5">
         <div className="container">
-          <h2 className="display-5 lineBorderTitle">HISTORIA</h2>
+          <h2 className="display-5 lineBorderTitle">Historia</h2>
           <p >Un 5 de Febrero de 1944, como parte de las transformaciones sociales inauguradas por el Peronismo se fundaba la USEOCPE (Unión Sindical de Empleados y Obreros de las Compañías Productoras de Electricidad), antecesor de Luz y Fuerza Córdoba. Era el resultado de la larga lucha de varias generaciones de trabajadores de la electricidad.</p>
           <p >Desde el momento de su fundación Luz y Fuerza de Córdoba se convirtió en una referencia para el Movimiento Obrero Organizado, formando parte de la vida gremial, social y cultural de Córdoba.</p>
           <p >Pasando por etapas muy distintas en su historia, mantuvo de manera constante la defensa irrestricta de dos pilares fundamentales: la EPEC como empresa estatal e integrada, con sentido social y estratégico, y los derechos contemplados en el Convenio Colectivo de Trabajo, que costó mucho conseguir y conservar.</p>
@@ -91,17 +87,17 @@ function Historia() {
       </section>
 
       {/* Título y descripción en dos columnas */}
-      <section className="descripcion py-5">
+      <section className="descripcion pt-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-6">
+            <div className="col-md-12">
               <h3 className='lineBorderTitle'>Se funda Luz y Fuerza</h3>
               <p>En Córdoba, los trabajadores lucifuercistas durante la primera mitad del S. XX, estaban nucleados en dos empresas de capital extranjero, la Compañía de Luz y Fuerza Motriz y la Compañía General, sin tener ningún reconocimiento de derechos laborales. Toda esta etapa es de enfrentamiento con la ley y las compañías, que castigaba la sindicalización.</p>
               <p>A partir de 1943 con la asunción en la Secretaría de Trabajo y Previsión de Juan Domingo Perón, las condiciones políticas cambian. Se impulsa una nueva política social, con eje en los trabajadores, y se envían asesores a todo el país a fomentar la sindicalización, en Córdoba fue designado un integrante del Círculo Obrero Católico, el cura Rafael Moreno, a quien se acercan un grupo de trabajadores de ambas compañías para buscar su asesoramiento.</p>
               <p>Las primeras reuniones tendientes a conformar el sindicato se realizaron el local del Círculo Obrero Católico, en la calle 9 de julio y allí también se realiza la asamblea constitutiva, el 5 de Febrero de 1944, que eligió una Comisión Provisoria que tuvo vigencia por un año, es decir hasta Febrero de 1945, año en el que se eligió la primera Comisión Directiva propiamente dicha.</p>
               <p>La Comisión Provisoria elegida en 1944 dirigió Luz y Fuerza en su primer año de vida y estuvo conformada por Julio Murúa como presidente y por los compañeros titulares Julio Barbeito, Enrique Álvarez Voccos , Horacio Carignano, Carlos Urquía, Gerónimo Ortiz, Bruno Cellerini, Atilio Borserini, Tomás Gómez, Juan Turini, Juan Zanoni, Julio Minggio, Luis Batistella, Francisco Pauluzzi y Luis R. Silva y por los compañeros suplentes: Francisco Alejandro, Oscar Maccio, Robustiano Gallardo y Francisco Sánchez; Además se eligieron delegados ante la patronal: Julio Murúa y Cristóbal Sierra y Revisadores de cuentas: Vidal Lazcano, Cosme Infantino y Ramón del Carmen Britos.</p>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-12">
               <p>Poco después se presenta un primer petitorio donde se exige el reconocimiento de derechos y garantías: aguinaldo, vacaciones pagas, derecho a Carpeta Médica, aumentos salariales.</p>
               <p>A partir del triunfo del Peronismo en las elecciones de 1946, todos los reclamos se aseguran y se inicia un proceso de profundización en materia de reconocimiento de derechos, de fortalecimiento y desarrollo de las organizaciones sindicales, así como de la industria nacional. Gran parte de las compañías privadas a cargo del servicio en las provincias, son estatizadas creando Empresas públicas Provinciales, como SPEC (antecesora de EPEC) en el caso de Córdoba, creada en 1946 luego de las estatización del Servicio el 11 de noviembre de ese año. En esta etapa se destacan Julio Murúa, Atilio Borserini y Cristóbal Sierra, pioneros dirigentes lucifuercistas que lideraron la construcción de nuestras bases sindicales peleando palmo a palmo por nuestro primer Convenio Colectivo de Trabajo, que se concretó en 1950 y discutiendo y elaborando con el gobierno provincial la integración de las dos compañías de electricidad en una sola empresa pública, que en un inicio iba a ser mixta, pero por presión de los trabajadores terminó siendo estatal e integrada. En esta etapa, se funda nuestro emblemático periódico ELECTRUM, por iniciativa de un joven Agustín Tosco. Además, nuestro sindicato forma parte activa de la fundación de FATLYF, la Federación Argentina de Trabajadores de Luz y Fuerza, un 13 de Julio de 1948.</p>
               <p>Esta etapa se cierra en septiembre de 1955, con el Golpe de Estado que derrocó a Perón, nuestro sindicato es intervenido, y poco después en noviembre de 1955, fallece Cristóbal Sierra, entonces Secretario General de nuestro sindicato.</p>
@@ -111,7 +107,7 @@ function Historia() {
       </section>
 
       {/* Galería de Pioneros */}
-      <section className="pioneros py-5 bg-light">
+      {/* <section className="pioneros py-5 bg-light">
         <div className="container">
           <h3 className="mb-4 lineBorderTitle">Pioneros</h3>
           <p>Los referentes de la década fundacional: Julio Murúa, Atilio Borserini y Cristóbal Sierra</p>
@@ -130,41 +126,52 @@ function Historia() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Frases destacadas con imágenes */}
       <section className="frases text-light py-5">
+        <div className="container">
+          <h3 className="mb-4 text-dark lineBorderTitle">Pioneros</h3>
+        </div>
         <div className="container ">
-          <div className="backgroundTes row align-items-center mb-5 ">
-            <div className="col-md-6 ">
-              <p className='lead'>"Nuestro sindicato siempre se caracterizó por ser una gran familia, nunca hubo divisiones por cuestiones político partidarias..."</p>
-              <p ><small><i class="bi bi-quote iconTestimonio"></i> - Julio “Quebracho” Murúa. Presidente de la primera Comisión Provisoria</small></p>
+          <div className="backgroundTes row align-items-center mb-5  ">
+            <div className="col-md-3 d-flex justify-content-center align-items-center rounded">
+              <img src={julioMurua} className="img-fluid backgroundTes my-3" alt="Julio Murúa" loading="lazy" />
             </div>
-            <div className="col-md-6 d-flex justify-content-center align-items-center">
-              <img src={julioMurua} className="img-fluid mb-2 imgTesti" alt="Julio Murúa" loading="lazy" />
+            <div className="col-md-9 p-5">
+
+              <h2><i class="bi bi-quote iconTestimonio"></i> <br /> "Nuestro sindicato siempre se caracterizó por ser una gran familia, nunca hubo divisiones por cuestiones político partidarias..."</h2>
+              <p ><small>Julio “Quebracho” Murúa. Presidente de la primera Comisión Provisoria</small></p>
             </div>
+
           </div>
 
-          <div className="backgroundTes row align-items-center mb-5 flex-md-row-reverse">
-            <div className="col-md-6">
-              <p className='lead'>
-                "Los obreros no pueden olvidar que si ellos no exigen la aplicación de la legislación social, esta se convierte en letra muerta..."</p>
-              <p><small><i class="bi bi-quote iconTestimonio"></i> - Cristóbal Sierra. Secretario General años 40 -50</small></p>
+          <div className="backgroundTes row align-items-center mb-5 ">
+            <div className="col-md-3 d-flex justify-content-center align-items-center">
+              <img src={cristobalSierraImgSita} className="img-fluid backgroundTes my-3" alt="Atilio Borserini" loading="lazy" />
             </div>
-            <div className="col-md-6 d-flex justify-content-center align-items-center">
-              <img src={cristobalSierraImgSita} className="img-fluid mb-2 imgMid imgTesti" alt="Atilio Borserini" loading="lazy" />
+            <div className="col-md-9 p-5">
+
+              <h2 >
+                <i class="bi bi-quote iconTestimonio"></i> <br />
+                "Los obreros no pueden olvidar que si ellos no exigen la aplicación de la legislación social, esta se convierte en letra muerta..."</h2>
+              <p><small>Cristóbal Sierra. Secretario General años 40 -50</small></p>
             </div>
+
           </div>
 
           <div className=" backgroundTes row align-items-center">
-            <div className="col-md-6">
-              <p className='lead'>
-                "¿No son necesarios los sindicatos? Hoy no solo son necesarios, son imprescindibles para el trabajador."</p>
-              <p><small><i class="bi bi-quote iconTestimonio"></i> - Cristóbal Sierra. Secretario General años 40 -50</small></p>
+            <div className="col-md-3 d-flex justify-content-center align-items-center ">
+              <img src={cristobalSierra} className="img-fluid backgroundTes my-3" alt="Atilio Borserini" loading="lazy" />
             </div>
-            <div className="col-md-6 d-flex justify-content-center align-items-center ">
-              <img src={cristobalSierra} className="img-fluid mb-2 imgTesti" alt="Atilio Borserini" loading="lazy" />
+            <div className="col-md-9 p-5">
+
+              <h2>
+                <i class="bi bi-quote iconTestimonio"></i> <br />
+                "¿No son necesarios los sindicatos? Hoy no solo son necesarios, son imprescindibles para el trabajador."</h2>
+              <p><small>Cristóbal Sierra. Secretario General años 40 -50</small></p>
             </div>
+
           </div>
         </div>
       </section>
@@ -172,55 +179,12 @@ function Historia() {
       {/* Swiper de imágenes */}
       <section className="timeline-swiper py-5 bg-light">
         <div className="container">
-          <h3 className="text-center mb-4 lineBorderTitle2">Línea de Tiempo del Sindicato</h3>
-
-          <div className="swiper-wrapper-timeline d-flex align-items-center position-relative">
-            <button className="btn-nav prev-btn" onClick={() => swiperRef.current?.slidePrev()}>←</button>
-
-            <Swiper
-              onSwiper={(swiper) => (swiperRef.current = swiper)}
-              slidesPerView={2}
-              spaceBetween={60}
-              loop={true}
-              pagination={{ clickable: true }}
-              modules={[Pagination, Navigation]}
-              autoplay={true}
-              className="timeline-carousel"
-              breakpoints={{
-                0: {            // Desde 0px (todo)
-                  slidesPerView: 1,
-                  spaceBetween: 20,
-                },
-                568: {          // Desde 568px
-                  slidesPerView: 2,
-                  spaceBetween: 40,
-                },
-                769: {          // Desde 769px (tablets en adelante)
-                  slidesPerView: 2,
-                  spaceBetween: 60,
-                }
-              }}
-            >
-              {swiperSlides.map((slide, i) => (
-                <SwiperSlide key={i} className="slide-timeline">
-                  <div className="timeline-dot">
-                    <span>{slide.year}</span>
-                  </div>
-                  <div className="timeline-card">
-                    <img src={slide.src} alt={slide.texto} loading="lazy" />
-                    <p className='text-light'>{slide.texto}</p>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            <button className="btn-nav next-btn" onClick={() => swiperRef.current?.slideNext()}>→</button>
-
-            {/* Línea base */}
-            <div className="timeline-line"></div>
-          </div>
+          <h3 className="text-center mb-4 lineBorderTitle">Línea de Tiempo</h3>
+          <Timeline />
+        
         </div>
       </section>
+
 
     </>
   );

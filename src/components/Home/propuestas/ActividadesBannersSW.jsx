@@ -19,13 +19,10 @@ import imgTrakking from "../../../assets/images/home/bannersActividades/imgTrakk
 
 
 const actividades = [
-  { img: imgNaturaleza, titulo: "Aire libre y naturaleza", bajada: "Trekking mensual con guías" },
-  { img: imgTrakking, titulo: "Deportes y competencia", bajada: "Pesca, fútbol, hockey, pileta" },
-  { img: imgArteMarcial, titulo: "Arte marcial y disciplina", bajada: "Karate para todas las edades" },
-  { img: imgCamaderia, titulo: "Encuentro y camaradería", bajada: "Torneos y eventos deportivos" },
-  { img: imgActRecreativas, titulo: "Actividades recreativas", bajada: "Jornadas para toda la familia" },
-  { img: imgBienestarSalud, titulo: "Bienestar y salud", bajada: "Propuestas para moverse y disfrutar" },
-  { img: imgComunidad, titulo: "Club y comunidad", bajada: "Compartir, aprender y crecer" },
+  { img: imgBienestarSalud, titulo: "Programa de Trekking y Excursiones", bajada: "Recorré y conocé distintos puntos y parajes de la bellísima geografía cordobesa." },
+  { img: imgNaturaleza, titulo: "Concurso de Pesca", bajada: "Participá de la Copa Anual de pescadores organizada por Luz y Fuerza." },
+  { img: imgArteMarcial, titulo: "Karate Tradicional y Deportivo", bajada: "Sumate a practicar este arte marcial para afianzar la autoconfianza y la seguridad." },
+  { img: imgTrakking, titulo: "Campeonato de fútbol “Confraternidad”", bajada: "Vos también podes participar en el tradicional campeonato de fútbol lucifuercista." },
 ];
 
 export default function ActividadesBannersSW() {

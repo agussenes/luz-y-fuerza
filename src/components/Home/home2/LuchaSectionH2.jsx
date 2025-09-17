@@ -26,7 +26,7 @@ function LuchaSection() {
                     <Container>
                         <Row className="align-items-center">
                             <Col >
-                                <h2 className="mb-4 display-4 text-center"> <span style={{ fontWeight: 'bold', textDecoration: 'underline' }}>Desde 1944</span>, Defendiendo un Sindicato participativo y plural en permanente transformación.</h2>
+                                <h2 className="mb-4 display-4 text-center"> <span style={{ fontWeight: 'bold', textDecoration: 'underline' }}>Desde 1944</span>, defendiendo un Sindicato participativo y plural en permanente transformación.</h2>
                                 <div className="d-flex justify-content-center gap-2">
                                     <Link className='estiloBotonClaroH2 px-4' to={'/nuestra-lucha'} style={{ fontSize: '1.6rem' }}>Nuestra lucha</Link>
 
