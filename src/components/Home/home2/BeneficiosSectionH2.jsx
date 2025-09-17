@@ -32,7 +32,7 @@ function BeneficiosSection() {
                                     <img src={imgTuristico} alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios" className='img-fluid rounded' />
                                 </div>
                                 <hr />
-                                <ul className="lista-ticks">
+                                <ul className="lista-ticks flex-grow-1">
                                     <li>
                                         <span className="title">Complejos Turísticos:
                                             Mina Clavero y Cosquín. Pensión completa para afiliados y familia.</span>
@@ -54,7 +54,7 @@ function BeneficiosSection() {
 
                                 </div>
                                 <hr />
-                                <ul className="lista-ticks">
+                                <ul className="lista-ticks flex-grow-1">
                                     
                                     <li>
                                         <span className="title">Becas: Hijos de afiliados en secundario, terciario o universitario.</span>
@@ -81,7 +81,7 @@ function BeneficiosSection() {
 
                                 </div>
                                 <hr />
-                                <ul className="lista-ticks">
+                                <ul className="lista-ticks flex-grow-1">
                                     <li>
                                         <span className="title">Asesoramiento previsional y jurídico: Inicio de trámite jubilatorio, consultas generales y continuidad de afiliación.</span>
 
@@ -106,7 +106,7 @@ function BeneficiosSection() {
 
                                 </div>
                                 <hr />
-                                <ul className="lista-ticks">
+                                <ul className="lista-ticks flex-grow-1">
                                     <li>
                                         <span className="title"> Campo de Deportes: Guiñazú 3: canchas, pileta, quinchos y asadores. Temporada de pileta con tarifa diferencial.</span>
 
@@ -127,7 +127,7 @@ function BeneficiosSection() {
 
                                 </div>
                                 <hr />
-                                <ul className="lista-ticks">
+                                <ul className="lista-ticks flex-grow-1">
                                     <li>
                                         <span className="title">aca va un subtitulo</span>
 
