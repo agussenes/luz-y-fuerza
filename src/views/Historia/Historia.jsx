@@ -14,55 +14,14 @@ import atilioBorserini from '../../assets/images/historia/2-Atilio-Borserini-370
 import cristobalSierra from '../../assets/images/historia/Cristobal-Sierra-370x400.jpg'
 import cristobalSierraImgSita from '../../assets/images/historia/Sierra-4-570x700.jpg'
 
-// imagenes swipper
 
-import img1 from '../../assets/images/historia/swipper/img1.jpg'
-import img2 from '../../assets/images/historia/swipper/img2.jpg'
-import img3 from '../../assets/images/historia/swipper/img3.jpg'
-import img4 from '../../assets/images/historia/swipper/img4.jpg'
-import img5 from '../../assets/images/historia/swipper/img5.jpg'
-import img6 from '../../assets/images/historia/swipper/img6.jpg'
-import img7 from '../../assets/images/historia/swipper/img7.jpg'
-import img8 from '../../assets/images/historia/swipper/img8.jpg'
-// import img9 from '../../../assets/images/historia/swipper/img9.jpg'
-// import img10 from '../../../assets/images/historia/swipper/img10.jpg'
-// import img11 from '../../../assets/images/historia/swipper/img11.jpg'
-// import img12 from '../../../assets/images/historia/swipper/img12.jpg'
-// import img13 from '../../../assets/images/historia/swipper/img13.jpg'
-
-
-// const swiperSlides = [
-//   { src: img1, alt: 'Historia 1', texto: 'Primeros pasos del sindicato' },
-//   { src: img2, alt: 'Historia 2', texto: 'Movilización histórica' },
-//   { src: img3, alt: 'Historia 3', texto: 'Firma de acuerdos fundamentales' },
-//   { src: img4, alt: 'Historia 4', texto: 'Asamblea general de afiliados' },
-//   { src: img5, alt: 'Historia 5', texto: 'Marcha solidaria' },
-//   { src: img6, alt: 'Historia 6', texto: 'Conferencia gremial' },
-//   { src: img7, alt: 'Historia 7', texto: 'Asado del 1º de Mayo' },
-//   { src: img8, alt: 'Historia 8', texto: 'Recuerdo de Murúa' },
-//   { src: img9, alt: 'Historia 9', texto: 'Cristóbal Sierra con delegados' },
-//   { src: img10, alt: 'Historia 10', texto: 'Acto institucional' },
-//   { src: img11, alt: 'Historia 11', texto: 'Jornada sindical' },
-//   { src: img12, alt: 'Historia 12', texto: 'Charla con afiliados' },
-//   { src: img13, alt: 'Historia 13', texto: 'Protesta histórica' },
-// ];
-
-const swiperSlides = [
-  { year: '1944', src: img1, texto: 'Nacimiento del Sindicato' },
-  { year: '1950', src: img2, texto: 'Primer Convenio Colectivo' },
-  { year: '1969', src: img3, texto: 'Cordobazo y lucha sindical' },
-  { year: '1983', src: img4, texto: 'Retorno a la democracia' },
-  { year: '1990', src: img5, texto: 'Privatizaciones y defensa de EPEC' },
-  { year: '2000', src: img6, texto: 'Modernización sindical' },
-  { year: '2023', src: img7, texto: 'Actualidad y renovación institucional' },
-];
 
 
 
 
 function Historia() {
 
-  const swiperRef = useRef(null);
+ 
 
   return (
     <>
