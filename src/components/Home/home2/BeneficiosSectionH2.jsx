@@ -1,12 +1,16 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-// img de banner beneficio 
 
-import imgBeneEdu from '../../../assets/images/beneficios/imgCardBeneficioEducacion.webp'
-import imgBeneJudi from '../../../assets/images/beneficios/cardJudicialBene.webp'
-import imgTuristico from '../../../assets/images/home/swipperBeneficios/imgB5.jpeg';
+import './BeneficiosSection.css'
+
+import imgBeneEdu from '../../../assets/images/beneficios/imgEducativo.webp';
+import imgBeneJudi from '../../../assets/images/beneficios/cardJudicialBene.webp';
+import imgTuristico from '../../../assets/images/beneficios/imgTuristico.webp';
 import imgObraSocial from '../../../assets/images/beneficios/foto-edificio.jpg'
+import imgClub from '../../../assets/images/beneficios/imgClub.webp';
+
+
 
 function BeneficiosSection() {
     return (
@@ -19,7 +23,7 @@ function BeneficiosSection() {
                             <h2 className="lineBorderTitle2 ">Propuestas de servicios</h2>
                         </div>
                     </Row>
-                    <Row className="d-flex g-4 justify-content-center mt-4">
+                    <Row className="d-flex g-4 justify-content-center mt-4 contenedorCardsPS">
                         <Col lg={4} md={6} sm={12}>
                             <div className="card shadow p-3">
                                 <h4 className="fw-bold text-center border bg-color-principal text-light rounded mb-3">Turísticos</h4>
@@ -92,13 +96,13 @@ function BeneficiosSection() {
                             </div>
                         </Col>
                     </Row>
-                    <Row className="d-flex g-4 justify-content-center mt-4">
+                    <Row className="d-flex g-4 justify-content-center mt-4 contenedorCardsPS">
                         <Col lg={4} md={6} sm={12}>
                             <div className="card shadow p-3">
                                 <h4 className="fw-bold text-center border bg-color-principal text-light rounded mb-3">Acción social y deporte</h4>
 
                                 <div className="d-flex text-center">
-                                    <img src={imgTuristico} alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios" className='img-fluid rounded' />
+                                    <img src={imgClub} alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios" className='img-fluid rounded' />
 
                                 </div>
                                 <hr />

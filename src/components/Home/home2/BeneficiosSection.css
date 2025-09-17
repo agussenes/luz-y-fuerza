@@ -1,0 +1,9 @@
+.contenedorCardsPS .card {
+    min-height: 580px !important;
+}
+
+@media (max-width:768px) {
+    .contenedorCardsPS .card {
+        min-height: auto !important;
+    }
+}
