@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Timeline.css";
 
 import img1 from '../../assets/images/historia/swipper/img1.jpg'
@@ -19,11 +19,35 @@ const demoItems = [
   { year: "2023", title: "Actualización y renovación institucional", img: img7 }
 ];
 
-
 export default function Timeline({ items = demoItems }) {
+
+  useEffect(() => {
+    const rows = document.querySelectorAll(".timeline-row");
+    if (!rows.length) return;
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("reveal--visible");
+            // si no querés re-animar al scrollear hacia arriba, descomentá:
+            // io.unobserve(e.target);
+          }
+        });
+      },
+      { root: null, threshold: 0.15 } // aparece cuando se ve ~15%
+    );
+
+    rows.forEach((el) => {
+      el.classList.add("reveal"); // estado inicial oculto
+      io.observe(el);
+    });
+
+    return () => io.disconnect();
+  }, []);
+
   return (
     <div className="timeline p-3 p-md-4">
-
       <div className="timeline-list timeline-inner">
         {items.map((it, idx) => (
           <div className="row align-items-center py-4 timeline-row" key={idx}>
