@@ -7,7 +7,7 @@ import BannerGif from '../../../components/reutilizables/bannerEpecNoEsAnonima/B
 
 // import imagenes 
 import portadaImg from '../../../assets/images/vidaInstitucional/bannerPortada.jpg';
-import img1 from '../../../assets/images/nuestraLucha/pngParaCol.png';
+import img1 from '../../../assets/images/portadaProvi.webp';
 
 import './DefendamosEpec.css';
 

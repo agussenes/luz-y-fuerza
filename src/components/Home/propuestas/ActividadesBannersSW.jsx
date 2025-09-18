@@ -9,20 +9,17 @@ import "swiper/css/pagination";
 import "./ActividadesBannersSW.css";
 
 // Importá tus imágenes (las mismas que tenías)
-import imgActRecreativas from "../../../assets/images/home/bannersActividades/imgActRecreativas.jpg";
-import imgArteMarcial from "../../../assets/images/home/bannersActividades/imgArteMarcial.jpg";
-import imgBienestarSalud from "../../../assets/images/home/bannersActividades/imgBienestarSalud.jpg";
-import imgCamaderia from "../../../assets/images/home/bannersActividades/imgCamaderia.jpg";
-import imgComunidad from "../../../assets/images/home/bannersActividades/imgComunidad.jpg";
-import imgNaturaleza from "../../../assets/images/home/bannersActividades/imgNaturaleza.jpg";
-import imgTrakking from "../../../assets/images/home/bannersActividades/imgTrakking.jpg";
+import imgArteMarcial from "../../../assets/images/home/bannersActividades/imgArteMarcial.webp";
+import imgFutbol from "../../../assets/images/home/bannersActividades/imgFutbol.webp";
+import imgPesca from "../../../assets/images/home/bannersActividades/imgPesca.webp";
+import imgTrakking from "../../../assets/images/home/bannersActividades/imgTrakking.webp";
 
 
 const actividades = [
-  { img: imgBienestarSalud, titulo: "Programa de Trekking y Excursiones", bajada: "Recorré y conocé distintos puntos y parajes de la bellísima geografía cordobesa." },
-  { img: imgNaturaleza, titulo: "Concurso de Pesca", bajada: "Participá de la Copa Anual de pescadores organizada por Luz y Fuerza." },
+  { img: imgTrakking, titulo: "Programa de Trekking y Excursiones", bajada: "Recorré y conocé distintos puntos y parajes de la bellísima geografía cordobesa." },
+  { img: imgPesca, titulo: "Concurso de Pesca", bajada: "Participá de la Copa Anual de pescadores organizada por Luz y Fuerza." },
   { img: imgArteMarcial, titulo: "Karate Tradicional y Deportivo", bajada: "Sumate a practicar este arte marcial para afianzar la autoconfianza y la seguridad." },
-  { img: imgTrakking, titulo: "Campeonato de fútbol “Confraternidad”", bajada: "Vos también podes participar en el tradicional campeonato de fútbol lucifuercista." },
+  { img: imgFutbol, titulo: "Campeonato de fútbol “Confraternidad”", bajada: "Vos también podes participar en el tradicional campeonato de fútbol lucifuercista." },
 ];
 
 export default function ActividadesBannersSW() {

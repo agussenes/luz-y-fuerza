@@ -11,9 +11,9 @@ import BannerPortadas from '../../components/reutilizables//bannerPortadas/Banne
 import './VidaInstitucional.css';
 
 // import de imagenes 
-import imgPortada from '../../assets/images/vidaInstitucional/bannerPortada.jpg';
+import imgPortada from '../../assets/images/portadaProvi.webp';
 import ConsejoDirectivo from '../../assets/images/vidaInstitucional/ConsejoDirectivo.jpg'
-import pngParaCol from '../../assets/images/vidaInstitucional/pngParaCol.png';
+import pngParaCol from '../../assets/images/vidaInstitucional/placeHolder.webp';
 import imgPersona1 from '../../assets/images/vidaInstitucional/imgPersona1.jpg';
 import imgPersona2 from '../../assets/images/vidaInstitucional/imgPersona2.jpg';
 import imgPersona3 from '../../assets/images/vidaInstitucional/imgPersona3.jpg';
@@ -118,7 +118,7 @@ function VidaInstitucional() {
         image="https://tusitio.com/img/home-og-image.jpg"
       />
 
-      <BannerPortadas imagen={imgPortada} titulo="Vida institucional" />
+      <BannerPortadas imagen={imgPortada} titulo="" />
 
       <section className="vidaInstitucional container py-5">
 
@@ -294,53 +294,7 @@ function VidaInstitucional() {
           ))}
         </div>
 
-        {/* Banners navegables como cards */}
-        <div className="row">
-          {/* Card 1 - Cuerpo General de Delegados */}
-          <div className="col-md-4 mb-4">
-            <div
-              className="card h-100 text-center shadow-sm"
-              onClick={() => navigate("/cuerpo-general-delegados")}
-              style={{ cursor: "pointer" }}
-            >
-              <div className="card-body">
-                <i className="bi bi-people-fill fs-1 mb-3 text-primary"></i> {/* 👥 */}
-                <h5 className="card-title">Cuerpo General de Delegados</h5>
-                <p className="card-text">Accedé a la sección del cuerpo general.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2 - Asamblea General */}
-          <div className="col-md-4 mb-4">
-            <div
-              className="card h-100 text-center shadow-sm"
-              onClick={() => navigate("/asamblea-general")}
-              style={{ cursor: "pointer" }}
-            >
-              <div className="card-body">
-                <i className="bi bi-megaphone-fill fs-1 mb-3 text-danger"></i> {/* 📣 */}
-                <h5 className="card-title">Asamblea General</h5>
-                <p className="card-text">Información sobre la Asamblea General.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3 - Secretaría */}
-          <div className="col-md-4 mb-4">
-            <div
-              className="card h-100 text-center shadow-sm"
-              onClick={() => navigate("/secretarias")}
-              style={{ cursor: "pointer" }}
-            >
-              <div className="card-body">
-                <i className="bi bi-person-vcard-fill fs-1 mb-3 text-success"></i> {/* 🪪 */}
-                <h5 className="card-title">Secretaría</h5>
-                <p className="card-text">Conocé el trabajo de la secretaría.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+       
 
       </section>
 

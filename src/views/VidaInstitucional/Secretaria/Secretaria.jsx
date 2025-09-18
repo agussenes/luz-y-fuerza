@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Secretaria.css';
 
 import BannerPortadas from '../../../components/reutilizables/bannerPortadas/BannerPortadas';
-import imgPortada from '../../../assets/images/vidaInstitucional/bannerPortada.jpg';
+import imgPortada from '../../../assets/images/portadaProvi.webp';
 
 const secretariasData = [
   {
@@ -48,7 +48,7 @@ const secretariasData = [
 function Secretarias() {
   return (
     <>
-      <BannerPortadas imagen={imgPortada} titulo="Secretarías" />
+      <BannerPortadas imagen={imgPortada} titulo="" />
 
       <section className="secretaria-seccion">
         <Container>

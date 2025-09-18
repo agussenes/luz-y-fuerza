@@ -11,9 +11,9 @@ import LuchaSectionH2 from '../../components/Home/home2/LuchaSectionH2';
 import BannerElectrumh2 from '../../components/Home/home2/bannerElectrum/BannerElectrumh2';
 
 // import imagenes 
-import imgPortada1 from '../../assets/images/home/swiperHeroHome/imgSliderHome1.jpg';
-import imgPortada2 from '../../assets/images/home/swiperHeroHome/imgSliderHome2.jpg';
-import imgPortada3 from '../../assets/images/home/swiperHeroHome/imgSliderHome3.jpg';
+import imgPortada1 from '../../assets/images/home/swiperHeroHome/imgSliderHome1.webp';
+import imgPortada2 from '../../assets/images/home/swiperHeroHome/imgSliderHome2.webp';
+import imgPortada3 from '../../assets/images/home/swiperHeroHome/imgSliderHome3.webp';
 import imgPortada4 from '../../assets/images/home/swiperHeroHome/imgSliderHome4.webp';
 import imgPortada5 from '../../assets/images/home/swiperHeroHome/imgSliderHome5.webp';
 

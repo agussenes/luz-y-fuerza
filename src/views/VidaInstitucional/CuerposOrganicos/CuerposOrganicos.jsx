@@ -3,12 +3,12 @@ import CuerpoDelegados from '../../../views/VidaInstitucional/CuerpoDelegados/Cu
 import BannerPortadas from '../../../components/reutilizables/bannerPortadas/BannerPortadas';
 import AsambleaGeneral from '../AsambleaGeneral/AsambleaGeneral';
 // Importa imagenes
-import imgPortada from '../../../assets/images/vidaInstitucional/bannerPortada.jpg';
+import imgPortada from '../../../assets/images/portadaProvi.webp';
 
 function CuerposOrganicos() {
   return (
    <>
-   <BannerPortadas imagen={imgPortada} titulo="Cuerpos Organicos" />
+   <BannerPortadas imagen={imgPortada} titulo="" />
    <CuerpoDelegados />
    <AsambleaGeneral />
    </>

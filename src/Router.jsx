@@ -6,7 +6,6 @@ import Home from './views/Home/Home';
 import QuienesSomos from './views/QuienesSomos/QuienesSomos';
 import Historia from './views/Historia/Historia';
 import ConvenioColectivo from './views/ConvenioColectivo/ConvenioColectivo';
-import Novedades from './views/Novedades/Novedades';
 import NuestraLucha from './views/NuestraLucha/NuestraLucha';
 import VidaInstitucional from './views/VidaInstitucional/VidaInstitucional';
 import AsambleaGeneral from './views/VidaInstitucional/AsambleaGeneral/AsambleaGeneral';
@@ -36,7 +35,6 @@ function Router() {
           <Route path="/historia" element={<Historia />} />
           <Route path="/quienes-somos" element={<QuienesSomos />} />
           <Route path="/convenio-colectivo" element={<ConvenioColectivo />} />
-          <Route path="/novedades" element={<Novedades />} />
           <Route path="/nuestra-lucha" element={<NuestraLucha />} />
           <Route path="/defendamos-epec" element={<DefendamosEpec />} />
           <Route path="/autoridades" element={<VidaInstitucional />} />

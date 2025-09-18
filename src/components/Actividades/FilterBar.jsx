@@ -34,7 +34,7 @@ export default function FilterBar({ categorias = [], onSearch, onJump }) {
           {categorias.map(c => (
             <button
               key={c.id}
-              className="estiloBoton"
+              className="estiloBotonH2"
               onClick={() => onJump?.(c.anchor)}
               aria-label={c.label}
               type="button"

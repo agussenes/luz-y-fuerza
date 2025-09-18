@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 // Importa imagenes
-import imgCard1 from '../../../assets/images/vidaInstitucional/pngParaCol.png';
+import imgCard1 from '../../../assets/images/vidaInstitucional/placeHolder.webp';
 
 import './CuerpoDelegados.css';
 
