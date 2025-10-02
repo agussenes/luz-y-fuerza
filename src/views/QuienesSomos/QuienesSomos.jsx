@@ -5,7 +5,6 @@ import BannerPortadas from '../../components/reutilizables/bannerPortadas/Banner
 
 // improt imagenes 
 import bannerQuiSomos from '../../assets/images/portadaProvi.webp';
-import logoSlyf from '../../assets/images/quienesSomos/presentacion.jpg'
 
 function QuienesSomos() {
   return (
@@ -17,7 +16,7 @@ function QuienesSomos() {
         image="https://tusitio.com/img/home-og-image.jpg"
       />
 
-      <BannerPortadas imagen={bannerQuiSomos} title="Quienes somos" />
+      <BannerPortadas imagen={bannerQuiSomos} titulo="Quienes somos" />
 
       <section className="quienes-section pb-2 pt-4">
         <div className="container">

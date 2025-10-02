@@ -100,7 +100,7 @@ footer {
 
 /*  Hover sobre el thumb */
 ::-webkit-scrollbar-thumb:hover {
-    background: #030F27;
+  background: #030F27;
 
 }
 
@@ -172,13 +172,15 @@ body {
   }
   
 }
+  */
 
 @media (max-width:768px) {
-  .lineBorderTitle{
+  .lineBorderTitle2 {
+
     font-size: 2rem;
   }
-  
-} */
+
+}
 
 
 
@@ -321,6 +323,6 @@ body {
   background-color: #030F27;
 }
 
-.bg-color-principal{
+.bg-color-principal {
   background-color: var(--color-primary);
 }

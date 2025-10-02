@@ -107,7 +107,7 @@ export default function ContactForm({ fields = defaultFields, onSubmit, endpoint
       })}
 
       <div className="d-flex justify-content-center">
-        <button type="submit" disabled={isSubmitting} className='estiloBoton px-3 py-1'>
+        <button type="submit" disabled={isSubmitting} className='estiloBotonH2 px-3 py-1'>
           {isSubmitting ? 'Enviando...' : 'Enviar'}
         </button>
       </div>
