@@ -43,7 +43,7 @@ export default function ActividadesBannersSW() {
                   style={{ backgroundImage: `url(${act.img})` }}
                 >
                   {/* Overlay superior con titulo y bajada */}
-                  <div className="actividad-overlay-top">
+                  <div className="actividad-overlay-top ">
                     <h3 className="actividad-titulo">{act.titulo}</h3>
                     <p className="actividad-bajada">{act.bajada}</p>
                   </div>

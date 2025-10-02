@@ -1,6 +1,8 @@
-
-.HeroContainerG{
-    height: 70vh !important;
+.HeroContainerG {
+    aspect-ratio: 16 / 9;
+    height: auto !important;
+    /* deja que lo defina el ratio */
+    width: 100%;
 
 }
 
@@ -8,17 +10,18 @@
 .hero-swiper-container-h2 {
     position: relative;
     width: 100%;
-   
+
 }
 
 .hero-swiper-h2 {
     width: 100%;
-    
+
 }
 
 .hero-slide-h2 {
     background-size: cover;
     background-position: top center;
+    background-repeat: no-repeat;
     height: 100%;
 
 }

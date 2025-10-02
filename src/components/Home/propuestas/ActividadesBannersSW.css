@@ -6,7 +6,7 @@
 /* El wrapper debe tener ALTURA explícita (no solo min-height) */
 .actividades-banners-wrapper {
   /* elegí una altura fija responsiva */
-  height: clamp(260px, 45vw, 300px);
+  height: clamp(335px, 45vw, 0px);
   /* Opción alternativa si preferís por relación de aspecto: */
   /* aspect-ratio: 16 / 9; height: auto; */
 }
@@ -24,8 +24,10 @@
   width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;           /* no recorta la imagen */
-  background-color: #0b0b0b;          /* fondo para “letterbox” */
+  background-size: cover;
+  /* no recorta la imagen */
+  background-color: #0b0b0b;
+  /* fondo para “letterbox” */
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -34,15 +36,28 @@
 /* Overlay superior: degradado para legibilidad del texto */
 .actividad-overlay-top {
   position: absolute;
-  inset: 0 0 auto 0;                  /* top:0; left:0; right:0 */
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: clamp(14px, 3vw, 28px);
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 0)
-  );
   color: #fff;
+  z-index: 1;
+}
+
+.actividad-overlay-top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0));
+  z-index: -1;
+  /* queda debajo del texto */
+  pointer-events: none;
 }
 
 .actividad-titulo {
@@ -50,14 +65,14 @@
   font-weight: 800;
   font-size: clamp(18px, 3.2vw, 32px);
   line-height: 1.1;
-  text-align: right;
+  text-align: center;
 }
 
 .actividad-bajada {
   margin: 0;
   font-size: clamp(14px, 2.2vw, 18px);
   opacity: 0.95;
-  text-align: right;
+  text-align: center;
 
 }
 
@@ -67,6 +82,7 @@
   height: 10px;
   opacity: 0.6;
 }
+
 .actividades-banners-swiper .swiper-pagination-bullet-active {
   opacity: 1;
 }
