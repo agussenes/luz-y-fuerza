@@ -14,7 +14,7 @@ function BannerElectrum() {
                 <Container className='my-4'>
                     <Row className='container '>
                         <Col sm={12} lg={7}>
-                            <h2 className='lineBorderTitle2'>Electrúm</h2>
+                            <h2 className='lineBorderTitle2'>Electrum</h2>
                             <h4 className='lineBorderSubTitle'>El periodico de Luz y Fuerza</h4>
                             <p className="">Desde Septiembre de 1953, Electrum es el órgano oficial de prensa y comunicación de nuestro sindicato. Es uno de los <strong>pocos periódicos sindicales del país que logró continuidad y vigencia</strong>, lo que implica un gran orgullo para la comunidad lucifuercista.</p>
                             <p className=""><strong>Nuestro periódico ha salido de manera casi ininterrumpida, acompañando la vida lucifuercista</strong> y reflejando en sus páginas la historia de nuestras luchas, anhelos logros,  victorias y también momentos muy duros. </p>
