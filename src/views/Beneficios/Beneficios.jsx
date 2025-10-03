@@ -7,7 +7,7 @@ import BeneficiosSection from "../../components/Home/home2/BeneficiosSectionH2";
 import "./Beneficios.css";
 
 // imagen de portada (ya la tenés)
-import portadaImg from "../../assets/images/portadaProvi.webp";
+import portadaImg from "../../assets/images/beneficios/portadaPS.webp";
 
 export default function Beneficios() {
   return (
@@ -18,7 +18,7 @@ export default function Beneficios() {
         url="http://localhost:5173/propuestas-de-servicios"
         image="https://tusitio.com/img/home-og-image.jpg"
       />
-      <BannerPortadas imagen={portadaImg} titulo="" />
+      <BannerPortadas imagen={portadaImg} titulo="Propuesta de servicios" />
 
       <div className="container py-4">
        

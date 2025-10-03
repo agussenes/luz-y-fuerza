@@ -11,7 +11,7 @@ import BannerPortadas from '../../components/reutilizables//bannerPortadas/Banne
 import './VidaInstitucional.css';
 
 // import de imagenes 
-import imgPortada from '../../assets/images/portadaProvi.webp';
+import imgPortada from '../../assets/images/vidaInstitucional/portadaVI.webp';
 import ConsejoDirectivo from '../../assets/images/vidaInstitucional/ConsejoDirectivo.jpg'
 import pngParaCol from '../../assets/images/vidaInstitucional/placeHolder.webp';
 import imgPersona1 from '../../assets/images/vidaInstitucional/imgPersona1.jpg';
@@ -118,7 +118,7 @@ function VidaInstitucional() {
         image="https://tusitio.com/img/home-og-image.jpg"
       />
 
-      <BannerPortadas imagen={imgPortada} titulo="" />
+      <BannerPortadas imagen={imgPortada} titulo="Autoridades" />
 
       <section className="vidaInstitucional container py-5">
 

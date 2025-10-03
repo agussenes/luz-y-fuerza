@@ -3,7 +3,7 @@ import BannerPortadas from '../../components/reutilizables/bannerPortadas/Banner
 import Typewriter from 'typewriter-effect';
 
 // Imágenes
-import imgPortada from '../../assets/images/portadaProvi.webp';
+import imgPortada from '../../assets/images/vidaInstitucional/portadaVI.webp';
 import convenioPersola from '../../assets/images/convenioColectivo/convenioPersola.jpg';
 import img1 from '../../assets/images/convenioColectivo/img1.jpg'
 import img2 from '../../assets/images/convenioColectivo/img2.jpg'
@@ -21,7 +21,7 @@ function ConvenioColectivo() {
         image="https://tusitio.com/img/home-og-image.jpg"
       />
 
-      <BannerPortadas imagen={imgPortada} title="" />
+      <BannerPortadas imagen={imgPortada} titulo="Convenio colectivo" />
 
       {/* Introducción */}
       <section className="container py-5">

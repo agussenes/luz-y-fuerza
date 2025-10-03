@@ -18,7 +18,7 @@ import { categoriasUI, trekking, pesca, karate, futbol } from "./data/actividade
 
 // Estilos y portada
 import "./Actividades.css";
-import portadaImg from "../../assets/images/portadaProvi.webp";
+import portadaImg from "../../assets/images/actividades/portadaA.webp";
 
 export default function Actividades() {
   const [q, setQ] = useState("");
@@ -46,7 +46,7 @@ export default function Actividades() {
         url="https://tu-dominio/actividades"
         image="https://tusitio.com/img/home-og-image.jpg"
       />
-      <BannerPortadas imagen={portadaImg} titulo="" />
+      <BannerPortadas imagen={portadaImg} titulo="Actividades" />
 
       <div className="container py-4">
         <FilterBar
