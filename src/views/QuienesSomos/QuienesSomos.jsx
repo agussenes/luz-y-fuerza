@@ -4,7 +4,7 @@ import BannerPortadas from '../../components/reutilizables/bannerPortadas/Banner
 
 
 // improt imagenes 
-import bannerQuiSomos from '../../assets/images/portadaProvi.webp';
+import bannerQuiSomos from '../../assets/images/quienesSomos/portadaQS.webp';
 
 function QuienesSomos() {
   return (

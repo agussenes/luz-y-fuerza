@@ -1,6 +1,5 @@
 .HeroContainerG {
-    aspect-ratio: 16 / 9;
-    height: auto !important;
+    height: 75vh !important;
     /* deja que lo defina el ratio */
     width: 100%;
 

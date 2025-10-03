@@ -7,7 +7,7 @@ import BannerPortadas from '../../components/reutilizables/bannerPortadas/Banner
 import './Historia.css'
 
 // imagenes individuales 
-import portadaImg from '../../assets/images/portadaProvi.webp';
+import portadaImg from '../../assets/images/historia/portadaH.webp';
 
 import julioMurua from '../../assets/images/historia/Julio-Murua-370x400.jpg';
 import atilioBorserini from '../../assets/images/historia/2-Atilio-Borserini-370x400.jpg';
@@ -33,7 +33,7 @@ function Historia() {
       />
 
       {/* Portada */}
-      <BannerPortadas imagen={portadaImg} titulo="" />
+      <BannerPortadas imagen={portadaImg} titulo="nuestra historia" />
 
       {/* Bajada con título grande */}
       <section className="bajada pt-5">

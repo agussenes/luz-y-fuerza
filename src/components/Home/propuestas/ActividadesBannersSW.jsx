@@ -24,7 +24,7 @@ const actividades = [
 
 export default function ActividadesBannersSW() {
   return (
-    <section className="actividades-banners-section text-dark">
+    <section className="actividades-banners-section text-dark mt-4">
       <Container>
         {/* Slider tipo banner */}
         <div className="actividades-banners-wrapper">
@@ -37,18 +37,34 @@ export default function ActividadesBannersSW() {
           >
             {actividades.map((act, i) => (
               <SwiperSlide key={i}>
-                {/* Slide con imagen de fondo sin recortes */}
-                <div
-                  className="actividad-banner"
-                  style={{ backgroundImage: `url(${act.img})` }}
-                >
-                  {/* Overlay superior con titulo y bajada */}
-                  <div className="actividad-overlay-top ">
+                <div className="actividad-banner">
+                  {/* Fondo de apoyo (mismo src, en blur + cover) */}
+                  <div
+                    className="actividad-bg-blur"
+                    style={{ backgroundImage: `url(${act.img})` }}
+                    aria-hidden="true"
+                  />
+
+                  {/* Imagen principal SIN recorte */}
+                  <picture className="actividad-img-wrap">
+                    {/* opcional: versión mobile si la tenés */}
+                    {/* <source srcSet={act.imgMobile} media="(max-width: 768px)" /> */}
+                    <img
+                      src={act.img}
+                      alt={act.titulo}
+                      className="actividad-img-contain"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  {/* Overlay con título y bajada */}
+                  <div className="actividad-overlay-top">
                     <h3 className="actividad-titulo">{act.titulo}</h3>
                     <p className="actividad-bajada">{act.bajada}</p>
                   </div>
                 </div>
               </SwiperSlide>
+
             ))}
           </Swiper>
         </div>

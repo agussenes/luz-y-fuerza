@@ -9,7 +9,7 @@ import BannerPortadas from '../../components/reutilizables/bannerPortadas/Banner
 
 
 // Importa imágenes, videos y PDFs
-import portadaImg from '../../assets/images/portadaProvi.webp';
+import portadaImg from '../../assets/images/nuestraLucha/portadaNL.webp';
 import img1 from '../../assets/images/nuestraLucha/img1.webp';
 import img2 from '../../assets/images/nuestraLucha/img2.webp';
 import img3 from '../../assets/images/nuestraLucha/img3.webp';
@@ -29,7 +29,7 @@ function NuestraLucha() {
         image="https://tusitio.com/img/home-og-image.jpg"
       />
 
-      <BannerPortadas imagen={portadaImg} />
+      <BannerPortadas imagen={portadaImg} titulo="NUestra lucha" />
 
 
       <section className="nuestra-lucha-content py-5">

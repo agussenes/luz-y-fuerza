@@ -17,8 +17,8 @@ function BeneficiosSection() {
         <>
             {/* Módulo beneficios */}
             <section className="modulo-40-40-40 bg-beneficios">
-                <Container className='pt-4'>
-                    <Row className="d-flex justify-content-center mt-4">
+                <Container >
+                    <Row className="d-flex justify-content-center mt-2">
                         <div className="d-flex justify-content-center">
                             <h2 className="lineBorderTitle2 ">Propuestas de servicios</h2>
                         </div>

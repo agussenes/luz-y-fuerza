@@ -1,15 +1,11 @@
-/* Contenedor del módulo */
-.actividades-banners-section {
-  padding: 2rem 0;
+/* Wrapper con altura proporcional consistente */
+.actividades-banners-wrapper {
+  /* Mantiene proporción wide y se adapta al ancho del contenedor */
+  aspect-ratio: 15 / 5;
+  height: auto;
 }
 
-/* El wrapper debe tener ALTURA explícita (no solo min-height) */
-.actividades-banners-wrapper {
-  /* elegí una altura fija responsiva */
-  height: clamp(335px, 45vw, 0px);
-  /* Opción alternativa si preferís por relación de aspecto: */
-  /* aspect-ratio: 16 / 9; height: auto; */
-}
+
 
 /* Swiper ocupa todo el alto del wrapper */
 .actividades-banners-swiper,
@@ -18,78 +14,102 @@
   height: 100%;
 }
 
-/* Cada banner con imagen de fondo SIN recortar */
+/* Banner: capa contenedora */
 .actividad-banner {
-  height: 100%;
-  width: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* no recorta la imagen */
-  background-color: #0b0b0b;
-  /* fondo para “letterbox” */
   position: relative;
+  width: 100%;
+  height: 100%;
   border-radius: 12px;
   overflow: hidden;
+  isolation: isolate; /* asegura que el blur no “sangre” */
 }
 
-/* Overlay superior: degradado para legibilidad del texto */
-.actividad-overlay-top {
+/* Fondo blur para rellenar bandas (puede recortar, es decorativo) */
+.actividad-bg-blur {
   position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px) brightness(0.7);
+  transform: scale(1.08); /* que no se vean bordes del blur */
+  z-index: 0;
+}
+
+/* Imagen principal: NUNCA se recorta */
+.actividad-img-contain {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* clave: mantiene la forma */
+  z-index: 1;
+}
+
+/* Overlay de contenido arriba de todo */
+.actividad-overlay-top {
+  position: relative;
+  z-index: 2;
   inset: 0;
   display: flex;
   flex-direction: column;
+  height: 100%;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: clamp(14px, 3vw, 28px);
   color: #fff;
-  z-index: 1;
 }
 
+/* Degradado suave para legibilidad del texto */
 .actividad-overlay-top::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0));
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.25),
+    rgba(0,0,0,0)
+  );
   z-index: -1;
-  /* queda debajo del texto */
   pointer-events: none;
 }
 
+/* Tipografías */
 .actividad-titulo {
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 .25rem 0;
   font-weight: 800;
   font-size: clamp(18px, 3.2vw, 32px);
   line-height: 1.1;
-  text-align: center;
 }
 
 .actividad-bajada {
   margin: 0;
   font-size: clamp(14px, 2.2vw, 18px);
-  opacity: 0.95;
-  text-align: center;
-
+  opacity: .95;
 }
 
-/* Paginación */
+/* Bullets */
 .actividades-banners-swiper .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  opacity: 0.6;
+  opacity: .6;
 }
-
 .actividades-banners-swiper .swiper-pagination-bullet-active {
   opacity: 1;
 }
 
-/* (Opcional) Ajuste mobile */
-@media (max-width: 576px) {
-  .actividades-banners-wrapper {
-    height: clamp(220px, 54vw, 380px);
+
+
+@media (max-width: 768px) {
+  .actividades-banners-wrapper { 
+    aspect-ratio: 2 / 1;
+  }  
+
+  .actividad-img-contain{
+    object-fit: cover;
   }
 }
+
+
+
