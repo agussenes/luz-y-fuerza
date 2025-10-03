@@ -4,7 +4,7 @@ import SEO from '../../seo/SEO';
 import { Container, Row, Col } from 'react-bootstrap';
 import ContactForm from '../../components/reutilizables/formularioCont/ContactForm';
 import BannerPortadas from '../../components/reutilizables/bannerPortadas/BannerPortadas';
-import portadaImg from '../../assets/images/portadaProvi.webp';
+import portadaImg from '../../assets/images/Contacto/portadaC.webp';
 
 function Contacto() {
     return (
@@ -16,7 +16,7 @@ function Contacto() {
                 image="https://tusitio.com/img/home-og-image.jpg"
             />
 
-            <BannerPortadas imagen={portadaImg} titulo="" />
+            <BannerPortadas imagen={portadaImg} titulo="Contacto" />
 
             <section className="contacto-section py-5">
                 <Container>

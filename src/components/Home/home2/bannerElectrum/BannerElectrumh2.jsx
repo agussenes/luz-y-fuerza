@@ -3,7 +3,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import './BannerElectrumh2.css';
 
 // imagenes 
-import imgBanner from '../../../../assets/images/home/nuestraLuchaBanner.webp';
+import imgBanner from '../../../../assets/images/home/electrumBn.webp';
 
 function BannerElectrum() {
     return (
