@@ -8,7 +8,7 @@ import imgPortada from '../../../assets/images/vidaInstitucional/portadaVI.webp'
 function CuerposOrganicos() {
   return (
    <>
-   <BannerPortadas imagen={imgPortada} titulo="Cuerpos organicos" />
+   <BannerPortadas imagen={imgPortada} titulo="Cuerpos orgánicos" />
    <CuerpoDelegados />
    <AsambleaGeneral />
    </>

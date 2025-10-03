@@ -61,7 +61,7 @@ function Header() {
                   El Sindicato
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
-                  <li><Link className="dropdown-item" to="/quienes-somos">Quienes somos</Link></li>
+                  <li><Link className="dropdown-item" to="/quienes-somos">Quiénes somos</Link></li>
 
                   <li><Link className="dropdown-item" to="/historia">Historia</Link></li>
                   <li><Link className="dropdown-item" to="/nuestra-lucha">Nuestra lucha</Link></li>
@@ -83,7 +83,7 @@ function Header() {
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuVI">
                   <li><Link className="dropdown-item" to="/autoridades">Autoridades</Link></li>
-                  <li><Link className="dropdown-item" to="/cuerpos-organicos">Cuerpos organicos</Link></li>
+                  <li><Link className="dropdown-item" to="/cuerpos-organicos">Cuerpos orgánicos</Link></li>
                   <li><Link className="dropdown-item" to="/secretarias">Secretarías</Link></li>
 
                 </ul>

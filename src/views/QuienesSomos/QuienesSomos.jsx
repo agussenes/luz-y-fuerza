@@ -16,7 +16,7 @@ function QuienesSomos() {
         image="https://tusitio.com/img/home-og-image.jpg"
       />
 
-      <BannerPortadas imagen={bannerQuiSomos} titulo="Quienes somos" />
+      <BannerPortadas imagen={bannerQuiSomos} titulo="Quiénes somos" />
 
       <section className="quienes-section pb-2 pt-4">
         <div className="container">
