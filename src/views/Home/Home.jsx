@@ -21,7 +21,7 @@ import imgPortada5 from '../../assets/images/home/swiperHeroHome/imgSliderHome5.
 function HomeSecund() {
 
   const slides = [
-    { img: imgPortada1, imgMobile: {}, titulo: 'Sindicato Luz y Fuerza', bajada: 'Más de 80 años defendiendo a los trabajadores del servicio eléctrico de Córdoba.', boton: 'El Sindicato', link: '/quienes-somos' },
+    { img: imgPortada1, imgMobile: {}, titulo: 'Luz y Fuerza Córdoba', bajada: 'Más de 80 años defendiendo a los trabajadores del servicio eléctrico de Córdoba.', boton: 'El Sindicato', link: '/quienes-somos' },
     { img: imgPortada2, titulo: 'Beneficios para nuestros afiliados y sus familias', bajada: 'Actividades recreativas, descuentos en turismo, capacitaciones y mucho más.', boton: 'Conocé más', link: '/propuestas-de-servicios' },
     { img: imgPortada3, titulo: 'Luchamos por una EPEC de los cordobeses', bajada: 'Somos un gremio en pie de lucha por una EPEC estatal, democrática e integrada.', boton: 'Mirá nuestra lucha', link: '/nuestra-lucha' },
     { img: imgPortada4, titulo: 'Eléctrum: nuestro histórico diario', bajada: 'Desde 1953 informando sobre la vida sindical, nuestras luchas y Córdoba.', boton: 'Eléctrum Digital', link: 'https://luzyfuerzacordobaelectrum.com.ar/electrum-digital/' },
