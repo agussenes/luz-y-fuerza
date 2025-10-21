@@ -1,5 +1,5 @@
 .contenedorCardsPS .card {
-    min-height: 580px !important;
+    min-height: 400px !important;
 }
 
 @media (max-width:768px) {

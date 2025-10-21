@@ -1,6 +1,6 @@
 export const turismo = {
   hero: {
-    titulo: "Servicios Turísticos",
+    titulo: "Turistico",
     bajada:
       "Complejos en Mina Clavero y Cosquín, con estadías en hoteles, camping y temporada de pileta para toda la familia.",
     icon: "bi-geo-alt-fill",
@@ -63,7 +63,7 @@ export const turismo = {
 
 export const educativos = {
   hero: {
-    titulo: "Servicios Educativos",
+    titulo: "Educacion",
     bajada:
       "Centro de Actividades para jubilados/as, becas para hijos/as de afiliados y entrega de útiles escolares.",
     icon: "bi-mortarboard",
@@ -151,7 +151,7 @@ export const juridicos = {
 
 export const campoDeportivo = {
   hero: {
-    titulo: "Servicios Jurídicos y de Asesoramiento",
+    titulo: "Campo de Deportes",
     bajada:
       "Atención para trámites jubilatorios, consultas previsionales y legales, continuidad de afiliación y asistencia en vivienda.",
     icon: "bi-journal-text",
@@ -192,5 +192,87 @@ export const campoDeportivo = {
       telefonos: "351 422 8079/81 – 351 313 0413 – 351 381 1001",
       email: "luzyfuerzavivienda@gmail.com",
     },
+  },
+};
+
+export const accionSocial = {
+  hero: {
+    titulo: "Acción social y deporte",
+    bajada:
+      "Centro de Actividades para jubilados/as, becas para hijos/as de afiliados y entrega de útiles escolares.",
+    icon: "bi-mortarboard",
+  },
+  centro: {
+    nombre: "Centro de Actividades “Lorenzo Racero”",
+    gestion: "Secretaría de Previsión Social",
+    ubicacion: "Barrio Cofico",
+    descripcion:
+      "Espacio cultural y social para afiliados jubilados y la vida sindical lucifuercista. Talleres que combinan aprendizaje, movimiento, música y danza para el bienestar general.",
+    grilla: [
+      { dia: "Martes", hora: "14:30 a 16:15", taller: "Manejo de celular", profe: "Prof. Jeremy Mendez" },
+      { dia: "Martes", hora: "16:15 a 18:15", taller: "Ritmo", profe: "Prof. María Astrada" },
+      { dia: "Jueves", hora: "16:00 a 18:00", taller: "Folklore", profe: "Prof. Silvia Yapura" },
+    ],
+    contacto: {
+      whatsapp: "351 7 484 083",
+      telefonoSede: "351 422 8079/81",
+    },
+  },
+  becas: {
+    marco:
+      "Otorgadas por EPEC, derecho establecido en los artículos 29 y 30 del CCT 165/75.",
+    comision:
+      "Comisión Mixta de Becas (empresa y sindicatos de Luz y Fuerza: Córdoba, Regional Villa María y Río Cuarto).",
+    quienes:
+      "Hijos/as de afiliados que cursen como alumnos regulares el último o penúltimo año del nivel secundario, terciario o universitario.",
+    inscripcion:
+      "Se abre todos los años. Orden de mérito con prioridad para quienes no fueron beneficiados el año anterior.",
+    contacto: "José María Britos – 351 620 6871",
+  },
+  utiles: {
+    descripcion:
+      "Entrega anual antes del inicio de clases: kit para primaria y vouchers/descuentos para secundaria.",
+    contacto: "Secretaría de Acción Social y Deportes.",
+  },
+};
+
+export const cultura = {
+  hero: {
+    titulo: "Cultura",
+    bajada:
+      "Centro de Actividades para jubilados/as, becas para hijos/as de afiliados y entrega de útiles escolares.",
+    icon: "bi-mortarboard",
+  },
+  centro: {
+    nombre: "Centro de Actividades “Lorenzo Racero”",
+    gestion: "Secretaría de Previsión Social",
+    ubicacion: "Barrio Cofico",
+    descripcion:
+      "Espacio cultural y social para afiliados jubilados y la vida sindical lucifuercista. Talleres que combinan aprendizaje, movimiento, música y danza para el bienestar general.",
+    grilla: [
+      { dia: "Martes", hora: "14:30 a 16:15", taller: "Manejo de celular", profe: "Prof. Jeremy Mendez" },
+      { dia: "Martes", hora: "16:15 a 18:15", taller: "Ritmo", profe: "Prof. María Astrada" },
+      { dia: "Jueves", hora: "16:00 a 18:00", taller: "Folklore", profe: "Prof. Silvia Yapura" },
+    ],
+    contacto: {
+      whatsapp: "351 7 484 083",
+      telefonoSede: "351 422 8079/81",
+    },
+  },
+  becas: {
+    marco:
+      "Otorgadas por EPEC, derecho establecido en los artículos 29 y 30 del CCT 165/75.",
+    comision:
+      "Comisión Mixta de Becas (empresa y sindicatos de Luz y Fuerza: Córdoba, Regional Villa María y Río Cuarto).",
+    quienes:
+      "Hijos/as de afiliados que cursen como alumnos regulares el último o penúltimo año del nivel secundario, terciario o universitario.",
+    inscripcion:
+      "Se abre todos los años. Orden de mérito con prioridad para quienes no fueron beneficiados el año anterior.",
+    contacto: "José María Britos – 351 620 6871",
+  },
+  utiles: {
+    descripcion:
+      "Entrega anual antes del inicio de clases: kit para primaria y vouchers/descuentos para secundaria.",
+    contacto: "Secretaría de Acción Social y Deportes.",
   },
 };

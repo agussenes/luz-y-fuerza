@@ -15,6 +15,11 @@ import img2 from '../../assets/images/nuestraLucha/img2.webp';
 import img3 from '../../assets/images/nuestraLucha/img3.webp';
 import img4 from '../../assets/images/nuestraLucha/img4.webp';
 
+// imagen banner epec no es anonima 
+import imgPcENEA from '../../assets/images/nuestraLucha/bannerEpecNoEsAnonima/Banner-ENEA-web.webp'
+import imgPcENEAmobile from '../../assets/images/nuestraLucha/bannerEpecNoEsAnonima/Banner-ENEA-web-mobile.webp'
+
+// estilo 
 import './NuestraLucha.css';
 
 function NuestraLucha() {
@@ -76,7 +81,7 @@ function NuestraLucha() {
 
                 </div>
               </Col>
-              
+
               <Col lg={12}>
                 <div>
                   <h3 className="fw-bold mt-5 lineBorderSubTitle">Privatización sectorizada, vaciamiento y precarización</h3>
@@ -95,7 +100,7 @@ function NuestraLucha() {
 
                 </div>
               </Col>
-              
+
               <Col lg={12}>
                 <div>
                   <h3 className="fw-bold mt-5 lineBorderSubTitle">Plan de Lucha y acción gremial</h3>
@@ -108,20 +113,31 @@ function NuestraLucha() {
                 </div>
               </Col>
 
-              <Col lg={12}className='d-flex align-items-center mt-3'>
+              <Col lg={12} className='d-flex align-items-center mt-3'>
                 <div className="d-flex justify-content-center">
                   <img src={img4} alt="" loading='lazy' className='img-fluid rounded-3' />
 
                 </div>
               </Col>
 
-               <Col lg={12}>
+              <Col lg={12}>
                 <div>
                   <h3 className="fw-bold mt-5 lineBorderSubTitle">EPEC estatal e Integrada</h3>
                   <p>En la década del 90 enfrentamos épocas muy difíciles, con sucesivos intentos privatistas que amenazan a EPEC, se trató de dividirla en “unidades de negocios”, convertirla en Sociedad Anónima, concesionarla, y venderla. Todos estos intentos fracasaron, fundamentalmente porque el pueblo de Córdoba y los trabajadores lucifuercistas la defendieron con todas sus fuerzas, con la convicción de que la Empresa era parte sustancial de nuestro patrimonio y un instrumento vital para una política económica con sentido social. El modelo de privatizaciones impuesto en los años 90 resultó en un modelo de ganancias para las empresas privadas que se han llevado enormes ganancias fuera del país, sin realizar las inversiones prometidas, eliminado miles de puestos de trabajo, desintegrando operativamente las empresas, con la consiguiente baja en la calidad del servicio y cortes prologados que desde hace años sufren recurrentemente los usuarios. Podemos decir con orgullo que en el caso de Córdoba la situación es distinta, sostuvimos un servicio eléctrico de calidad, sobre todo porque conservamos a EPEC, la única empresa estatal y totalmente integrada que quedó en pie en el país</p>
                   <p>Derrotado el intento de privatización en 2001, la tarea fue abocarse a reconstruir la empresa con una herramienta fundamental, su nueva Carta Orgánica, lograda en 2003, que reafirma a EPEC como estatal e integrada, abriendo nuevas posibilidades de crecimiento e incorporando a los trabajadores organizados en aspectos centrales de la gestión de la Empresa, siguiendo la concepción presente en el Convenio Colectivo de Trabajo 165/75, que la misma carta orgánica reconoce como plenamente vigente</p>
                   <p>La historia de los últimos años nos ha demostrado que fue un acierto la creación de la empresa estatal, así como haberla defendido contra la privatización y enfrentar hoy las políticas que de vaciamiento y tercerización que desde 2018 debilitan su funcionamiento operativo, su rol estratégico y la calidad del servicio</p>
-                  <a href="https://luzyfuerzacordoba.com.ar/epec-no-es-anonima/" target="_blank" rel="noopener noreferrer" className="btn estiloBotonH2 mt-3 my-4">Defendamos EPEC</a>
+
+                  <Link to='https://luzyfuerzacordoba.com.ar/epec-no-es-anonima/' target="_blank" >
+                    <div className="bannerGif-img rounded">
+                      <img src={imgPcENEA} alt="Portada Luz y Fuerza" className="pc" />
+                      <img src={imgPcENEAmobile} alt="Portada Luz y Fuerza" className="mobile " />
+                    </div>
+                  </Link>
+                  <div className="d-flex justify-content-center">
+                    <a href="https://luzyfuerzacordoba.com.ar/epec-no-es-anonima/" target="_blank" rel="noopener noreferrer" className="btn estiloBotonH2 mt-3 my-4">Defendamos EPEC</a>
+
+                  </div>
+
                 </div>
               </Col>
 

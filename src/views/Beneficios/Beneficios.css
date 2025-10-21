@@ -31,8 +31,7 @@
   left: 0;
   top: .15rem;
   font-size: 1rem;
-  color: #198754;
-  /* success */
+  
 }
 
 .lista-ticks .title {
@@ -66,7 +65,30 @@
   overflow-x: auto;
 }
 
-/* imagen responsive con ratio si querés usar imágenes luego */
+
 .ratio img.object-fit-cover {
   object-fit: cover;
+}
+
+.img-wrap { 
+  position: relative;
+}
+
+
+.titulo-overlay {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;                 
+  transform: translateX(-50%);   
+  background: #0d3b66;
+  color: #fff;
+  padding: .35rem .9rem;
+  border-radius: 0px 0px 16px 16px;
+  border-bottom: 2px solid #fff;       
+  border-left: 2px solid #fff;       
+  border-right: 2px solid #fff;       
+  box-shadow: 0 6px 14px rgba(0,0,0,.15);
+  margin: 0;                     
+  font-size: 1.1rem;
+  width: 101%;
 }

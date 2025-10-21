@@ -19,6 +19,8 @@ import Beneficios from './views/Beneficios/Beneficios';
 import BeneficiosEducativos from './views/Beneficios/BeneficiosEducativos';
 import BeneficiosTurismo from './views/Beneficios/BeneficiosTurismo';
 import BeneficiosJuridicos from './views/Beneficios/BeneficiosJuridicos';
+import BeneficioCultura from './views/Beneficios/BeneficioCultura';
+import BeneficiosAccionSocial from './views/Beneficios/BeneficiosAccionSocial';
 import Actividades from './views/Actividades/Actividades';
 import NotFound from './views/NotFound/NotFound';
 import CuerposOrganicos from './views/VidaInstitucional/CuerposOrganicos/CuerposOrganicos';
@@ -45,10 +47,12 @@ function Router() {
           <Route path="/delegados-generales" element={<CuerpoGenDelegados />} />
           <Route path="/delegados-delegadas" element={<DelegadosDelegadas />} />
           <Route path="/contacto" element={<Contacto />} />
-          <Route path="/propuestas-de-servicios" element={<Beneficios />} />
-          <Route path="/propuestas-de-servicios-turisticos" element={<BeneficiosTurismo />} />
-          <Route path="/propuestas-de-servicios-educativos" element={<BeneficiosEducativos />} />
-          <Route path="/propuestas-de-servicios-juridicos-y-de-asesoramiento" element={<BeneficiosJuridicos />} />
+          <Route path="/propuesta-de-servicios" element={<Beneficios />} />
+          <Route path="/propuesta-de-servicios-turisticos" element={<BeneficiosTurismo />} />
+          <Route path="/propuesta-de-servicios-accion-social-y-deporte" element={<BeneficiosAccionSocial/>} />
+          <Route path="/propuesta-de-servicios-cultura" element={<BeneficioCultura />} />
+          <Route path="/propuesta-de-servicios-educativos" element={<BeneficiosEducativos />} />
+          <Route path="/propuesta-de-servicios-juridicos-y-de-asesoramiento" element={<BeneficiosJuridicos />} />
           <Route path="/actividades" element={<Actividades />} />
 
           {/* propuestas home  */}
