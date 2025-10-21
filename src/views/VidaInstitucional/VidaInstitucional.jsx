@@ -31,7 +31,7 @@ function VidaInstitucional() {
     { titulo: 'Gabriel Romero', texto: 'Subsecretario de Prensa', alt: 'Gabriel Romero | Subsecretario de Prensa' },
     { titulo: 'Franco Carrizo', texto: 'Secretario de Previsión Social', alt: 'Franco Carrizo | Secretario de Previsión Social' },
     { titulo: 'Ariel Cabrera', texto: 'Subsecretario de Previsión Social', alt: 'Ariel Cabrera | Subsecretario de Previsión Social' },
-    { titulo: 'Roberto Oliva', texto: 'Secretario de Política Energética y Asuntos Técnicos', alt: 'Roberto Oliva | Secretario de Política Energética y Asuntos Técnicos' },
+    { titulo: 'Roberto Oliva', texto: 'Secretario de Política Energética y Asuntos Tec.', alt: 'Roberto Oliva | Secretario de Política Energética y Asuntos Técnicos' },
     { titulo: 'Roberto Britos', texto: 'Subsecretario de Política Energética', alt: 'Roberto Britos | Subsecretario de Política Energética' },
     { titulo: 'Juan Muñoz', texto: 'Secretario de Turismo y Cultura', alt: 'Juan Muñoz | Secretario de Turismo y Cultura' },
     { titulo: 'Leonardo Rojas', texto: 'Subsecretario de Turismo y Cultura', alt: 'Leonardo Rojas | Subsecretario de Turismo y Cultura' },
@@ -114,8 +114,8 @@ function VidaInstitucional() {
             {swipperAutoridades.map((item, i) => (
               <div key={i} className="col">
                 <div className="p-2  rounded h-100 bg-white">
-                  <h6 className="fw-bold mb-1">{item.titulo}</h6>
-                  <p className="small text-muted mb-0">{item.texto}</p>
+                  <h6 className="fw-bold mb-1 tituloAutoridades">{item.titulo}</h6>
+                  <p className=" text-muted mb-0 ">{item.texto}</p>
                 </div>
               </div>
             ))}
@@ -125,72 +125,125 @@ function VidaInstitucional() {
         <div className="vocales container py-3 border-bottom mb-3">
           <h2 className="mb-4 lineBorderTitle">VOCALES</h2>
           <div className="row">
+            <h5 className='lineBorderSubTitle'>Titulares</h5>
             {/* Columna 1 */}
             <div className="col-md-4 mb-4">
-              <h5 className='lineBorderSubTitle'>Titulares</h5>
-              <ul className="lista-correcta ps-3">
-                <li>Jorge Parejo - 1º Vocal Titular</li>
-                <li>Christian Maldonado - 2º Vocal Titular</li>
-                <li>Marcos Ceballos Soria - 3º Vocal Titular</li>
-                <li>Víctor Gramajo - 4º Vocal Titular</li>
-                <li>Diego Lozada - 5º Vocal Titular</li>
-              </ul>
+              <div className='p-2'>
+                <h6 className="fw-bold mb-1 tituloAutoridades">Jorge Parejo </h6>
+                <p className=" text-muted mb-0">1º Vocal Titular</p>
+              </div>
+              <div className='p-2'>
+                <h6 className="fw-bold mb-1 tituloAutoridades">Christian Maldonado </h6>
+                <p className=" text-muted mb-0">2º Vocal Titular</p>
+              </div>
+              <div className='p-2'>
+                <h6 className="fw-bold mb-1 tituloAutoridades">Marcos Ceballos Soria</h6>
+                <p className=" text-muted mb-0">3º Vocal Titular</p>
+              </div>
+              <div className='p-2'>
+                <h6 className="fw-bold mb-1 tituloAutoridades">Víctor Gramajo</h6>
+                <p className=" text-muted mb-0">4º Vocal Titular</p>
+              </div>
+
+              <div className='p-2'>
+                <h6 className="fw-bold mb-1 tituloAutoridades">Diego Lozada</h6>
+                <p className="text-muted mb-0">5º Vocal Titular</p>
+              </div>
+
             </div>
 
             {/* Columna 2 */}
             <div className="col-md-4 mb-4 d-flex">
-              <ul className="lista-correcta pe-3 mb-0 separadorBorde">
-                <li>Ricardo Acosta – 6º Vocal Titular</li>
-                <li>Ariel Romero – 7º Vocal Titular</li>
-                <li>Pablo Ceballos – 8º Vocal Titular</li>
-                <li>Germán Agüero – 9º Vocal Titular</li>
-                <li>Luis Calderón – 10º Vocal Titular</li>
-              </ul>
+              <div className='w-100'>
+                <div className='p-2'>
+                  <h6 className="fw-bold mb-1 tituloAutoridades">Ricardo Acosta</h6>
+                  <p className=" text-muted mb-0">6º Vocal Titular</p>
+                </div>
+                <div className='p-2'>
+                  <h6 className="fw-bold mb-1 tituloAutoridades">Ariel Romero</h6>
+                  <p className=" text-muted mb-0">7º Vocal Titular</p>
+                </div>
+                <div className='p-2'>
+                  <h6 className="fw-bold mb-1 tituloAutoridades">Pablo Ceballos</h6>
+                  <p className=" text-muted mb-0">8º Vocal Titular</p>
+                </div>
+                <div className='p-2'>
+                  <h6 className="fw-bold mb-1 tituloAutoridades">Germán Agüero</h6>
+                  <p className=" text-muted mb-0">9º Vocal Titular</p>
+                </div>
+                <div className='p-2'>
+                  <h6 className="fw-bold mb-1 tituloAutoridades">Luis Calderón</h6>
+                  <p className=" text-muted mb-0">10º Vocal Titular</p>
+                </div>
+              </div>
+
               <div className="linea-vertical"></div>
             </div>
 
             {/* Columna 3 */}
             <div className="col-md-4 mb-4">
               <h5 className='lineBorderSubTitle'>Suplentes</h5>
-              <ul className="lista-correcta ps-3">
-                <li> Lucas Muñoz Giraudo</li>
-                <li> Hugo Pereyra</li>
-                <li> José Segura</li>
-                <li> Juan Alaniz</li>
-                <li> Claudia Córdoba</li>
-              </ul>
+              <div className="py-2">
+                <h6 className="fw-bold mb-1 tituloAutoridades">Lucas Muñoz Giraudo</h6>
+
+              </div>
+              <div className="py-2">
+                <h6 className="fw-bold mb-1 tituloAutoridades">Hugo Pereyra</h6>
+
+              </div>
+              <div className="py-2">
+                <h6 className="fw-bold mb-1 tituloAutoridades">José Segura</h6>
+
+              </div>
+              <div className="py-2">
+                <h6 className="fw-bold mb-1 tituloAutoridades">Juan Alaniz</h6>
+
+              </div>
+              <div className="py-2">
+                <h6 className="fw-bold mb-1 tituloAutoridades">Claudia Córdoba</h6>
+              </div>
+
+
             </div>
           </div>
         </div>
 
 
         {/* Título + Bajada + Row 3 columnas */}
-        <h2 className="lineBorderTitle m-0 mt-3">TRIBUNAL PARITARIO</h2>
-        <p className="my-2">El tribunal paritario cumple su una función primordial, establecida en el art. 82 del CCT, es el organismo facultado para dictaminar sobre la aplicación e interpretación de los dispositivos establecidos en el Convenio Colectivo de Trabajo 165/65.</p>
-        <p className="my-2">La organización sindical integra el tribunal paritario con 4 representantes, que son elegidos mediante voto directo y secreto de los afiliados, en elecciones que se harán conjuntamente con las de Consejo Directivo.</p>
-        <div className="row py-3 border-bottom mb-3">
-          {tribunalPari.map((item, i) => (
-            <div key={i} className="col-md-4 ">
-              <h5 className='fw-bold'>{item.titulo}</h5>
-              <p>• {item.texto}</p>
+        <div className="container border-bottom py-3 mb-3">
+          <div className="row">
+            <h2 className="lineBorderTitle m-0 mt-3">TRIBUNAL PARITARIO</h2>
+            <div className="col-lg-8 col-md-12">
+              <p className="my-2">El tribunal paritario cumple su una función primordial, establecida en el art. 82 del CCT, es el organismo facultado para dictaminar sobre la aplicación e interpretación de los dispositivos establecidos en el Convenio Colectivo de Trabajo 165/65.</p>
+              <p className="my-2">La organización sindical integra el tribunal paritario con 4 representantes, que son elegidos mediante voto directo y secreto de los afiliados, en elecciones que se harán conjuntamente con las de Consejo Directivo.</p>
             </div>
-          ))}
+            <div className="col-lg-4 col-md-12 d-flex align-items-center flex-column">
+              {tribunalPari.map((item, i) => (
+                <div key={i} className="col-md-12 p-2">
+                  <h6 className="fw-bold mb-1 tituloAutoridades"> {item.titulo}</h6>
+                  <p className=" text-muted mb-0">{item.texto}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
+
         {/* Título + Row con 6 columnas */}
-        <h2 className="lineBorderTitle m-0 mt-3">COMISIÓN REVISORA DE CUENTAS</h2>
         <div className="row py-3 border-bottom mb-3">
-          <div className='textoComisionRevisora my-2'>
+          <h2 className="lineBorderTitle p-0 m-0 my-3">COMISIÓN REVISORA DE CUENTAS</h2>
+
+          <div className='textoComisionRevisora my-2 col-lg-6 col-md-12'>
             <p>Es elegida cada 4 años conjuntamente con la elección de Consejo Directivo, que designará la Comisión Revisora de Cuentas.</p>
             <p>Tiene a su cargo fiscalizar la gestión administrativa y contable del Consejo Directivo y presentar a la Asamblea General Ordinara los informes y balances anuales sobre la situación económico financiera del sindicato.</p>
 
           </div>
-          <div className="col-lg-12 d-flex flex-wrap gap-4 mb-4">
+          <div className="col-lg-6 col-md-12 d-flex flex-wrap gap-4 mb-4">
             {comisionRevisoraCuentas.map((item, i) => (
-              <p key={i} >
-                <strong>{item.titulo}</strong> <br />
-                • {item.texto}
-              </p>
+              <div key={i} className="p-2">
+                <h6 className="fw-bold mb-1 tituloAutoridades"> {item.titulo}</h6>
+                <p className=" text-muted mb-0">{item.texto}</p>
+              </div>
             ))}
           </div>
         </div>

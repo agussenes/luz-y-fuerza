@@ -8,7 +8,7 @@ import ContactCard from "../../components/Beneficios/ContactCard";
 import { turismo } from "./data/beneficiosDetalle";
 import "./Beneficios.css";
 
-import portadaImg from "../../assets/images/vidaInstitucional/bannerPortada.jpg";
+import portadaImg from "../../assets/images/beneficios/portadaPS/portadaTur.webp"
 
 export default function BeneficiosTurismo() {
   const { hero, minaClavero, cosquin, inscripciones, guiñazu } = turismo;

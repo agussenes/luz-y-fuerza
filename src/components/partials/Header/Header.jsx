@@ -104,7 +104,7 @@ function Header() {
                   Afiliados
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu">
-                  <li><Link className="dropdown-item" to="/propuestas-de-servicios">Propuesta de servicios</Link></li>
+                  <li><Link className="dropdown-item" to="/propuesta-de-servicios">Propuesta de servicios</Link></li>
                   <li><Link className="dropdown-item" to="/actividades">Actividades</Link></li>
                   <li><Link className="dropdown-item" to="/convenio-colectivo">Convenio colectivo</Link></li>
 

@@ -32,7 +32,7 @@ function HomeSecund() {
     <>
       <HeroSwiperH2 slides={slides} />;
       <div className="d-flex justify-content-center pb-0 mb-0 pt-2">
-        <h2 className="lineBorderTitle2 ">Propuesta de servicios</h2>
+        <h2 className="lineBorderTitle2 ">Nuestras propuestas para vos</h2>
       </div>
       <BeneficiosSectionH2 />
       <ActividadesBannersSW />

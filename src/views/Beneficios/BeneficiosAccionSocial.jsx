@@ -7,7 +7,7 @@ import FeatureList from "../../components/Beneficios/FeatureList";
 import { accionSocial } from "./data/beneficiosDetalle";
 import "./Beneficios.css";
 
-import portadaImg from "../../assets/images/vidaInstitucional/bannerPortada.jpg";
+import portadaImg from "../../assets/images/beneficios/portadaPS/portadaASD.webp";
 
 export default function BeneficioCultura() {
   const { hero, centro, becas, utiles } = accionSocial;

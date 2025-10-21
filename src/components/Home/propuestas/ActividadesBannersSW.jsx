@@ -24,7 +24,7 @@ const actividades = [
 
 export default function ActividadesBannersSW() {
   return (
-    <section className="actividades-banners-section text-dark mt-4">
+    <section className="actividades-banners-section text-dark mt-4 mb-3">
       <Container>
         {/* Slider tipo banner */}
         <div className="actividades-banners-wrapper">

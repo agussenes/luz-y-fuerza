@@ -8,7 +8,7 @@ import ContactCard from "../../components/Beneficios/ContactCard";
 import { juridicos } from "./data/beneficiosDetalle";
 import "./Beneficios.css";
 
-import portadaImg from "../../assets/images/vidaInstitucional/bannerPortada.jpg";
+import portadaImg from "../../assets/images/beneficios/portadaPS/portadaAse.webp"
 
 export default function BeneficiosJuridicos() {
   const { hero, previsional, vivienda } = juridicos;

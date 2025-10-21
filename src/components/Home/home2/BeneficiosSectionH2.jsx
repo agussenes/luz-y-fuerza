@@ -7,8 +7,9 @@ import './BeneficiosSection.css'
 import imgBeneEdu from '../../../assets/images/beneficios/imgEducativo.webp';
 import imgBeneJudi from '../../../assets/images/beneficios/cardJudicialBene.webp';
 import imgTuristico from '../../../assets/images/beneficios/imgTuristico.webp';
-import imgObraSocial from '../../../assets/images/beneficios/foto-edificio.jpg'
+import imgObraSocial from '../../../assets/images/beneficios/obraSocial.webp'
 import imgClub from '../../../assets/images/beneficios/imgClub.webp';
+import imgCultura from '../../../assets/images/beneficios/imgScultura.webp'
 
 function BeneficiosSection() {
     return (
@@ -34,12 +35,12 @@ function BeneficiosSection() {
                                 </div>
 
                                 <hr className="p-0 mt-4 mb-0" />
-                                <ul className="lista-ticks flex-grow-1">
+                                <ul className="lista-ticks flex-grow-1 m-0 mt-3">
                                     <li>
-                                        Complejos Turísticos: Mina Clavero y Cosquín. Pensión completa para afiliados y familia.
+                                       Complejos Turísticos en Mina Clavero y Cosquín.
                                     </li>
                                     <li>
-                                        Complejos Turísticos: Mina Clavero y Cosquín. Pensión completa para afiliados y familia.
+                                       Pensión completa para afiliados y familia.
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center">
@@ -63,12 +64,12 @@ function BeneficiosSection() {
                                 </div>
 
                                 <hr className="p-0 mt-4 mb-0" />
-                                <ul className="lista-ticks flex-grow-1">
+                                <ul className="lista-ticks flex-grow-1  m-0 mt-3">
                                     <li>
-                                        Becas: Hijos de afiliados en secundario, terciario o universitario.
+                                        Becas: Hijos de afiliados en secundario, terciario o universitario. 
                                     </li>
                                     <li>
-                                        Útiles escolares: Kit para primaria y vouchers/descuentos para secundaria.
+                                        Útiles escolares: Kit para escuela primaria y  descuentos para la secundaria.
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center">
@@ -92,29 +93,29 @@ function BeneficiosSection() {
                                 </div>
 
                                 <hr className="p-0 mt-4 mb-0" />
-                                <ul className="lista-ticks flex-grow-1">
+                                <ul className="lista-ticks flex-grow-1  m-0 mt-3">
                                     <li>
-                                        Asesoramiento previsional y jurídico: Inicio de trámite jubilatorio, consultas generales y continuidad de afiliación.
+                                        Asesoramiento previsional y jurídico: Inicio de trámite jubilatorio y consultas generales.
                                     </li>
                                     <li>
-                                        Vivienda: Asistencia para edificación/refacción y atención prioritaria ante siniestros estructurales.
+                                        Vivienda: Asistencia para edificación/refacción.
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center">
-                                    <Link to="/propuestas-de-servicios-juridicos-y-de-asesoramiento" className="px-4 estiloBotonH2">Ver más</Link>
+                                    <Link to="/propuesta-de-servicios-juridicos-y-de-asesoramiento" className="px-4 estiloBotonH2">Ver más</Link>
                                 </div>
                             </div>
                         </Col>
                     </Row>
 
-                    {/* Fila 2 */}
+                   
                     <Row className="d-flex g-4 justify-content-center mt-4 contenedorCardsPS">
-                        {/* Acción social y deporte */}
+                        {/* cultura */}
                         <Col lg={4} md={6} sm={12}>
                             <div className="card shadow p-3">
                                 <div className="img-wrap position-relative">
                                     <img
-                                        src={imgClub}
+                                        src={imgCultura}
                                         alt="imagen de complejos turisticos luz y fuerza par asus afiliados - beneficios"
                                         className="img-fluid rounded"
                                     />
@@ -124,12 +125,12 @@ function BeneficiosSection() {
                                 </div>
 
                                 <hr className="p-0 mt-4 mb-0" />
-                                <ul className="lista-ticks flex-grow-1">
+                                <ul className="lista-ticks flex-grow-1  m-0 mt-3">
                                     <li>
-                                        Campo de Deportes: Guiñazú 3: canchas, pileta, quinchos y asadores. Temporada de pileta con tarifa diferencial.
+                                        Centro de documentación histórica del Sindicato.
                                     </li>
                                     <li>
-                                        Campo de Deportes:
+                                        Acceso a eventos artísticos y talleres culturales. 
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center">
@@ -153,12 +154,12 @@ function BeneficiosSection() {
                                 </div>
 
                                 <hr className="p-0 mt-4 mb-0" />
-                                <ul className="lista-ticks flex-grow-1">
+                                <ul className="lista-ticks flex-grow-1  m-0 mt-3">
                                     <li>
-                                        Campo de Deportes: Guiñazú 3: canchas, pileta, quinchos y asadores. Temporada de pileta con tarifa diferencial.
+                                       Centro Médico en la ciudad de Córdoba.
                                     </li>
                                     <li>
-                                        Campo de Deportes:
+                                        Más de 100 prestadores de diferentes especialidades.
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center">
@@ -182,12 +183,12 @@ function BeneficiosSection() {
                                 </div>
 
                                 <hr className="p-0 mt-4 mb-0" />
-                                <ul className="lista-ticks flex-grow-1">
+                                <ul className="lista-ticks flex-grow-1  m-0 mt-3">
                                     <li>
-                                        Campo de Deportes: Guiñazú 3: canchas, pileta, quinchos y asadores. Temporada de pileta con tarifa diferencial.
+                                        Campo de Deportes Guiñazú 3: Canchas, pileta, quinchos y asadores. 
                                     </li>
                                     <li>
-                                        Campo de Deportes: Guiñazú 3…
+                                        Temporada de pileta con tarifa diferencial
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center">

@@ -7,7 +7,7 @@ import FeatureList from "../../components/Beneficios/FeatureList";
 import { educativos } from "./data/beneficiosDetalle";
 import "./Beneficios.css";
 
-import portadaImg from "../../assets/images/vidaInstitucional/bannerPortada.jpg";
+import portadaImg from "../../assets/images/beneficios/portadaPS/portadaEdu.webp";
 
 export default function BeneficiosEducativos() {
   const { hero, centro, becas, utiles } = educativos;
