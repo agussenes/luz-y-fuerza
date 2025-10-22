@@ -254,7 +254,7 @@ function VidaInstitucional() {
         </div>
 
         {/* Título + Row 3 columnas con subtítulo + 2 párrafos */}
-        <h2 className="m-0 my-3 lineBorderTitle ">Comisiones Estatutarias</h2>
+        <h2 className="m-0 my-3 lineBorderTitle text-uppercase">Comisiones Estatutarias</h2>
         <div className="row ">
           {comisionesEstatutarias.map((item, i) => (
             <div key={i} className="col-md-4 mb-4">

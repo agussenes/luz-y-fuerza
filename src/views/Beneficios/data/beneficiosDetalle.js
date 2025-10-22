@@ -202,38 +202,9 @@ export const accionSocial = {
       "",
     icon: "bi-mortarboard",
   },
-  centro: {
-    nombre: "”",
-    gestion: "",
-    ubicacion: "",
-    descripcion:
-      "",
-    grilla: [
-      { dia: "", hora: "", taller: "", profe: "" },
-      { dia: "", hora: "", taller: "", profe: "" },
-      { dia: "", hora: "", taller: "", profe: "" },
-    ],
-    contacto: {
-      whatsapp: "",
-      telefonoSede: "",
-    },
-  },
-  becas: {
-    marco:
-      "",
-    comision:
-      "",
-    quienes:
-      "",
-    inscripcion:
-      "",
-    contacto: "",
-  },
-  utiles: {
-    descripcion:
-      "",
-    contacto: "",
-  },
+  mantenimiento: {
+    bajada: "Estamos desarrollando esto para nuestros/as compañeros y compañeras"
+  }
 };
 
 export const cultura = {
@@ -243,36 +214,7 @@ export const cultura = {
       "",
     icon: "bi-mortarboard",
   },
-  centro: {
-    nombre: "”",
-    gestion: "",
-    ubicacion: "",
-    descripcion:
-      "",
-    grilla: [
-      { dia: "", hora: "", taller: "", profe: "" },
-      { dia: "", hora: "", taller: "", profe: "" },
-      { dia: "", hora: "", taller: "", profe: "" },
-    ],
-    contacto: {
-      whatsapp: "",
-      telefonoSede: "",
-    },
-  },
-  becas: {
-    marco:
-      "",
-    comision:
-      "",
-    quienes:
-      "",
-    inscripcion:
-      "",
-    contacto: "",
-  },
-  utiles: {
-    descripcion:
-      "",
-    contacto: "",
-  },
+  mantenimiento: {
+    bajada: "Estamos desarrollando esto para nuestros/as compañeros y compañeras"
+  }
 };
