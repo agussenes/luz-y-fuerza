@@ -104,7 +104,8 @@ const secretariasDetalle = {
     titulo: 'Secretaría Adjunta',
     subtitulo: 'Nuestro trabajo',
     contenido: [
-      'Colabora activamente con la Secretaría General en todas sus funciones, interviniendo en la toma de decisiones claves del sindicato.'
+      'La Secretaría Adjunta colabora y respalda a la Secretaría General, en su organización interna, y todo cuanto la organización sindical requiera, cumpliendo y haciendo cumplir las decisiones de los Cuerpos Orgánicos, del Estatuto gremial y las reglamentaciones que se dicten.',
+      'Junto a la Secretaría General se compromete en la defensa del Convenio Colectivo de Trabajo ante la patronal y la autoridad de aplicación y la defensa irrestricta de la EPEC estatal e Integrada.'
     ],
     contacto: 'Secretario Adjunto – (351) 156-515100'
   },
