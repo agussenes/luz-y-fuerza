@@ -19,7 +19,6 @@ export default function Beneficios() {
       />
       <BannerPortadas imagen={portadaImg} titulo="Propuesta de servicios" />
       <div className="container py-4">
-        <IntroStrip />
         <BeneficiosSection />
       </div>
       <section className="py-3">

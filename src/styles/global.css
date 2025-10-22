@@ -326,3 +326,7 @@ body {
 .bg-color-principal {
   background-color: var(--color-primary);
 }
+
+.bg-gris{
+  background-color:#F4F4F4 ;
+}

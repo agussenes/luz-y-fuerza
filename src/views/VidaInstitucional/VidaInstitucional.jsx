@@ -82,7 +82,7 @@ function VidaInstitucional() {
 
       <section className="vidaInstitucional container py-5">
 
-        <div className="d-flex flex-column align-items-center">
+        <div className="">
           <h1 className="mb-4 lineBorderTitle">CONSEJO DIRECTIVO</h1>
           <p>Conforme al cumplimiento de su misión sindical, el Secretariado y Consejo Directivo, órganos de dirección de la entidad sindical, están abocados a:</p>
 
@@ -122,12 +122,13 @@ function VidaInstitucional() {
           </div>
         </div>
 
-        <div className="vocales container py-3 border-bottom mb-3">
-          <h2 className="mb-4 lineBorderTitle">VOCALES</h2>
+        <div className="vocales  pb-3 border-bottom mb-3">
+          <h2 className=" mt-3 lineBorderTitle ">VOCALES</h2>
+
           <div className="row">
             <h5 className='lineBorderSubTitle'>Titulares</h5>
             {/* Columna 1 */}
-            <div className="col-md-4 mb-4">
+            <div className="col-md-4 col-sm-6 col-xs-12 mb-4">
               <div className='p-2'>
                 <h6 className="fw-bold mb-1 tituloAutoridades">Jorge Parejo </h6>
                 <p className=" text-muted mb-0">1º Vocal Titular</p>
@@ -153,7 +154,7 @@ function VidaInstitucional() {
             </div>
 
             {/* Columna 2 */}
-            <div className="col-md-4 mb-4 d-flex">
+            <div className="col-md-4 col-sm-6 col-xs-12 mb-4 d-flex">
               <div className='w-100'>
                 <div className='p-2'>
                   <h6 className="fw-bold mb-1 tituloAutoridades">Ricardo Acosta</h6>
@@ -181,7 +182,7 @@ function VidaInstitucional() {
             </div>
 
             {/* Columna 3 */}
-            <div className="col-md-4 mb-4">
+            <div className="col-md-4 col-sm-6 col-xs-12 mb-4">
               <h5 className='lineBorderSubTitle'>Suplentes</h5>
               <div className="py-2">
                 <h6 className="fw-bold mb-1 tituloAutoridades">Lucas Muñoz Giraudo</h6>
@@ -210,37 +211,41 @@ function VidaInstitucional() {
 
 
         {/* Título + Bajada + Row 3 columnas */}
-        <div className="container border-bottom py-3 mb-3">
+        <div className=" border-bottom py-3 mb-3">
+          <h2 className="lineBorderTitle m-0 mt-3">TRIBUNAL PARITARIO</h2>
+
           <div className="row">
-            <h2 className="lineBorderTitle m-0 mt-3">TRIBUNAL PARITARIO</h2>
             <div className="col-lg-8 col-md-12">
               <p className="my-2">El tribunal paritario cumple su una función primordial, establecida en el art. 82 del CCT, es el organismo facultado para dictaminar sobre la aplicación e interpretación de los dispositivos establecidos en el Convenio Colectivo de Trabajo 165/65.</p>
               <p className="my-2">La organización sindical integra el tribunal paritario con 4 representantes, que son elegidos mediante voto directo y secreto de los afiliados, en elecciones que se harán conjuntamente con las de Consejo Directivo.</p>
             </div>
             <div className="col-lg-4 col-md-12 d-flex align-items-center flex-column">
-              {tribunalPari.map((item, i) => (
-                <div key={i} className="col-md-12 p-2">
-                  <h6 className="fw-bold mb-1 tituloAutoridades"> {item.titulo}</h6>
-                  <p className=" text-muted mb-0">{item.texto}</p>
-                </div>
-              ))}
+              <div className="row justify-content-center align-items-center">
+                {tribunalPari.map((item, i) => (
+                  <div key={i} className="col-12 p-2">
+                    <h6 className="fw-bold mb-1 tituloAutoridades"> {item.titulo}</h6>
+                    <p className=" text-muted mb-0">{item.texto}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
 
         {/* Título + Row con 6 columnas */}
-        <div className="row py-3 border-bottom mb-3">
-          <h2 className="lineBorderTitle p-0 m-0 my-3">COMISIÓN REVISORA DE CUENTAS</h2>
+        <h2 className="lineBorderTitle p-0 m-0 mt-3">COMISIÓN REVISORA DE CUENTAS</h2>
 
-          <div className='textoComisionRevisora my-2 col-lg-6 col-md-12'>
+        <div className="row py-3 border-bottom mb-3">
+
+          <div className='textoComisionRevisora my-2 col-lg-12 col-md-12'>
             <p>Es elegida cada 4 años conjuntamente con la elección de Consejo Directivo, que designará la Comisión Revisora de Cuentas.</p>
             <p>Tiene a su cargo fiscalizar la gestión administrativa y contable del Consejo Directivo y presentar a la Asamblea General Ordinara los informes y balances anuales sobre la situación económico financiera del sindicato.</p>
 
           </div>
-          <div className="col-lg-6 col-md-12 d-flex flex-wrap gap-4 mb-4">
+          <div className="col-lg-12 col-md-12 row mb-4">
             {comisionRevisoraCuentas.map((item, i) => (
-              <div key={i} className="p-2">
+              <div key={i} className="p-2 col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <h6 className="fw-bold mb-1 tituloAutoridades"> {item.titulo}</h6>
                 <p className=" text-muted mb-0">{item.texto}</p>
               </div>
