@@ -1,6 +1,6 @@
 export const turismo = {
   hero: {
-    titulo: "Turistico",
+    titulo: "Turismo",
     bajada:
       "Complejos en Mina Clavero y Cosquín, con estadías en hoteles, camping y temporada de pileta para toda la familia.",
     icon: "bi-geo-alt-fill",
@@ -63,7 +63,7 @@ export const turismo = {
 
 export const educativos = {
   hero: {
-    titulo: "Educacion",
+    titulo: "Educación",
     bajada:
       "Centro de Actividades para jubilados/as, becas para hijos/as de afiliados y entrega de útiles escolares.",
     icon: "bi-mortarboard",

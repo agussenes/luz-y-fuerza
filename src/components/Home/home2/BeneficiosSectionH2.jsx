@@ -37,10 +37,10 @@ function BeneficiosSection() {
                                 <hr className="p-0 mt-4 mb-0" />
                                 <ul className="lista-ticks flex-grow-1 m-0 mt-3">
                                     <li>
-                                       Complejos Turísticos en Mina Clavero y Cosquín.
+                                       Complejos Turísticos en Mina Clavero y Cosquín con estadías en hoteles.
                                     </li>
                                     <li>
-                                       Pensión completa para afiliados y familia.
+                                       Pensión completa para afiliados y temporada de pileta para toda la familia.
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center">
@@ -69,7 +69,7 @@ function BeneficiosSection() {
                                         Becas: Hijos de afiliados en secundario, terciario o universitario. 
                                     </li>
                                     <li>
-                                        Útiles escolares: Kit para escuela primaria y  descuentos para la secundaria.
+                                        Kit de útiles para la primaria y descuentos para la secundaria.
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center">
@@ -95,10 +95,10 @@ function BeneficiosSection() {
                                 <hr className="p-0 mt-4 mb-0" />
                                 <ul className="lista-ticks flex-grow-1  m-0 mt-3">
                                     <li>
-                                        Asesoramiento previsional y jurídico: Inicio de trámite jubilatorio y consultas generales.
+                                        Inicio de trámite jubilatorio y consultas generales.
                                     </li>
                                     <li>
-                                        Vivienda: Asistencia para edificación/refacción.
+                                        Vivienda: Asistencia para edificación, refacción y ampliación
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center">
@@ -127,10 +127,10 @@ function BeneficiosSection() {
                                 <hr className="p-0 mt-4 mb-0" />
                                 <ul className="lista-ticks flex-grow-1  m-0 mt-3">
                                     <li>
-                                        Centro de documentación histórica del Sindicato.
+                                        Centro de documentación histórica del Sindicato y biblioteca para el afiliado.
                                     </li>
                                     <li>
-                                        Acceso a eventos artísticos y talleres culturales. 
+                                        Acceso a eventos artísticos y talleres culturales.
                                     </li>
                                 </ul>
                                 <div className="d-flex justify-content-center">
@@ -156,7 +156,7 @@ function BeneficiosSection() {
                                 <hr className="p-0 mt-4 mb-0" />
                                 <ul className="lista-ticks flex-grow-1  m-0 mt-3">
                                     <li>
-                                       Centro Médico en la ciudad de Córdoba.
+                                       Centro Médico "Agustín Tosco" en la capital.
                                     </li>
                                     <li>
                                         Más de 100 prestadores de diferentes especialidades.

@@ -7,7 +7,7 @@ import imgPortada from '../../assets/images/vidaInstitucional/portadaVI.webp';
 import convenioPersola from '../../assets/images/convenioColectivo/convenioPersola.jpg';
 import img1 from '../../assets/images/convenioColectivo/img1.jpg'
 import img2 from '../../assets/images/convenioColectivo/img2.jpg'
-import logoSi from '../../assets/images/convenioColectivo/logo-Sindicato-de-Luz-y-Fuerza_resized.png'
+import logoSi from '../../assets/images/nuestraLucha/img2.webp'
 
 
 
@@ -25,10 +25,10 @@ function ConvenioColectivo() {
 
       {/* Introducción */}
       <section className="container py-5">
-        <h2 className="mb-4 text-primary fw-bold lineBorderTitle">
-          El Convenio Colectivo de Luz y Fuerza tiene <span className="text-dark">PLENA VIGENCIA</span>
+        <h2 className="mb-4 fw-bold lineBorderTitle">
+          El Convenio Colectivo tiene plena vigencia
         </h2>
-        <div className="row align-items-center">
+        <div className="row ">
           <div className="col-md-8">
             <p className="mb-3">
               El CCT de Luz y Fuerza 165/75 es un Convenio ejemplar, de avanzada en muchos aspectos, de visión progresista e integral, amparado en la visión que entiende a la Empresa Provincial de Energía de Córdoba como una comunidad de Trabajo, una Comunidad Organizada.
@@ -63,12 +63,13 @@ function ConvenioColectivo() {
             </p>
           </div>
           <div className="col-md-4 text-center ">
-            <img src={convenioPersola} alt="Convenio Luz y Fuerza" className="img-fluid rounded shadow my-4" />
-            <div className="ratio ratio-16x9 shadow">
+            <img src={convenioPersola} alt="Convenio Luz y Fuerza" className="img-fluid rounded shadow mb-4" />
+            <div className="ratio ratio-16x9 rounded shadow">
               <iframe
                 src="https://www.youtube.com/embed/fDbm3X5C1J0?si=WyECgfhlMTClBNKI"
                 title="Laboralistas y Juristas"
                 allowFullScreen
+                className='rounded'
               ></iframe>
             </div>
           </div>
@@ -93,51 +94,34 @@ function ConvenioColectivo() {
         </div>
       </section>
 
-
-
-
-      {/* Frase destacada en bloque */}
-      <section className="bg-dark text-white py-5">
-        <div className="container text-center">
-          <p className="fs-5">
-            La dirección de la Empresa incurre ilegalmente en sucesivas violaciones...
-          </p>
-          <h3 className="text-info fw-bold mt-4 lineBorderTitle">
-            “EL CONVENIO NO SE TOCA!!! SIGAMOS DEFENDIÉNDOLO”
-          </h3>
-        </div>
-      </section>
-
       {/* Efecto máquina de escribir */}
-      <section className="container text-center py-5">
-        <div className="d-flex flex-column align-items-center">
-          <h3 className="fw-bold">
-            <Typewriter
-              options={{
-                strings: ['El 165/75 está VIGENTE |', '¡No a la flexibilización laboral!'],
-                autoStart: true,
-                loop: true,
-                delay: 50,
-              }}
-            />
-          </h3>
+      <section className="container  pb-5">
 
+        <div className='row'>
+
+          <div className='col-lg-7 col-md-6 col-sm-12 texto-final-cc'>
+            <div>
+              <h2 className="mb-4 fw-bold lineBorderTitle">
+                No a la flexibilización laboral
+              </h2>
+            </div>
+            <ul>
+              <li>Desde 2018, Luz y Fuerza de Córdoba viene luchando por el pleno respeto del Convenio Colectivo de Trabajo 165/75.</li>
+              <li>Amparado por la ley 14.250 de Convenciones Colectivas, mantiene la ultraactividad.</li>
+              <li>La modificación parcial de nuestro Convenio, aprobada por la Legislatura de Córdoba, es arbitraria e ilegal, en tanto la Unicameral no tiene autoridad para incidir en la autonomía colectiva, establecida en la legislación nacional e internacional.</li>
+            </ul>
+
+          </div>
+          <div className='col-lg-5 col-md-6 col-sm-12 d-flex flex-column align-items-center'>
+            <img src={logoSi} alt="Artículo de Electrum"  className="img-fluid rounded shadow" />
+
+          </div>
         </div>
       </section>
 
-      <div className=' container d-flex'>
-        <div className='col-6 texto-final-cc'>
-          <p>- Desde 2018, Luz y Fuerza de Córdoba viene luchando por el pleno respeto del Convenio Colectivo de Trabajo 165/75</p>
-          <p>- Amparado por la ley 14.250 de Convenciones Colectivas, mantiene la ultraactividad</p>
-          <p>- La modificación parcial de nuestro Convenio, aprobada por la Legislatura de Córdoba, es arbitraria e ilegal, en tanto la Unicameral no tiene autoridad para incidir en la autonomía colectiva, establecida en la legislación nacional e internacional.</p>
-        </div>
-        <div className='col-6 d-flex flex-column align-items-center'>
-          <img src={logoSi} alt="Artículo de Electrum" width={250} className="img-fluid rounded shadow" />
 
-        </div>
-      </div>
 
-      
+
     </>
   );
 }

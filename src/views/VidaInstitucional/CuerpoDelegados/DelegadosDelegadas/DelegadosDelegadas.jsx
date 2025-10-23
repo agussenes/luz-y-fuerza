@@ -94,7 +94,7 @@ function DelegadosDelegadas() {
                     <h2 className="fw-bold lineBorderTitle mb-4">DELEGADOS y DELEGADAS 2022 - 2023</h2>
 
                     <div className="table-responsive">
-                        <table className="table table-bordered delegados-table my-4 tamaño">
+                        <table className="table table-bordered delegados-table rounded m-4 tamaño">
                             <thead>
                                 <tr >
                                     <th className='bg-color-tabla'>NOMBRE</th>

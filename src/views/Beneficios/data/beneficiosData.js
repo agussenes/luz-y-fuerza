@@ -6,7 +6,7 @@ import imgJuridico from "../../../assets/images/beneficios/cardJudicialBene.webp
 export const beneficiosCategorias = [
   {
     id: "turisticos",
-    title: "Turísticos",
+    title: "Turistico",
     icon: "bi-geo-alt-fill",
     image: imgTurismo,
     bullets: [
@@ -23,7 +23,7 @@ export const beneficiosCategorias = [
   },
   {
     id: "educativos",
-    title: "Educativos",
+    title: "Educación",
     icon: "bi-mortarboard",
     image: imgEducacion,
     bullets: [
