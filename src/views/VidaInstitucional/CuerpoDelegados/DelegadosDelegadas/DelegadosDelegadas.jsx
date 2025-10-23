@@ -1,7 +1,5 @@
 // DelegadosDelegadas.jsx
 import { Container } from 'react-bootstrap';
-import BannerPortadas from '../../../../components/reutilizables/bannerPortadas/BannerPortadas';
-import portadaImg from '../../../../assets/images/vidaInstitucional/CuerpoDelegados/CuerpoGenDelegados/bannerPortada.jpg';
 import './DelegadosDelegadas.css';
 
 const data = [
@@ -89,7 +87,6 @@ const data = [
 function DelegadosDelegadas() {
     return (
         <>
-            <BannerPortadas imagen={portadaImg} titulo="DELEGADOS y DELEGADAS 2022 - 2023" />
 
             <section className="delegados-table-section py-5">
                 <Container>
