@@ -245,10 +245,12 @@ function SecretariaDetalle() {
       <Container className="py-5 secretaria-detalle-container">
         <p className="text-info fw-bold subtitulo">{data.subtitulo}</p>
         <h2 className="fw-bold mb-4 lineBorderTitle">{data.titulo}</h2>
+        <ul>
+          {data.contenido.map((texto, i) => (
+            <li key={i}>{texto}</li>
+          ))}
+        </ul>
 
-        {data.contenido.map((texto, i) => (
-          <p key={i}>{texto}</p>
-        ))}
 
         {data.secretario && (
           <Alert variant="warning" className="mt-4 border-start border-info border-5 bg-light-warning">
@@ -268,11 +270,10 @@ function SecretariaDetalle() {
         {id === 'derechos-humanos' && (
           <>
             <div className='bg-gris p-4 rounded shadow'>
-              <h2 className="fw-bold mb-4 lineBorderTitle">Barrio Jardín del Pilar</h2>
+              <h2 className="fw-bold mb-4 lineBorderTitle">Denuncias por violencia laboral</h2>
               <p>
                 Las denuncias por maltrato, violencia o acoso laboral son receptadas en la Secretaría de Derechos Humanos de la sede sindical (2do piso) en el horario de 7 a 14 HS, o a través del correo electrónico <a href="mailto:ddhhluzyfuerzacba@gmail.com">ddhhluzyfuerzacba@gmail.com</a>, a los efectos de ir delineando acciones en cada caso particular con el correspondiente asesoramiento jurídico.
               </p>
-              <a href="mailto:ddhhluzyfuerzacba@gmail.com" className='btn estiloBotonH2'>Contacto vía email</a>
             </div>
           </>
         )}

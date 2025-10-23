@@ -15,10 +15,10 @@ function BannerElectrum() {
                     <Row className='container '>
                         <Col sm={12} lg={7}>
                             <h2 className='lineBorderTitle2'>Electrum</h2>
-                            <h4 className='lineBorderSubTitle'>El periodico de Luz y Fuerza</h4>
+                            <h4 className='lineBorderSubTitle'>El periódico de Luz y Fuerza</h4>
                             <p className="">Desde Septiembre de 1953, Electrum es el órgano oficial de prensa y comunicación de nuestro sindicato. Es uno de los <strong>pocos periódicos sindicales del país que logró continuidad y vigencia</strong>, lo que implica un gran orgullo para la comunidad lucifuercista.</p>
                             <p className=""><strong>Nuestro periódico ha salido de manera casi ininterrumpida, acompañando la vida lucifuercista</strong> y reflejando en sus páginas la historia de nuestras luchas, anhelos logros,  victorias y también momentos muy duros. </p>
-                            <p className="">Con el regreso de la democracia, en 1984 recuperamos la publicación continua y actualmente contamos con una <strong>versión digital a la que se puede acceder vía web y redes sociales.</strong></p>
+                            <p className="">Con el regreso de la democracia, en 1984, recuperamos la publicación continua y actualmente contamos con una <strong>versión digital a la que se puede acceder vía web y redes sociales.</strong></p>
                         </Col>
                         <Col sm={12} lg={5} className=''>
                             <div className='d-flex justify-content-center bg-dark rounded' style={{objectFit: "contain", overflow: "hidden" }}>

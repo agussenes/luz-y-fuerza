@@ -59,7 +59,7 @@ function BeneficiosSection() {
                                         className="img-fluid rounded"
                                     />
                                     <h4 className="titulo-overlay fw-bold text-center">
-                                        Educacion
+                                        Educación
                                     </h4>
                                 </div>
 
