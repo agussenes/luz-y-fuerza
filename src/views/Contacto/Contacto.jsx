@@ -22,8 +22,11 @@ function Contacto() {
                 <Container>
                     <Row className="mb-5">
                         <Col md={6}>
-                            <h2 className="fw-bold mb-3 lineBorderTitle">¿Tenés alguna consulta?</h2>
-                            <p>Completá el formulario y nos pondremos en contacto con vos a la brevedad.</p>
+                            <div className='container'>
+                                <h2 className="fw-bold mb-3 lineBorderTitle">¿Tenés alguna consulta?</h2>
+                                <p>Completá el formulario y nos pondremos en contacto con vos a la brevedad.</p>
+
+                            </div>
                             <ContactForm />
                         </Col>
 
@@ -33,10 +36,10 @@ function Contacto() {
                             <p><i className="bi bi-telephone-fill me-2 text-info"></i> +54 351 123-4567</p>
                             <p><i className="bi bi-envelope-fill me-2 text-info"></i> contacto@luzyfuerzacba.org.ar</p>
 
-                            <div className="ratio ratio-16x9 mt-4 shadow rounded">
+                            <div className="ratio ratio-16x9 mt-4 shadow " style={{ border: 0, borderRadius: '16px' }}>
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!..." // reemplazar por el real
-                                    style={{ border: 0 }}
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.2933341377507!2d-64.17853882419146!3d-31.419816096417463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a29996c6786d%3A0xfddc7f374173eb50!2sSan%20Jer%C3%B3nimo%20666%2C%20X5000AGN%20C%C3%B3rdoba!5e1!3m2!1ses-419!2sar!4v1761222938269!5m2!1ses-419!2sar" // reemplazar por el real
+                                    style={{ border: 0, borderRadius: '16px' }}
                                     allowFullScreen=""
                                     loading="lazy"
                                     title="Ubicación Luz y Fuerza"

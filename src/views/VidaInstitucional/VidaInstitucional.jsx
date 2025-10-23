@@ -8,7 +8,7 @@ import BannerPortadas from '../../components/reutilizables//bannerPortadas/Banne
 import './VidaInstitucional.css';
 
 // import de imagenes 
-import imgPortada from '../../assets/images/vidaInstitucional/portadaVI.webp'; import pngParaCol from '../../assets/images/vidaInstitucional/placeHolder.webp';
+import imgPortada from '../../assets/images/vidaInstitucional/portadaVI.webp'; 
 
 
 function VidaInstitucional() {
@@ -21,7 +21,7 @@ function VidaInstitucional() {
     { titulo: 'Roque Daniel Tapia', texto: 'Secretario Adjunto', alt: 'Roque Daniel Tapia | Secretario Adjunto' },
     { titulo: 'Susana Altamiran', texto: 'Secretaria Gremial', alt: 'Susana Altamiran | Secretaria Gremial' },
     { titulo: 'Sebastián Calderón', texto: '1° Subsecretario Gremial', alt: 'Sebastián Calderón | 1° Subsecretario Gremial' },
-    { titulo: 'Víctor Zavorra', texto: '2° Subsecretario Gremial2° Subsecretario Gremial', alt: 'Víctor Zavorra | 2° Subsecretario Gremial' },
+    { titulo: 'Víctor Zavorra', texto: '2° Subsecretario Gremial', alt: 'Víctor Zavorra | 2° Subsecretario Gremial' },
     { titulo: 'Marcelo Valles', texto: 'Secretario de Organización y Actas', alt: 'Marcelo Valles | Secretario de Organización y Actas' },
     { titulo: 'Pablo Gutiérres', texto: 'Subsecretario de Organización y Actas', alt: 'Pablo Gutiérres | Subsecretario de Organización y Actas' },
     { titulo: 'Matías Contreras', texto: 'Secretario de Finanzas y Administración', alt: 'Matías Contreras | Logo sin nombre de sindicato de Luz y Fuerza' },
@@ -128,7 +128,7 @@ function VidaInstitucional() {
           <div className="row">
             <h5 className='lineBorderSubTitle'>Titulares</h5>
             {/* Columna 1 */}
-            <div className="col-md-4 col-sm-6 col-xs-12 mb-4">
+            <div className="col-md-4 col-sm-6 col-xs-6 mb-4">
               <div className='p-2'>
                 <h6 className="fw-bold mb-1 tituloAutoridades">Jorge Parejo </h6>
                 <p className=" text-muted mb-0">1º Vocal Titular</p>
@@ -154,7 +154,7 @@ function VidaInstitucional() {
             </div>
 
             {/* Columna 2 */}
-            <div className="col-md-4 col-sm-6 col-xs-12 mb-4 d-flex">
+            <div className="col-md-4 col-sm-6 col-xs-6 mb-4 d-flex">
               <div className='w-100'>
                 <div className='p-2'>
                   <h6 className="fw-bold mb-1 tituloAutoridades">Ricardo Acosta</h6>
@@ -245,7 +245,7 @@ function VidaInstitucional() {
           </div>
           <div className="col-lg-12 col-md-12 row mb-4">
             {comisionRevisoraCuentas.map((item, i) => (
-              <div key={i} className="p-2 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <div key={i} className="p-2 col-lg-4 col-md-6 ">
                 <h6 className="fw-bold mb-1 tituloAutoridades"> {item.titulo}</h6>
                 <p className=" text-muted mb-0">{item.texto}</p>
               </div>
