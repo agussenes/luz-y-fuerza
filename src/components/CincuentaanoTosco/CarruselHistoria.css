@@ -1,0 +1,123 @@
+/* Zona del carrusel */
+.tosco50-section {
+}
+
+/* Swiper contenedor (no fija la altura aquí porque hay 3 por vista) */
+.tosco50-swiper {
+  position: relative;
+}
+
+/* Cada slide tiene su “tarjeta” con relación fija para uniformar alturas */
+.tosco50-slide {
+  height: auto;
+}
+
+.tosco50-figure {
+  position: relative;
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 0;
+  line-height: 0;
+}
+
+
+
+
+.tosco50-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Caption (faja inferior) */
+.tosco50-caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 10px 14px;
+  font-size: clamp(13px, 1.8vw, 15px);
+  color: #fff;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .65) 100%);
+}
+
+/* Flechas personalizadas */
+.tosco50-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 999px;
+  background: #00657e;
+  color: #f1f1f1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform .15s ease, background .2s ease, box-shadow .2s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
+}
+
+.tosco50-button:hover {
+  transform: translateY(-50%) scale(1.05);
+  background: #00657e;
+}
+
+.tosco50-button:active {
+  transform: translateY(-50%) scale(0.96);
+}
+
+.tosco50-button i {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.tosco50-button-prev {
+  left: 8px;
+}
+
+.tosco50-button-next {
+  right: 8px;
+}
+
+/* Bullets personalizados */
+.tosco50-pagination {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 5;
+}
+
+.tosco50-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #00657e;
+  border: 2px solid #fff;
+  opacity: 1;
+  /* manejamos nosotros */
+  transform: scale(1);
+  transition: transform .15s ease, background .2s ease, border-color .2s ease;
+}
+
+.tosco50-pagination .swiper-pagination-bullet:hover {
+  transform: scale(1.15);
+}
+
+.tosco50-pagination .swiper-pagination-bullet-active {
+  background: #000;
+  border-color: #fff;
+  width: 14px;
+  height: 14px;
+}
+
+/* Accesibilidad foco */
+.tosco50-button:focus-visible,
+.tosco50-pagination .swiper-pagination-bullet:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}

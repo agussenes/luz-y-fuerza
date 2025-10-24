@@ -7,11 +7,13 @@ import Footer from './components/partials/Footer/Footer';
 function App() {
   return (
     <>
-      <Header />
-      <main className="main-content">
-      <Router />
-      </main>
-      <Footer />
+      <section className="appGlobal d-flex flex-column">
+        <Header />
+        <main className="main-content flex-grow-1">
+          <Router />
+        </main>
+        <Footer />
+      </section>
       {/* <SocialSidebar /> */}
     </>
   );

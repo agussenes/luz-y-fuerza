@@ -31,3 +31,15 @@ header {
     transform: scale(1.05);
     color: var(--color-secondary);
 }
+
+
+/* ----  */
+
+.cincuentaAnoTosco{
+    background-color: #00657e !important ;
+}
+
+
+.cincuentaAnoTosco .nav-link{} .nav-link:hover{
+    color: #f1f1f1 !important;
+}

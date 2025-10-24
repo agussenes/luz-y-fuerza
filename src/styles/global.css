@@ -112,9 +112,9 @@ footer {
 /*  Para Firefox */
 body {
   scrollbar-width: thin;
-  /* thin | auto | none */
+
   scrollbar-color: #004B51 #030F27;
-  /* thumb color | track color */
+
 }
 
 
@@ -123,23 +123,12 @@ body {
 
 .lineBorderTitle {
   display: inline-block;
-  /* Solo ocupa lo que necesita */
   position: relative;
   margin-bottom: 1.5rem;
   font-weight: bold;
   font-size: 2.5rem;
 }
 
-/* .lineBorderTitle::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 70px;
-  height: 5px;
-  background-color: var(--color-celeste);
-
-} */
 
 .lineBorderTitle2 {
   position: relative;
@@ -153,7 +142,6 @@ body {
 
 .lineBorderSubTitle {
   display: inline-block;
-  /* Solo ocupa lo que necesita */
   position: relative;
   font-weight: 600;
   font-size: 1.5rem;
@@ -166,13 +154,6 @@ body {
   color: var(--color-celeste);
 }
 
-/* @media (max-width:468px) {
-  .lineBorderTitle{
-    font-size: 1.5rem !important;
-  }
-  
-}
-  */
 
 @media (max-width:768px) {
   .lineBorderTitle2 {

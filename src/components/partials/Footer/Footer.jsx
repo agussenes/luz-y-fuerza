@@ -2,8 +2,25 @@ import { Link } from 'react-router-dom';
 import './Footer.css'; // Estilos propios
 
 import imgUsina from '../../../../public/img/identidad/logoUsina.webp'
+import { useLocation } from 'react-router-dom';
 
 function Footer() {
+
+  const location = useLocation();
+  const { pathname } = useLocation();
+
+  const HIDE_SLUG = "/cincuenta-años-agustin-tosco";
+
+  // Normalizo el pathname y comparo contra ambas variantes (decodificada y URL-encoded)
+  const cleanPath = decodeURIComponent(pathname).replace(/\/+$/, '');
+  const hideFooter =
+    cleanPath.endsWith(HIDE_SLUG) ||
+    pathname.replace(/\/+$/, '').endsWith(encodeURI(HIDE_SLUG));
+
+  if (hideFooter) {
+    return null;
+  }
+
   return (
     <footer className="text-white pt-5 pb-4">
       <div className="container">

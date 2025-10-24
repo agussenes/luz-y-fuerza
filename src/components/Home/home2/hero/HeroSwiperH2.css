@@ -85,6 +85,16 @@
     font-size: 1.2rem !important;
 }
 
+.espacio50AT{
+    height: 40vh;
+}
+
+.mobileEstilo50{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
 @media (max-width: 991px) {
     .hero-slide-title {
         text-align: left;
@@ -94,7 +104,6 @@
     .hero-slide-text {
         text-align: left;
         max-width: 90%;
-
     }
 }
 
@@ -131,6 +140,15 @@
     .contenedorBotonHeroSwipper {
         display: flex;
         justify-content: center;
+    }
+
+    .mobileEstilo50{
+        justify-content: center !important;
+        align-items: end !important;
+    }
+
+    .espacio50AT{
+        height: 55vh;
     }
 
 }

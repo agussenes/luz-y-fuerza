@@ -1,4 +1,4 @@
-import {Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 
 // Importamos vistas
@@ -24,45 +24,48 @@ import BeneficiosAccionSocial from './views/Beneficios/BeneficiosAccionSocial';
 import Actividades from './views/Actividades/Actividades';
 import NotFound from './views/NotFound/NotFound';
 import CuerposOrganicos from './views/VidaInstitucional/CuerposOrganicos/CuerposOrganicos';
-// propuestas home 
+
+// vista tosco 
+import CincuentaAnosTosco from './views/CincuentaAnosTosco/CincuentaAnosTosco';
 
 
 
 function Router() {
   return (
     <>
-      
-        <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
-          <Route path="/historia" element={<Historia />} />
-          <Route path="/quienes-somos" element={<QuienesSomos />} />
-          <Route path="/convenio-colectivo" element={<ConvenioColectivo />} />
-          <Route path="/nuestra-lucha" element={<NuestraLucha />} />
-          <Route path="/defendamos-epec" element={<DefendamosEpec />} />
-          <Route path="/autoridades" element={<VidaInstitucional />} />
-          <Route path='/asamblea-general' element={<AsambleaGeneral />} />
-          <Route path='/secretarias' element={<Secretarias />} />
-          <Route path='/secretarias/:id' element={<SecretariaDetalle />} />
-          <Route path="/cuerpos-organicos" element={<CuerposOrganicos />} />
-          <Route path="/delegados-generales" element={<CuerpoGenDelegados />} />
-          <Route path="/delegados-delegadas" element={<DelegadosDelegadas />} />
-          <Route path="/contacto" element={<Contacto />} />
-          <Route path="/propuesta-de-servicios" element={<Beneficios />} />
-          <Route path="/propuesta-de-servicios-turisticos" element={<BeneficiosTurismo />} />
-          <Route path="/propuesta-de-servicios-accion-social-y-deporte" element={<BeneficiosAccionSocial/>} />
-          <Route path="/propuesta-de-servicios-cultura" element={<BeneficioCultura />} />
-          <Route path="/propuesta-de-servicios-educativos" element={<BeneficiosEducativos />} />
-          <Route path="/propuesta-de-servicios-juridicos-y-de-asesoramiento" element={<BeneficiosJuridicos />} />
-          <Route path="/actividades" element={<Actividades />} />
 
-          {/* propuestas home  */}
-          <Route path="/" element={<Home />} />
-        
+      <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/historia" element={<Historia />} />
+        <Route path="/quienes-somos" element={<QuienesSomos />} />
+        <Route path="/convenio-colectivo" element={<ConvenioColectivo />} />
+        <Route path="/nuestra-lucha" element={<NuestraLucha />} />
+        <Route path="/defendamos-epec" element={<DefendamosEpec />} />
+        <Route path="/autoridades" element={<VidaInstitucional />} />
+        <Route path='/asamblea-general' element={<AsambleaGeneral />} />
+        <Route path='/secretarias' element={<Secretarias />} />
+        <Route path='/secretarias/:id' element={<SecretariaDetalle />} />
+        <Route path="/cuerpos-organicos" element={<CuerposOrganicos />} />
+        <Route path="/delegados-generales" element={<CuerpoGenDelegados />} />
+        <Route path="/delegados-delegadas" element={<DelegadosDelegadas />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/propuesta-de-servicios" element={<Beneficios />} />
+        <Route path="/propuesta-de-servicios-turisticos" element={<BeneficiosTurismo />} />
+        <Route path="/propuesta-de-servicios-accion-social-y-deporte" element={<BeneficiosAccionSocial />} />
+        <Route path="/propuesta-de-servicios-cultura" element={<BeneficioCultura />} />
+        <Route path="/propuesta-de-servicios-educativos" element={<BeneficiosEducativos />} />
+        <Route path="/propuesta-de-servicios-juridicos-y-de-asesoramiento" element={<BeneficiosJuridicos />} />
+        <Route path="/actividades" element={<Actividades />} />
 
 
-          <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Home />} />
 
-        </Routes>
+        {/* vista espesifica para 50 años Agustin Tosco */}
+        <Route path='/cincuenta-años-agustin-tosco' element={<CincuentaAnosTosco />} />
+
+        <Route path="*" element={<NotFound />} />
+
+      </Routes>
 
     </>
   );
