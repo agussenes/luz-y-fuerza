@@ -164,16 +164,16 @@ function Header() {
 
               <li className="nav-item">
                 {/* ✅ Siempre navego a la ruta base + hash, incluso si ya estoy en la misma página */}
-                <Link className="nav-link" to={{ pathname: base, hash: "#conoce-su-historia" }}>Conocé su historia</Link>
+                <Link className="nav-link" to={{ pathname: base, hash: "#conoce-su-historia" }}>Historia</Link>
               </li>
 
               <li className="nav-item">
                 
-                <Link className="nav-link" to={{ pathname: base, hash: "#descarga-tu-afiche" }}>Descargá tu afiche de Tosco</Link>
+                <Link className="nav-link" to={{ pathname: base, hash: "#descarga-tu-afiche" }}>Afiches</Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to={{ pathname: base, hash: "#todas-las-actividades" }}>Mirá todas las actividades</Link>
+                <Link className="nav-link" to={{ pathname: base, hash: "#todas-las-actividades" }}>Agenda</Link>
               </li>
 
             </ul>

@@ -57,7 +57,7 @@ function CarruselHistoria() {
         <p className="lead">
           Fue uno de los protagonistas del Cordobazo y un impulsor del sindicalismo combativo y solidario.
         </p>
-        <p className="lead">Murió en 1975, perseguido por su compromiso con la justicia y la libertad.</p>
+        <p className="lead">Murió en 1975, perseguido por su compromiso con la justicia social y la energía pública al servicio del pueblo.</p>
       </Container>
 
       {/* Swiper debajo del container */}

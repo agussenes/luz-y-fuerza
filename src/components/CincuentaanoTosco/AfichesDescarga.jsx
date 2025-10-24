@@ -11,17 +11,27 @@ import "./CarruselHistoria.css";
 
 // Imágenes
 import img1 from "../../assets/images/cincuentaAnAT/carouselAfiches/img1.webp";
+import img2 from "../../assets/images/cincuentaAnAT/carouselAfiches/img2.webp";
+import img3 from "../../assets/images/cincuentaAnAT/carouselAfiches/img3.webp";
+
+// imagenes para descargar 
+import imgD from '/imgDL/img1.jpg';
+import imgD2 from '/imgDL/img2.jpg';
+import imgD3 from '/imgDL/img3.jpg';
 
 
 function AfichesDescarga() {
 
     const slides = [
-        { src: img1, alt: "Agustín Tosco 1", caption: "", tituloDescarga: "img1" },
-        { src: img1, alt: "Agustín Tosco 2", caption: "", tituloDescarga: "img2" },
-        { src: img1, alt: "Agustín Tosco 3", caption: "", tituloDescarga: "img3" },
-        { src: img1, alt: "Agustín Tosco 3", caption: "", tituloDescarga: "img4" },
-        { src: img1, alt: "Agustín Tosco 3", caption: "", tituloDescarga: "img4" },
-        { src: img1, alt: "Agustín Tosco 3", caption: "", tituloDescarga: "img5" },
+        { src: img1, alt: "Agustín Tosco 1", caption: "", tituloDescarga: "img1", descargaImg: imgD },
+        { src: img2, alt: "Agustín Tosco 2", caption: "", tituloDescarga: "img2", descargaImg: imgD2},
+        { src: img3, alt: "Agustín Tosco 3", caption: "", tituloDescarga: "img3", descargaImg: imgD3 },
+        { src: img1, alt: "Agustín Tosco 1", caption: "", tituloDescarga: "img1", descargaImg: imgD },
+        { src: img2, alt: "Agustín Tosco 2", caption: "", tituloDescarga: "img2", descargaImg: imgD2},
+        { src: img3, alt: "Agustín Tosco 3", caption: "", tituloDescarga: "img3", descargaImg: imgD3 },
+
+
+
     ];
 
     return (
@@ -74,7 +84,7 @@ function AfichesDescarga() {
                                         )}
                                     </figure>
                                     <div className="d-flex justify-content-center py-4">
-                                        <a href={s.src}
+                                        <a href={s.descargaImg}
                                             download={s.tituloDescarga}
                                             className="estiloBotonH2 btn">
                                             Descarga el afiche
