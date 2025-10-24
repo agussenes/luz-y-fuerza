@@ -33,7 +33,7 @@ function CincuentaAnosTosco() {
             <BannerPortadas imagen={portadaImg} titulo="" />
 
 
-            <Container fluid className='py-5'>
+            <Container fluid className='py-5 contenedorCustom50aniosAT'>
                 <div id='conoce-su-historia'>
                     <CarruselHistoria />
                 </div>
