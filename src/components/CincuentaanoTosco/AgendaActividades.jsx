@@ -54,7 +54,7 @@ function AgendaActividades() {
             descripcion: 'Próximamente más información',
         },
         {
-            titulo: '5 de febrero: Colocación de Placa (en algún lugar representativo para el gremio) o realización de la cartelería de identificación del auditorio Agustín Tosco.',
+            titulo: 'Colocación de Placa (en algún lugar representativo para el gremio) o realización de la cartelería de identificación del auditorio Agustín Tosco.',
             descripcion: 'Próximamente más información',
         },
         {
