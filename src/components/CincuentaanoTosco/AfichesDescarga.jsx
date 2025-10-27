@@ -36,7 +36,7 @@ function AfichesDescarga() {
 
     return (
         <>
-            <section className="container-fluid py-4">
+            <section className="container-fluid pt-4 py-4">
                 <Container className="py-2">
                     <h1 className="fw-bold text-uppercase lineBorderTitle text-center">Manifiesto visual </h1>
                     <p className="lead">

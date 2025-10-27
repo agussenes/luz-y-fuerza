@@ -99,9 +99,9 @@
   background: #00657e;
   border: 2px solid #fff;
   opacity: 1;
-  /* manejamos nosotros */
   transform: scale(1);
   transition: transform .15s ease, background .2s ease, border-color .2s ease;
+  margin-top: 1rem !important;
 }
 
 .tosco50-pagination .swiper-pagination-bullet:hover {
@@ -111,6 +111,7 @@
 .tosco50-pagination .swiper-pagination-bullet-active {
   background: #000;
   border-color: #fff;
+  /* background: #f1f1f1; */
   width: 14px;
   height: 14px;
 }

@@ -3,7 +3,6 @@ import SEO from '../../seo/SEO';
 import BannerPortadas from '../../components/reutilizables/bannerPortadas/BannerPortadas';
 
 import { Container, Row, Col } from 'react-bootstrap';
-import portadaImg from '../../assets/images/cincuentaAnAT/portada.webp';
 
 
 import './CincuentaAnosTosco.css'
@@ -16,6 +15,7 @@ import AgendaActividades from '../../components/CincuentaanoTosco/AgendaActivida
 
 // imagenes 
 import imgUsina from '../../../public/img/identidad/logoUsina.webp'
+import portadaImg from '../../assets/images/cincuentaAnAT/portada.webp';
 
 
 
@@ -33,14 +33,14 @@ function CincuentaAnosTosco() {
             <BannerPortadas imagen={portadaImg} titulo="" />
 
 
-            <Container fluid className='py-5 contenedorCustom50aniosAT'>
-                <div id='conoce-su-historia'>
+            <Container fluid className=' contenedorCustom50aniosAT m-0 py-0 my-0 p-0'>
+                <div id='conoce-su-historia' className='container-fluid bloque-1-ag py-4 m-0'>
                     <CarruselHistoria />
                 </div>
                 <div id='descarga-tu-afiche'>
                     <AfichesDescarga />
                 </div>
-                <div id='todas-las-actividades'>
+                <div id='todas-las-actividades' className='container-fluid bloque-1-ag py-3'>
                     <AgendaActividades />
                 </div>
             </Container>

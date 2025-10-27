@@ -1,0 +1,100 @@
+
+.accordion-agenda {
+  --agenda-bg: #00657e;          
+  --agenda-bg-active: #dce9f7;  
+  --agenda-border: #dce9f7;      
+  --agenda-text: #111;           
+  --agenda-accent: #dce9f7;      
+  --agenda-hover: #dce9f7;       
+  --agenda-radius: 14px;
+  --agenda-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ===== ITEM ===== */
+.accordion-agenda .accordion-item {
+  background-color: var(--agenda-bg);
+  border: 1px solid var(--agenda-border);
+  border-radius: var(--agenda-radius);
+  box-shadow: var(--agenda-shadow);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-agenda .accordion-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* ===== HEADER ===== */
+.accordion-agenda .accordion-header {
+  background-color: transparent;
+}
+
+/* Botón */
+.accordion-agenda .accordion-button {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--agenda-accent);
+  background: linear-gradient(180deg, var(--agenda-bg), var(--agenda-bg));
+  border: none;
+  box-shadow: none;
+  padding: 1rem 0.rem;
+  position: relative;
+  transition: all 0.25s ease;
+  
+}
+
+/* Hover */
+.accordion-agenda .accordion-button:hover {
+  background-color: var(--agenda-hover);
+}
+
+/* Cuando está abierto (no collapsed) */
+.accordion-agenda .accordion-button:not(.collapsed) {
+  background-color: var(--agenda-bg-active);
+  border-bottom: 1px solid var(--agenda-border);
+  box-shadow: inset 0 -2px 0 var(--agenda-accent);
+}
+
+/* ===== Ícono (chevron) personalizado ===== */
+.accordion-agenda .accordion-button::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+  transition: transform 0.25s ease;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23ffffff' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+}
+
+.accordion-agenda .accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+/* ===== BODY ===== */
+.accordion-agenda .accordion-body {
+  background-color: var(--agenda-bg-active);
+  color: var(--agenda-text);
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0.5rem 1rem;
+}
+
+/* ===== FOCUS ===== */
+.accordion-agenda .accordion-button:focus {
+  box-shadow: 0 0 0 3px rgba(11, 61, 117, 0.25);
+  outline: none;
+}
+
+/* ===== EFECTO DE ELEVACIÓN ===== */
+.accordion-agenda .accordion-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* ===== DARK MODE OPCIONAL ===== */
+[data-theme="dark"] .accordion-agenda {
+  --agenda-bg: #111827;
+  --agenda-bg-active: #1f2937;
+  --agenda-border: #374151;
+  --agenda-text: #f9fafb;
+  --agenda-accent: #60a5fa;
+  --agenda-hover: #1e40af;
+}

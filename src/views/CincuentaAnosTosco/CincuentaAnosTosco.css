@@ -11,6 +11,12 @@
 
 }
 
+.bloque-1-ag{
+    /* background-color: #FFEDB9; */
+    background-color: #3F6188;
+    color: #f1f1f1;
+}
+
 
 
 @media (max-width: 768px) {
