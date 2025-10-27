@@ -37,7 +37,7 @@
   background: linear-gradient(180deg, var(--agenda-bg), var(--agenda-bg));
   border: none;
   box-shadow: none;
-  padding: 1rem 0.rem;
+  padding: 1rem 1rem;
   position: relative;
   transition: all 0.25s ease;
   
@@ -89,12 +89,4 @@
   box-shadow: 0 6px 14px rgba(0,0,0,0.1);
 }
 
-/* ===== DARK MODE OPCIONAL ===== */
-[data-theme="dark"] .accordion-agenda {
-  --agenda-bg: #111827;
-  --agenda-bg-active: #1f2937;
-  --agenda-border: #374151;
-  --agenda-text: #f9fafb;
-  --agenda-accent: #60a5fa;
-  --agenda-hover: #1e40af;
-}
+

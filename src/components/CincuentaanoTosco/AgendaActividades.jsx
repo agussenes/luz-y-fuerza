@@ -111,7 +111,7 @@ function AgendaActividades() {
                         ))} */}
                         <Accordion>
                             {agenda.map((item, i) => (
-                                <Accordion.Item eventKey={i.toString()} key={i} className="accordion-agenda mb-4">
+                                <Accordion.Item eventKey={i.toString()} key={i} className="accordion-agenda  mb-4">
                                     <Accordion.Header >{item.titulo}</Accordion.Header>
                                     <Accordion.Body >{item.descripcion}</Accordion.Body>
                                 </Accordion.Item>
