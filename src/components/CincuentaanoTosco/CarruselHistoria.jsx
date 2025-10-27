@@ -91,7 +91,7 @@ function CarruselHistoria() {
                   <img
                     src={s.src}
                     alt={s.alt}
-                    loading="lazy"
+                    
                     className="tosco50-img"
                   />
                   {s.caption && (
