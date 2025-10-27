@@ -5,9 +5,9 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import './HeroSwiper.css';
+import './HeroSwiper3.css';
 
-function HeroSwiper({ slides }) {
+function HeroSwiper3({ slides }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
@@ -36,11 +36,22 @@ function HeroSwiper({ slides }) {
               <div className="hero-slide-overlay">
                 <h1 className="hero-slide-title">{item.titulo}</h1>
                 <p className="hero-slide-text">{item.bajada}</p>
-                <div className="contenedorBotonHeroSwipper">
-                  <Link to={item.link} className="btn btn-outline-light mt-3 botonHeroSwiper">
-                    {item.boton} <i className="bi bi-arrow-right-short"></i>
-                  </Link>
-                </div>
+                {item.ocultarBoton === false ? (
+                  <div className='d-flex justify-content-center'>
+                    <Link to={item.link} className="px-4 mt-3 estiloBotonClaroH2 py-1">
+                      {item.boton} <i className="bi bi-arrow-right-short"></i>
+                    </Link>
+                  </div>
+                ) : (
+                  <div className='mt-5 pt-5 mobileEstilo50'>
+                    <div className='espacio50AT'></div>
+                    <div>
+                      <Link to={item.link} className="px-4 mt-5 estiloBotonClaroH2 py-1">
+                        {item.boton} <i className="bi bi-arrow-right-short"></i>
+                      </Link>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </SwiperSlide>
@@ -50,4 +61,4 @@ function HeroSwiper({ slides }) {
   );
 }
 
-export default HeroSwiper;
+export default HeroSwiper3;

@@ -16,6 +16,7 @@ import AgendaActividades from '../../components/CincuentaanoTosco/AgendaActivida
 // imagenes 
 import imgUsina from '../../../public/img/identidad/logoUsina.webp'
 import portadaImg from '../../assets/images/cincuentaAnAT/portada.webp';
+import portadaImgM from '../../assets/images/cincuentaAnAT/portadaMobile.webp';
 
 
 
@@ -30,7 +31,7 @@ function CincuentaAnosTosco() {
                 url="http://localhost:5173/cincuenta-años-agustin-tosco"
                 image="https://tusitio.com/img/home-og-image.jpg"
             />
-            <BannerPortadas imagen={portadaImg} titulo="" />
+            <BannerPortadas imagen={portadaImg} titulo="" isMobile={true} imgMobile={portadaImgM} />
 
 
             <Container fluid className=' contenedorCustom50aniosAT m-0 py-0 my-0 p-0'>
