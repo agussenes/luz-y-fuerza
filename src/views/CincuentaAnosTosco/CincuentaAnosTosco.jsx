@@ -31,7 +31,7 @@ function CincuentaAnosTosco() {
                 url="http://localhost:5173/cincuenta-años-agustin-tosco"
                 image="https://tusitio.com/img/home-og-image.jpg"
             />
-            <BannerPortadas imagen={portadaImg} titulo="" isMobile={true} imgMobile={portadaImgM} />
+            <BannerPortadas imagen={portadaImg} titulo="" isMobile={true} imgMobile={portadaImgM} overLay={false} />
 
 
             <Container fluid className=' contenedorCustom50aniosAT m-0 py-0 my-0 p-0'>
