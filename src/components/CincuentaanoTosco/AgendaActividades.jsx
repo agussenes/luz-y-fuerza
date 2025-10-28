@@ -50,35 +50,31 @@ function AgendaActividades() {
             descripcion: 'Próximamente más información',
         },
         {
-            titulo: 'Convocatoria de diseños Tosco x 50 (los mejores serán impresos como afiches y/o stickers conmemorativos)',
+            titulo: 'Convocatoria de diseños "Tosco x 50"',
             descripcion: 'Próximamente más información',
         },
         {
-            titulo: 'Colocación de Placa (en algún lugar representativo para el gremio) o realización de la cartelería de identificación del auditorio Agustín Tosco.',
+            titulo: 'Colocación de placa conmemorativa',
             descripcion: 'Próximamente más información',
         },
         {
-            titulo: 'Ciclo de charlas en el marco de los 50 años de Tosco Eterno pero que de pie para trabajar sobre temas actuales (no sólo históricos). Existe la posibilidad que una de esas charlas se de en la Feria del Libro 2026.',
+            titulo: 'Ciclo de charlas en el marco de los 50 años de Tosco Eterno',
             descripcion: 'Próximamente más información',
         },
         {
-            titulo: 'Intervención callejera “la ruta de Tosco” (señalización que pueda sacarse de lugares icónicos para Tosco, como su casa, lugar donde desempeñaba su trabajo, colegio al que asistió, etc)',
+            titulo: 'Intervención callejera "La ruta de Tosco"',
+            descripcion: 'Próximamente más información',
+        },       
+        {
+            titulo: 'Exposición itinerante de afiches',
             descripcion: 'Próximamente más información',
         },
         {
-            titulo: 'Campaña para redes sociales: delegados, afiliados, personalidades responden a cámara qué creen que significó Tosco para Córdoba. Esos testimonios son publicados en redes sociales.',
+            titulo: 'Entrega de reconocimientos "Agustín Tosco"',
             descripcion: 'Próximamente más información',
         },
         {
-            titulo: 'Exposición itinerante. Se imprimen los afiches que se fueron haciendo y se arman para una muestra itinerante en puntos públicos de la ciudad (plaza San Martín, parque Las Heras, etc).',
-            descripcion: 'Próximamente más información',
-        },
-        {
-            titulo: 'Reconocimiento Agustín Tosco. Organización de un acto en el que se haga entrega de un reconocimiento (diploma o estatuillas) a quienes hayan colaborado en mantener viva la memoria de Tosco (en festival).',
-            descripcion: 'Próximamente más información',
-        },
-        {
-            titulo: 'Festival o acto multitudinario (ver fecha).',
+            titulo: 'Festival "Agustín Tosco"',
             descripcion: 'Próximamente más información',
         },
     ]
