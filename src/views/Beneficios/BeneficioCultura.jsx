@@ -30,7 +30,7 @@ export default function BeneficioCultura() {
               <i className="bi bi-tools display-2"></i>
             </div>
             <div className="d-flex justify-content-center">
-              <Link to='/propuesta-de-servicios' className="btn px-4 py-2  estiloBotonH2">
+              <Link to='/' className="btn px-4 py-2  estiloBotonH2">
                 <span style={{fontSize:'1.5rem'}}>
                   <i className="bi bi-arrow-bar-left"></i> Volver
                 </span></Link>

@@ -17,7 +17,7 @@ export default function Beneficios() {
         url="http://localhost:5173/propuestas-de-servicios"
         image="https://tusitio.com/img/home-og-image.jpg"
       />
-      <BannerPortadas imagen={portadaImg} titulo="Propuesta de servicios" />
+      <BannerPortadas imagen={portadaImg} titulo="Nuestras propuestas para vos" />
       <div className="container py-4">
         <BeneficiosSection />
       </div>

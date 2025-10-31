@@ -64,7 +64,7 @@ function AgendaActividades() {
         {
             titulo: 'Intervención callejera "La ruta de Tosco"',
             descripcion: 'Próximamente más información',
-        },       
+        },
         {
             titulo: 'Exposición itinerante de afiches',
             descripcion: 'Próximamente más información',
@@ -82,11 +82,15 @@ function AgendaActividades() {
     return (
         <>
             <section className="m-0 p-0 h-100 pt-4">
-                <Container className="py-2">
-                    <h1 className="fw-bold text-uppercase lineBorderTitle text-center">AGENDA</h1>
+                <Container className="py-2 text-center">
+                    <h1 className="fw-bold text-uppercase mb-2 lineBorderTitle text-center">AGENDA</h1>
                     <p className="lead">
                         Desde el 5 de noviembre de 2025 al 5 de noviembre de 2026 nos encontramos para conmemorar y mantener vivo el legado de Agustín Tosco. Cada actividad es una forma de seguir defendiendo él nos enseñó: que la energía y el trabajo pertenecen al pueblo.
                     </p>
+
+                    <div className="card d-flex flex-colunm justify-content-center p-0">
+                        <h2 className="pt-2 px-4 text-center">Próximamente vas a encontrar aquí la agenda de actividades de <strong>50 años de Tosco Eterno.</strong></h2>
+                    </div>
                 </Container>
                 <section className="container">
                     <Row className="g-3 g-md-4 pb-4">
@@ -105,14 +109,14 @@ function AgendaActividades() {
                                 </div>
                             </Col>
                         ))} */}
-                        <Accordion>
+                        {/* <Accordion>
                             {agenda.map((item, i) => (
                                 <Accordion.Item eventKey={i.toString()} key={i} className="accordion-agenda  mb-4">
                                     <Accordion.Header >{item.titulo}</Accordion.Header>
                                     <Accordion.Body >{item.descripcion}</Accordion.Body>
                                 </Accordion.Item>
                             ))}
-                        </Accordion>
+                        </Accordion> */}
 
                     </Row>
                     {/* <Container>
