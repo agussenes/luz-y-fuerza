@@ -81,7 +81,7 @@ function AgendaActividades() {
 
     return (
         <>
-            <section className="m-0 p-0 h-100 pt-4">
+            <section className="m-0 p-0 h-100 py-4">
                 <Container className="py-2 text-center">
                     <h1 className="fw-bold text-uppercase mb-2 lineBorderTitle text-center">AGENDA</h1>
                     <p className="lead">
