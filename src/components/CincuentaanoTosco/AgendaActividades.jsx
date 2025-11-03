@@ -85,7 +85,7 @@ function AgendaActividades() {
                 <Container className="py-2 text-center">
                     <h1 className="fw-bold text-uppercase mb-2 lineBorderTitle text-center">AGENDA</h1>
                     <p className="lead">
-                        Desde el 5 de noviembre de 2025 al 5 de noviembre de 2026 nos encontramos para conmemorar y mantener vivo el legado de Agustín Tosco. Cada actividad es una forma de seguir defendiendo él nos enseñó: que la energía y el trabajo pertenecen al pueblo.
+                        Desde el 5 de noviembre de 2025 al 5 de noviembre de 2026 nos encontramos para conmemorar y mantener vivo el legado de Agustín Tosco. Cada actividad es una forma de seguir defendiendo lo que él nos enseñó: que la energía y el trabajo pertenecen al pueblo.
                     </p>
 
                     <div className="card d-flex flex-colunm justify-content-center p-0">
