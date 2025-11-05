@@ -9,13 +9,14 @@ function Footer() {
   const location = useLocation();
   const { pathname } = useLocation();
 
-  const HIDE_SLUG = "/cincuenta-años-agustin-tosco";
+  // const HIDE_SLUG = "/cincuenta-años-agustin-tosco";
+  const HIDE_SLUG = "/tosco-eterno";
 
   // Normalizo el pathname y comparo contra ambas variantes (decodificada y URL-encoded)
   const cleanPath = decodeURIComponent(pathname).replace(/\/+$/, '');
-  const hideFooter =
-    cleanPath.endsWith(HIDE_SLUG) ||
-    pathname.replace(/\/+$/, '').endsWith(encodeURI(HIDE_SLUG));
+  const hideFooter = '/tosco-eterno'
+    // cleanPath.endsWith(HIDE_SLUG) ||
+    // pathname.replace(/\/+$/, '').endsWith(encodeURI(HIDE_SLUG));
 
   if (hideFooter) {
     return null;

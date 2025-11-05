@@ -25,6 +25,7 @@ import img11 from '../../assets/images/cincuentaAnAT/carouselHistoria/img11.webp
 import img12 from '../../assets/images/cincuentaAnAT/carouselHistoria/img12.webp';
 import img13 from '../../assets/images/cincuentaAnAT/carouselHistoria/img13.webp';
 import img14 from '../../assets/images/cincuentaAnAT/carouselHistoria/img14.webp';
+import img15 from '../../assets/images/cincuentaAnAT/carouselHistoria/img15.webp';
 
 function CarruselHistoria() {
   const slides = [
@@ -42,6 +43,7 @@ function CarruselHistoria() {
     { src: img12, alt: "Agustín Tosco 3", caption: "" },
     { src: img13, alt: "Agustín Tosco 3", caption: "" },
     { src: img14, alt: "Agustín Tosco 3", caption: "" },
+    { src: img15, alt: "Agustín Tosco 3", caption: "" },
   ];
 
   return (

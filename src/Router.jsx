@@ -2,28 +2,28 @@ import { Routes, Route } from 'react-router-dom';
 
 
 // Importamos vistas
-import Home from './views/Home/Home';
-import QuienesSomos from './views/QuienesSomos/QuienesSomos';
-import Historia from './views/Historia/Historia';
-import ConvenioColectivo from './views/ConvenioColectivo/ConvenioColectivo';
-import NuestraLucha from './views/NuestraLucha/NuestraLucha';
-import VidaInstitucional from './views/VidaInstitucional/VidaInstitucional';
-import AsambleaGeneral from './views/VidaInstitucional/AsambleaGeneral/AsambleaGeneral';
-import Secretarias from './views/Secretaria/Secretaria';
-import SecretariaDetalle from './views/Secretaria/SecretariaDetalle';
-import CuerpoGenDelegados from './views/VidaInstitucional/CuerpoDelegados/CuerpoGenDelegados/CuerpoGenDelegados';
-import DelegadosDelegadas from './views/VidaInstitucional/CuerpoDelegados/DelegadosDelegadas/DelegadosDelegadas';
-import DefendamosEpec from './views/NuestraLucha/defendamosEpec/DefendamosEpec';
-import Contacto from './views/Contacto/Contacto';
-import Beneficios from './views/Beneficios/Beneficios';
-import BeneficiosEducativos from './views/Beneficios/BeneficiosEducativos';
-import BeneficiosTurismo from './views/Beneficios/BeneficiosTurismo';
-import BeneficiosJuridicos from './views/Beneficios/BeneficiosJuridicos';
-import BeneficioCultura from './views/Beneficios/BeneficioCultura';
-import BeneficiosAccionSocial from './views/Beneficios/BeneficiosAccionSocial';
-import Actividades from './views/Actividades/Actividades';
+// import Home from './views/Home/Home';
+// import QuienesSomos from './views/QuienesSomos/QuienesSomos';
+// import Historia from './views/Historia/Historia';
+// import ConvenioColectivo from './views/ConvenioColectivo/ConvenioColectivo';
+// import NuestraLucha from './views/NuestraLucha/NuestraLucha';
+// import VidaInstitucional from './views/VidaInstitucional/VidaInstitucional';
+// import AsambleaGeneral from './views/VidaInstitucional/AsambleaGeneral/AsambleaGeneral';
+// import Secretarias from './views/Secretaria/Secretaria';
+// import SecretariaDetalle from './views/Secretaria/SecretariaDetalle';
+// import CuerpoGenDelegados from './views/VidaInstitucional/CuerpoDelegados/CuerpoGenDelegados/CuerpoGenDelegados';
+// import DelegadosDelegadas from './views/VidaInstitucional/CuerpoDelegados/DelegadosDelegadas/DelegadosDelegadas';
+// import DefendamosEpec from './views/NuestraLucha/defendamosEpec/DefendamosEpec';
+// import Contacto from './views/Contacto/Contacto';
+// import Beneficios from './views/Beneficios/Beneficios';
+// import BeneficiosEducativos from './views/Beneficios/BeneficiosEducativos';
+// import BeneficiosTurismo from './views/Beneficios/BeneficiosTurismo';
+// import BeneficiosJuridicos from './views/Beneficios/BeneficiosJuridicos';
+// import BeneficioCultura from './views/Beneficios/BeneficioCultura';
+// import BeneficiosAccionSocial from './views/Beneficios/BeneficiosAccionSocial';
+// import Actividades from './views/Actividades/Actividades';
 import NotFound from './views/NotFound/NotFound';
-import CuerposOrganicos from './views/VidaInstitucional/CuerposOrganicos/CuerposOrganicos';
+// import CuerposOrganicos from './views/VidaInstitucional/CuerposOrganicos/CuerposOrganicos';
 
 // vista tosco 
 import CincuentaAnosTosco from './views/CincuentaAnosTosco/CincuentaAnosTosco';
@@ -36,7 +36,7 @@ function Router() {
 
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
-        <Route path="/historia" element={<Historia />} />
+        {/* <Route path="/historia" element={<Historia />} />
         <Route path="/quienes-somos" element={<QuienesSomos />} />
         <Route path="/convenio-colectivo" element={<ConvenioColectivo />} />
         <Route path="/nuestra-lucha" element={<NuestraLucha />} />
@@ -58,10 +58,10 @@ function Router() {
         <Route path="/actividades" element={<Actividades />} />
 
 
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} /> */}
 
         {/* vista espesifica para 50 años Agustin Tosco */}
-        <Route path='/cincuenta-años-agustin-tosco' element={<CincuentaAnosTosco />} />
+        <Route path='/' element={<CincuentaAnosTosco />} />
 
         <Route path="*" element={<NotFound />} />
 

@@ -25,7 +25,7 @@ import './styles/variables.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelmetProvider>
-    <BrowserRouter basename="/luz-y-fuerza">
+    <BrowserRouter basename="/tosco-eterno">
       <App />
       {/* Toastify container global */}
       <ToastContainer

@@ -8,9 +8,11 @@ function Header() {
   // ✅ Usamos la misma instancia de useLocation para evitar lecturas duplicadas
   const { pathname, hash } = location;
 
-  const HIDE_SLUG = "/cincuenta-años-agustin-tosco";
+  // const HIDE_SLUG = "/cincuenta-años-agustin-tosco";
+  const HIDE_SLUG = "/tosco-eterno";
 
-  const base = "/cincuenta-años-agustin-tosco";
+  // const base = "/cincuenta-años-agustin-tosco";
+  const base = "";
 
   useEffect(() => {
     const navbarCollapse = document.getElementById('navbarContenido');
@@ -42,9 +44,9 @@ function Header() {
 
   // --- FIX: normalizo el pathname y comparo contra ambas variantes (decodificada y URL-encoded) ---
   const cleanPath = decodeURIComponent(pathname).replace(/\/+$/, ''); 
-  const hideHeader =
-    cleanPath.endsWith(HIDE_SLUG) ||
-    pathname.replace(/\/+$/, '').endsWith(encodeURI(HIDE_SLUG));
+  const hideHeader ='/tosco-eterno'
+    // cleanPath.endsWith(HIDE_SLUG) ||
+    // pathname.replace(/\/+$/, '').endsWith(encodeURI(HIDE_SLUG));
   // -----------------------------------------------------------------------------------------------
 
   return !hideHeader ? (
@@ -54,7 +56,7 @@ function Header() {
 
           {/* LOGO */}
           <Link className="navbar-brand" to="/">
-            <img src="/luz-y-fuerza/img/identidad/Logo-White.webp" alt="Logo sindicato de luz y fuerza" height="50" loading="lazy" />
+            <img src="/img/identidad/Logo-White.webp" alt="Logo sindicato de luz y fuerza" height="50" loading="lazy" />
           </Link>
 
           {/* Botón hamburguesa mobile */}
@@ -149,7 +151,7 @@ function Header() {
 
           {/* LOGO */}
           <Link className="navbar-brand" to="/">
-            <img src="/luz-y-fuerza/img/identidad/Logo-White.webp" alt="Logo sindicato de luz y fuerza" height="50" loading="lazy" />
+            <img src="/tosco-eterno/img/identidad/Logo-White.webp" alt="Logo sindicato de luz y fuerza" height="50" loading="lazy" />
           </Link>
 
           {/* Botón hamburguesa mobile */}

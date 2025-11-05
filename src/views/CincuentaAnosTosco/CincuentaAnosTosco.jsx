@@ -28,7 +28,7 @@ function CincuentaAnosTosco() {
             <SEO
                 title="50 años Agustin Tosco - Luz y Fuerza Córdoba"
                 description="Bienvenidos al Sindicato de Luz y Fuerza de Córdoba. Noticias, beneficios y lucha sindical."
-                url="http://localhost:5173/cincuenta-años-agustin-tosco"
+                url="https://luzyfuerzacordoba.com.ar/tosco-eterno"
                 image="https://tusitio.com/img/home-og-image.jpg"
             />
             <BannerPortadas imagen={portadaImg} titulo="" isMobile={true} imgMobile={portadaImgM} overLay={false} />

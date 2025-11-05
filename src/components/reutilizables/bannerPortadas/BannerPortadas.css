@@ -38,3 +38,19 @@
     margin: 0;
   }
   
+  .pc{
+    display: block;
+  }
+
+  .mobile{
+    display: none !important;
+  }
+
+  @media (max-width: 768px) {
+    .pc {
+      display: none !important;
+    }
+    .mobile{
+      display: block !important;
+    }
+  }
