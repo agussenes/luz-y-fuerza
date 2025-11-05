@@ -45,7 +45,7 @@ function CincuentaAnosTosco() {
                     <AgendaActividades />
                 </div>
             </Container>
-            <Container fluid className='footerAT pt-3'>
+            {/* <Container fluid className='footerAT pt-3'>
                 <div className="text-center  text-light d-flex justify-content-center align-items-center styleColumMobile">
                     <p>Desarrollado por
                         <a href="https://usinacreativa.com.ar/" target="_blank" rel="noopener noreferrer" style={{ margin: '0 0.2rem' }}>
@@ -58,7 +58,7 @@ function CincuentaAnosTosco() {
                         </a>
                         © Sindicato de Luz y Fuerza Córdoba. 2025</p>
                 </div>
-            </Container>
+            </Container> */}
         </>
     )
 }
