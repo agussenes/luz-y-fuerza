@@ -88,7 +88,7 @@ function AgendaActividades() {
                         Desde el 5 de noviembre de 2025 al 5 de noviembre de 2026 nos encontramos para conmemorar y mantener vivo el legado de Agustín Tosco. Cada actividad es una forma de seguir defendiendo lo que él nos enseñó: que la energía y el trabajo pertenecen al pueblo.
                     </p>
 
-                    <div className="card d-flex flex-colunm justify-content-center p-0">
+                    <div className="card d-flex flex-colunm justify-content-center bg-azul-oscuro text-light m p-0">
                         <h2 className="pt-2 px-4 text-center">Próximamente vas a encontrar aquí la agenda de actividades de <strong>50 años de Tosco Eterno.</strong></h2>
                     </div>
                 </Container>

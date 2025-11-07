@@ -175,6 +175,10 @@ function Header() {
               </li>
 
               <li className="nav-item">
+                <Link className="nav-link" to={{ pathname: base, hash: "#semblanza" }}>Semblanza</Link>
+              </li>
+
+              <li className="nav-item">
                 <Link className="nav-link" to={{ pathname: base, hash: "#todas-las-actividades" }}>Agenda</Link>
               </li>
 

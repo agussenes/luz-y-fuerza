@@ -11,7 +11,7 @@ import './CincuentaAnosTosco.css'
 import CarruselHistoria from '../../components/CincuentaanoTosco/CarruselHistoria';
 import AfichesDescarga from '../../components/CincuentaanoTosco/AfichesDescarga';
 import AgendaActividades from '../../components/CincuentaanoTosco/AgendaActividades';
-
+import { Semblanza } from '../../components/CincuentaanoTosco/Semblanza';
 
 // imagenes 
 import imgUsina from '../../../public/img/identidad/logoUsina.webp'
@@ -41,7 +41,10 @@ function CincuentaAnosTosco() {
                 <div id='descarga-tu-afiche'>
                     <AfichesDescarga />
                 </div>
-                <div id='todas-las-actividades' className='container-fluid bloque-1-ag py-3'>
+                <div id="semblanza" className='container-fluid bloque-1-ag py-3'>
+                    <Semblanza />
+                </div>
+                <div id='todas-las-actividades' className='container-fluid  py-3'>
                     <AgendaActividades />
                 </div>
             </Container>
