@@ -18,9 +18,9 @@ export function Semblanza() {
                     <Accordion>
 
                         <Accordion.Item className="accordion-agenda  mb-4">
-                            <Accordion.Header className=''> Carta entera</Accordion.Header>
+                            <Accordion.Header className=''>Leer carta completa</Accordion.Header>
                             <Accordion.Body >
-                                <Row className=' p-4'>
+                                <Row className='p-4'>
                                     <Col lg={6}>
                                         <p>
                                             Estimado Agustín:
